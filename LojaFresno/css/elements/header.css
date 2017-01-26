@@ -1,0 +1,113 @@
+header {
+    margin-bottom: 20px;
+}
+
+.infobox {
+    display: none;
+}
+
+.header_Atendimento {
+    background-color: #232323;
+    padding: 6px 0px;
+}
+
+.header_Atendimento h4 {
+    color: #fff;
+    font-size: 12pt;  
+    text-align: right;
+}
+
+.header_Principal {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.header_Principal img {
+    margin-top: -15px;
+}
+
+.search {
+    max-width: 400px;
+    margin: auto;
+}
+
+.search form {
+    height: 35px;
+}
+
+.search .search-key {
+    font-size: 10pt;
+    height: 35px;
+    padding: 15px;
+}
+
+.search .search-button {
+    height: 35px;
+    padding: 5px 10px;
+    background: transparent;
+    color: #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+.search-button svg {
+    fill: #e2e2e2;
+}
+
+.header_AreaLinks {
+    line-height: 35px;
+    width: 90%;
+    float: right;
+}
+
+.header_AreaLinks img {
+    position: absolute;
+    margin-top: 0px;
+}
+
+.header_AreaLinksDivisor {
+    border-right: 1px solid #232323;
+}
+
+.header_AreaLinks h5 {
+    font-size: 8pt;
+    color: #232323;
+    font-weight: bold;
+}
+
+.main-menu{position:relative}
+.main-menu .container{max-width:1040px;}
+.main-menu .item-level1{float:left;margin-left:47px;position:relative}
+.main-menu .item-level1:first-child,.main-menu .item-level1:nth-child(2){margin-left:0}
+.main-menu .item-level1:hover .level2{opacity:1;visibility:visible;    z-index: 999;}
+.main-menu .item-level1:last-child .level2,.main-menu .item-level1:nth-child(6) .level2{right:0}
+.main-menu .item-level1:nth-child(5) .level2{left:calc(50% - 320px)}
+.main-menu h3 a{display:block;padding:30px 0;font-weight:900}
+@media screen and (min-width:769px){
+	.main-menu h3 a:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
+}
+.main-menu .link-novidades{float:right;padding:30px 0}
+.main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
+.main-menu .link-novidades ul{opacity:0;position:absolute;right:0;text-align:right;top:80%;visibility:hidden;width:600px}
+.main-menu .link-novidades:hover ul{opacity:1;visibility:visible}
+.main-menu .level2{background-color:#fff;border-bottom:1px solid #939596;border-left:1px solid #939596;border-right:1px solid #939596;border-top:6px solid #259ed6;opacity:0;padding-bottom:26px;padding-top:16px;position:absolute;top:80%;visibility:hidden;width:640px}
+.main-menu .level2 img{float:right;margin-top:-16px;margin-bottom:-26px}
+.main-menu .level2 div{overflow:hidden}
+.main-menu .item-level2{border-left:1px solid #939596;float:left;margin-left:-1px;padding-left:25px;width:50%}
+.main-menu .link-level2{color:#259ed6;font:700 12px/12px Lato,sans-serif;margin-bottom:6px}
+.main-menu .item-level3{margin-top:10px}
+.main-menu .link-level3{color:#4c4c4c;font:700 11px/11px Lato,sans-serif}
+@media screen and (max-width:767px){
+	.main-menu,.main-menu li.item-level1.link-novidades{display:none}
+	.main-menu .container{width:auto}
+	.main-menu .item-level1{display:block;margin:0;width:100%}
+	.main-menu .item-level1:hover .level2{display:none}
+}
+
+.main-menu h3 a {
+    font-size: 12pt;
+    color: #000;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
