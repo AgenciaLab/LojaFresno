@@ -14,6 +14,11 @@ and open the template in the editor.
 }
 
 @font-face {
+    font-family: OswaldBold;
+    src: url('fonts/oswald/Oswald-Bold.ttf');
+}
+
+@font-face {
     font-family: OxygenBold;
     src: url('fonts/oxygen/Oxygen-Bold.ttf');
 }

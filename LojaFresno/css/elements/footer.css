@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/01/2017, 11:40:46
+    Author     : MarceloMacedo
+*/
+
+.footer_content {
+    background-color: #ececec;
+    text-align: center;
+}
+
+.footer_contact {
+    margin-top: 30px;
+}
+
+.footer_contact h4 {
+    font-family: OswaldBold;
+    font-size: 23pt;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+
+.footer_contact span {
+    font-size: 14pt;
+    line-height: 20px;
+    margin-left: -10px;
+}
+
+.footer_contact h5 {
+    font-family: OswaldBold; 
+    font-size: 11pt;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.footer_contactus {
+    max-width: 185px;
+    margin: auto;
+    padding: 0px 5px;
+}
+
+.footer_contactus img {
+    float:left;
+}
+
+.footer_contact h6 {
+    font-family: OxygenRegular;
+    font-size: 10pt;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+.footer_options {
+    margin-top: 30px;
+    text-align: left;
+    padding: 0px 20px;
+    min-height: 120px;
+}
+
+.footer_options h5 {
+    font-family: OswaldBold; 
+    font-size: 11pt;
+    line-height: 30px;
+    color: #434343;
+}
+
+.footer_options h6 {
+    font-family: OxygenRegular;
+    font-size: 10pt;
+    color: #232323;
+    margin-top: 4px;
+}
+
+.aboveFooter_content {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aboveFooter_content h4 {
+    font-family: OxygenRegular;
+    font-size: 9pt;
+    line-height: 20px;
+}
