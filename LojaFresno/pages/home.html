@@ -40,7 +40,6 @@
             <a href="{{ banners.extra1.link }}" target="{{ banners.extra1.target }}">
                 <img src="{{ banners.extra1.src }}" class="imgBannerEx3" alt="{{ banners.extra1.alt }}" >
             </a>
-            <!--{{ banner.extra1 }}-->
             {% endif %}
         </div>
         <div class="col-sm-6 hidden-xs">
@@ -48,7 +47,6 @@
             <a href="{{ banners.extra2.link }}" target="{{ banners.extra2.target }}">
                 <img src="{{ banners.extra2.src }}" class="imgBannerEx3" alt="{{ banners.extra2.alt }}" >
             </a>
-            <!--{{ banner.extra2 }}-->
             {% endif %}
         </div>
     </div>
@@ -65,12 +63,18 @@
 
     <div class="row nospacing" style="margin-bottom: 20px;">
 
+        <div class="row nospacing">
+
+        {% element 'showcase' {
+            "products": products,
+            "showcaseTitle": showcaseText
+        } %}
+
         <div class="col-md-8" style="padding-left: 0px;">
             {% if banner.extra2 %}
             <a href="{{ banners.extra4.link }}" target="{{ banners.extra4.target }}">
                 <img src="{{ banners.extra4.src }}" class="imgBannerEx3" alt="{{ banners.extra4.alt }}" >
             </a>
-            <!--{{ banner.extra2 }}-->
             {% endif %}
         </div>
         <div class="col-md-4" style="padding: 4px">
