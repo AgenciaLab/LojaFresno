@@ -1,15 +1,15 @@
 {% if products|length > 0 %}
-    <div class="col-sm-12 showcaseRow" >
+    <div class="showcaseRow" >
         <div class="lineSeparate"></div>
 
         <div class="showcase clearfix" data-tray-tst="vitrine_home">
             <h2 class="titleProducts">
                 <strong>{{ showcaseTitle }}</strong>
             </h2>
-            <ul class="row">
+            <ul>
             {% for product in products %}
                 {% set ranking = product.ranking %}
-                <li class="col-sm-4" data-tray-tst="vitrine_produto">
+                <li class="col-sm-4" data-tray-tst="vitrine_produto" style="padding-left: 0px; padding-right: 0px;">
                     {% element 'snippets/product' {"product": product} %}
                 </li>
 

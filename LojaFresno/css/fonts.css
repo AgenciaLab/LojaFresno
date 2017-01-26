@@ -27,3 +27,8 @@ and open the template in the editor.
     font-family: OxygenRegular;
     src: url('fonts/oxygen/Oxygen-Regular.ttf');
 }
+
+@font-face {
+    font-family: BebasNeueBook;
+    src: url('fonts/bebas-neue-book/BebasNeueBook.ttf');
+}
