@@ -44,6 +44,12 @@
     <div class="application">
         
         {% element 'header' %}
+
+        {% if pages.current == 'home' and banner.home %}
+            <div class="banners banner-home container-fluid hidden-xs">
+                {{ banner.home }}
+            </div>
+        {% endif %}
             
         <main class="site-main container">
             <div class="row">

@@ -4,7 +4,6 @@
     {% set limitProducts = 12 %}
 {% endif %}
 
-
 {% if settings.showcase == "featured" %}
     {% set showcaseText = "Destaques" %}
 {% elseif settings.showcase == "new" %}
@@ -30,14 +29,6 @@
         'limit': limitProducts,
         'order': 'rand'
     }) %}
-{% endif %}
-
-{% if banner.home %}
-    <div class="box-banner hidden-xs">
-        <div class="banner banner-home">
-            {{ banner.home }}
-        </div>
-    </div>
 {% endif %}
 
 {% if banner.extra1 %}
