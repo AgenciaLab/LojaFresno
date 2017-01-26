@@ -1,22 +1,57 @@
 .banner {
     border: none;
 }
+
 .first {
     float: left;
     margin-right: 15px;
 }
+
 .rowNoSpacing {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
 }
+
 .nospacing {
     padding-left: 15px;
     padding-right: 10px;
     margin-left: 0;
     margin-right: 0;
 }
+
 .imgBannerEx3 {
     width: 100%;
+    margin: 0;
+    border:0;
+}
+
+.showcaseRow {
+    margin: 10px 0 10px 3px;
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+.lineSeparate {
+    display: block;
+    border: 1px solid #000;
+    margin: 10px 0 10px 3px;
+}
+
+.showcase>h2 strong {
+    text-align: center;
+    font-family: OswaldRegular;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.product .product-name {
+    height: auto;
+    margin-bottom: 3px;
+}
+
+.product .product-price {
+    height: auto;
+    margin-bottom: 3px;
 }
