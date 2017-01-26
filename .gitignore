@@ -1,3 +1,5 @@
 *.yml
 /nbproject/private/
 /nbproject/
+.idea/
+.idea/copyright/
