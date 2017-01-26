@@ -1,0 +1,59 @@
+{% if settings.limitProducts %}
+    {% set limitProducts = settings.limitProducts %}
+{% else %}
+    {% set limitProducts = 12 %}
+{% endif %}
+
+
+{% if settings.showcase == "featured" %}
+    {% set showcaseText = "Destaques" %}
+{% elseif settings.showcase == "new" %}
+    {% set showcaseText = "Lan&ccedil;amentos" %}
+{% elseif settings.showcase == "free_shipping" %}
+    {% set showcaseText = "Frete Gr&aacute;tis" %}
+{% elseif settings.showcase == "promotion" %}
+    {% set showcaseText = "Promo&ccedil;&otilde;es" %}
+{% elseif settings.showcase == "top_seller" %}
+    {% set showcaseText = "Mais Vendidos" %}
+{% endif %}
+
+{% if settings.showcase == "top_seller" %}
+    <div id="prognoos_popv1"></div>	
+    {% set products = Products({
+        'filter': 'available',
+        'limit': limitProducts,
+        'order': {'quantity_sold': 'desc'}
+    }) %}
+{% else %}
+    {% set products = Products({
+        'filter': settings.showcase,
+        'limit': limitProducts,
+        'order': 'rand'
+    }) %}
+{% endif %}
+
+{% if banner.home %}
+    <div class="box-banner hidden-xs">
+        <div class="banner banner-home">
+            {{ banner.home }}
+        </div>
+    </div>
+{% endif %}
+
+{% if banner.extra1 %}
+    <div class="banner banner-ruler hidden-xs">
+        {{ banner.extra1 }}
+    </div>
+{% endif %}
+                    
+
+{% element 'showcase' { 
+    "products": products,
+    "showcaseTitle": showcaseText
+} %}
+
+{% if banner.bottom %}
+    <div class="banner banner-bottom">
+        {{ banner.bottom }}
+    </div>
+{% endif %}

@@ -1,0 +1,31 @@
+<div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    {% if product.available %}
+        
+        {% if product.stock > 0 %} 
+        
+            {% if product.upon_request %}
+                <p>Produto Sob Consulta</p>
+            {% else %}
+            
+                {% if product.has_other_prices %}
+                    <span class="price-various">{{ Translation('a_partir_de') }}</span> 
+                {% endif %} 
+                    
+                {% if product.price_offer > 0 and product.show_price %}
+                    <div class="price-before">
+                        <div itemprop="priceCurrency" content="BRL"><abbr class="currency" title="BRL">{{ settings.currency }}</abbr> {{ product.price|currency }}</div>
+                    </div>
+                    <div class="price-promotion">
+                        <div itemprop="offers" class="price-off" itemscope itemtype="http://schema.org/Offer">R$ {{ product.price_offer|currency  }}</div>
+                    </div>
+                {% else %}
+                    <span itemprop="priceCurrency" content="BRL">R$ {{ product.price|currency }}</span>
+                {% endif %}
+            {% endif %}
+            
+        {% else %} 
+            <p>Esgotado!</p>
+        {% endif %} 
+    {% endif %} 
+    
+</div>
