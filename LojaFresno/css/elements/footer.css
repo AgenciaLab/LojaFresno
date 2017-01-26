@@ -85,3 +85,9 @@ and open the template in the editor.
     font-size: 9pt;
     line-height: 20px;
 }
+
+.footer_icon {
+    position: absolute;
+    margin-top: -18px;
+    left: 90%;
+}
