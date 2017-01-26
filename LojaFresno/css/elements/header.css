@@ -8,13 +8,14 @@ header {
 
 .header_Atendimento {
     background-color: #232323;
-    padding: 6px 0px;
+    padding: 9px 0px;
 }
 
 .header_Atendimento h4 {
     color: #fff;
-    font-size: 12pt;  
+    font-size: 11pt;  
     text-align: right;
+    font-family: OswaldRegular;
 }
 
 .header_Principal {
@@ -33,6 +34,7 @@ header {
 
 .search form {
     height: 35px;
+    font-family: OxygenBold;
 }
 
 .search .search-key {
@@ -73,7 +75,8 @@ header {
 .header_AreaLinks h5 {
     font-size: 8pt;
     color: #232323;
-    font-weight: bold;
+    font-family: OxygenBold;
+    padding: 0px 1px;
 }
 
 .main-menu{position:relative}
@@ -85,7 +88,7 @@ header {
 .main-menu .item-level1:nth-child(5) .level2{left:calc(50% - 320px)}
 .main-menu h3 a{display:block;padding:30px 0;font-weight:900}
 @media screen and (min-width:769px){
-	.main-menu h3 a:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
+    .main-menu h3 a:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
 }
 .main-menu .link-novidades{float:right;padding:30px 0}
 .main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
@@ -99,15 +102,18 @@ header {
 .main-menu .item-level3{margin-top:10px}
 .main-menu .link-level3{color:#4c4c4c;font:700 11px/11px Lato,sans-serif}
 @media screen and (max-width:767px){
-	.main-menu,.main-menu li.item-level1.link-novidades{display:none}
-	.main-menu .container{width:auto}
-	.main-menu .item-level1{display:block;margin:0;width:100%}
-	.main-menu .item-level1:hover .level2{display:none}
+    .main-menu,.main-menu li.item-level1.link-novidades{display:none}
+    .main-menu .container{width:auto}
+    .main-menu .item-level1{display:block;margin:0;width:100%}
+    .main-menu .item-level1:hover .level2{display:none}
 }
 
 .main-menu h3 a {
-    font-size: 12pt;
-    color: #000;
-    padding: 0px 20px;
+    font-size: 11pt;
+    color: #232323;
+    padding: 0px 15px;
     text-transform: uppercase;
+    font-family: OxygenRegular;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
