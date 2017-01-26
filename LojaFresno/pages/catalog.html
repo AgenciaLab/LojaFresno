@@ -1,0 +1,69 @@
+<div class="catalog-header">
+    
+    {% if banner.title %}
+        <div class="banner banner-title">
+            {{ banner.title }}
+        </div>
+    {% endif %}
+    
+    <h2 class="catalog-name">{{ category.name }}</h2>
+    
+    {% if products|length > 0 %}
+    
+        {% if breadcrumb %}
+            {% element 'snippets/breadcrumb' %}
+        {% endif %}
+        
+        <div class="system-filter">
+            {% if settings.compare %}
+                <a href="/loja/comparador.php?loja={{store.id}}&IdDep={{category.id}}" class="button-compare">Comparar Produtos</a>
+            {% endif %}
+            
+            {% element 'snippets/filter' {
+                'brands': category.brands
+            } %}
+        </div>
+    
+        <div class="pagination">
+            {% element 'snippets/paginate' %}
+        </div>
+        
+    {% endif %} 
+    
+</div>
+
+
+{% if products|length > 0 %}
+
+    <div class="catalog-content row">
+        {% element 'showcase-catalog' {
+            "products": products
+        } %}
+    </div>
+
+    <div class="catalog-footer pagination">
+        {% element 'snippets/paginate' %}
+    </div>
+
+{% else %}
+    
+    <div class="catalog-empty">
+        <img src="{{ asset('img/catalog-empty.svg') }}" alt="Sem produtos" width="150" height="150">
+        <p>Nenhum produto encontrado nessa categoria.</p>
+    </div>
+
+{% endif %}
+
+<div style="display:none;">
+    {% element 'snippets/history' {
+        'store.id': store.id,
+        'pages.current': pages.current,
+        'category.id': category.id
+    } %}
+</div>
+
+{% if banner.bottom %}
+    <div class="banner banner-bottom">
+        {{ banner.bottom }}
+    </div>
+{% endif %}
