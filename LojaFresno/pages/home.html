@@ -1,78 +1,87 @@
 {% if settings.limitProducts %}
-    {% set limitProducts = settings.limitProducts %}
+{% set limitProducts = settings.limitProducts %}
 {% else %}
-    {% set limitProducts = 4 %}
+{% set limitProducts = 4 %}
 {% endif %}
 
 {% if settings.showcase == "featured" %}
-    {% set showcaseText = "Destaques" %}
+{% set showcaseText = "Destaques" %}
 {% elseif settings.showcase == "new" %}
-    {% set showcaseText = "Lan&ccedil;amentos" %}
+{% set showcaseText = "Lan&ccedil;amentos" %}
 {% elseif settings.showcase == "free_shipping" %}
-    {% set showcaseText = "Frete Gr&aacute;tis" %}
+{% set showcaseText = "Frete Gr&aacute;tis" %}
 {% elseif settings.showcase == "promotion" %}
-    {% set showcaseText = "Promo&ccedil;&otilde;es" %}
+{% set showcaseText = "Promo&ccedil;&otilde;es" %}
 {% elseif settings.showcase == "top_seller" %}
-    {% set showcaseText = "Mais Vendidos" %}
+{% set showcaseText = "Mais Vendidos" %}
 {% endif %}
 
 {% if settings.showcase == "top_seller" %}
-    <div id="prognoos_popv1"></div>	
-    {% set products = Products({
-        'filter': 'available',
-        'limit': limitProducts,
-        'order': {'quantity_sold': 'desc'}
-    }) %}
+<div id="prognoos_popv1"></div>	
+{% set products = Products({
+'filter': 'available',
+'limit': limitProducts,
+'order': {'quantity_sold': 'desc'}
+}) %}
 {% else %}
-    {% set products = Products({
-        'filter': settings.showcase,
-        'limit': limitProducts,
-        'order': 'rand'
-    }) %}
+{% set products = Products({
+'filter': settings.showcase,
+'limit': limitProducts,
+'order': 'rand'
+}) %}
 {% endif %}
 
 <div class="container">
 
     {% if banner.extra1 and banner.extra2 %}
-        <div class="row rowNoSpacing" >
-                <div class="col-sm-6 hidden-xs" >
-                    {% if banner.extra1 %}
-                        <a href="{{ banners.extra1.link }}" target="{{ banners.extra1.target }}">
-                            <img src="{{ banners.extra1.src }}" class="imgBannerEx3" alt="{{ banners.extra1.alt }}" >
-                        </a>
-                        <!--{{ banner.extra1 }}-->
-                    {% endif %}
-                </div>
-                <div class="col-sm-6 hidden-xs">
-                    {% if banner.extra2 %}
-                        <a href="{{ banners.extra2.link }}" target="{{ banners.extra2.target }}">
-                            <img src="{{ banners.extra2.src }}" class="imgBannerEx3" alt="{{ banners.extra2.alt }}" >
-                        </a>
-                        <!--{{ banner.extra2 }}-->
-                    {% endif %}
-                </div>
+    <div class="row rowNoSpacing" >
+        <div class="col-sm-6 hidden-xs" >
+            {% if banner.extra1 %}
+            <a href="{{ banners.extra1.link }}" target="{{ banners.extra1.target }}">
+                <img src="{{ banners.extra1.src }}" class="imgBannerEx3" alt="{{ banners.extra1.alt }}" >
+            </a>
+            <!--{{ banner.extra1 }}-->
+            {% endif %}
         </div>
+        <div class="col-sm-6 hidden-xs">
+            {% if banner.extra2 %}
+            <a href="{{ banners.extra2.link }}" target="{{ banners.extra2.target }}">
+                <img src="{{ banners.extra2.src }}" class="imgBannerEx3" alt="{{ banners.extra2.alt }}" >
+            </a>
+            <!--{{ banner.extra2 }}-->
+            {% endif %}
+        </div>
+    </div>
     {% endif %}
 
     {% if banner.extra3 %}
-        <div class="row nospacing">
-            <a href="{{ banners.extra3.link }}" target="{{ banners.extra3.target }}">
-                <img src="{{ banners.extra3.src }}" class="imgBannerEx3" alt="{{ banners.extra3.alt }}" >
-            </a>
-        </div>
+    <div class="row nospacing" style="margin-top: 10px;">
+        <a href="{{ banners.extra3.link }}" target="{{ banners.extra3.target }}">
+            <img src="{{ banners.extra3.src }}" class="imgBannerEx3" alt="{{ banners.extra3.alt }}" >
+        </a>
+    </div>
     {% endif %}
 
-    <div class="row nospacing">
-        {% element 'showcase' {
-            "products": products,
-            "showcaseTitle": showcaseText
-        } %}
 
-        {% if banner.bottom %}
-            <div class="banner banner-bottom">
-                {{ banner.bottom }}
+    <div class="row nospacing" style="margin-bottom: 20px;">
+
+        <div class="col-md-8" style="padding-left: 0px;">
+            {% if banner.extra2 %}
+            <a href="{{ banners.extra4.link }}" target="{{ banners.extra4.target }}">
+                <img src="{{ banners.extra4.src }}" class="imgBannerEx3" alt="{{ banners.extra4.alt }}" >
+            </a>
+            <!--{{ banner.extra2 }}-->
+            {% endif %}
+        </div>
+        <div class="col-md-4" style="padding: 4px">
+            <div class="home_Cadastre">
+                <div class="newsletter">
+                    {% element 'snippets/newsletter' %}
+                </div>
             </div>
-        {% endif %}
+
+        </div>
+
     </div>
 
 </div>
