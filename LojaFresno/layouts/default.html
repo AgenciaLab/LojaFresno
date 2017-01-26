@@ -22,6 +22,8 @@
     
     <link rel="stylesheet" href="{{ asset('css/elements/header.css') }}" type="text/css">
 
+    <link rel="stylesheet" href="{{ asset('css/elements/home.css') }}" type="text/css">
+
     <style>
         {{ settings.custom_css }}
     </style>
@@ -56,13 +58,13 @@
         <main class="site-main container">
             <div class="row">
                 
-                {% if "central" in pages.current %}
-                    {%  element 'sidebar-central' %}
-                {% else %}
-                    {%  element 'sidebar-left' %}
-                {% endif %}
+                <!--{% if "central" in pages.current %}-->
+                    <!--{%  element 'sidebar-central' %}-->
+                <!--{% else %}-->
+                    <!--{%  element 'sidebar-left' %}-->
+                <!--{% endif %}-->
             
-                <section class="page-content col-sm-9">
+                <section class="page-content col-sm-12">
                     {{ content_for_layout }}
                 </section>
             </div>

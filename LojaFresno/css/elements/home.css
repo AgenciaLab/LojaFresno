@@ -1,0 +1,22 @@
+.banner {
+    border: none;
+}
+.first {
+    float: left;
+    margin-right: 15px;
+}
+.rowNoSpacing {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.nospacing {
+    padding-left: 15px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.imgBannerEx3 {
+    width: 100%;
+}
