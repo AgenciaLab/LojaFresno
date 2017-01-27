@@ -1,36 +1,34 @@
-<div class="catalog-header">
-    
-    {% if banner.title %}
-        <div class="banner banner-title">
-            {{ banner.title }}
-        </div>
-    {% endif %}
-    
-    <h2 class="catalog-name">{{ category.name }}</h2>
-    
-    {% if products|length > 0 %}
-    
-        {% if breadcrumb %}
-            {% element 'snippets/breadcrumb' %}
-        {% endif %}
-        
-        <div class="system-filter">
-            {% if settings.compare %}
-                <a href="/loja/comparador.php?loja={{store.id}}&IdDep={{category.id}}" class="button-compare">Comparar Produtos</a>
+{% element 'snippets/top-category' %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="catalog-header">
+
+            {% if products|length > 0 %}
+                {% if breadcrumb %}
+                    {% element 'snippets/breadc-catalog' %}
+                {% endif %}
             {% endif %}
-            
-            {% element 'snippets/filter' {
+
+        </div>
+
+        {% if products|length > 0 %}
+            {% if breadcrumb %}
+
+
+            {% element 'snippets/filterCatalog' {
                 'brands': category.brands
             } %}
+
+            {% endif %}
+        {% endif %}
+
+
+        <div class="paginateCatalogtop">
+            {% element 'snippets/paginateCatalog' %}
         </div>
-    
-        <div class="pagination">
-            {% element 'snippets/paginate' %}
-        </div>
-        
-    {% endif %} 
-    
+    </div>
 </div>
+
 
 
 {% if products|length > 0 %}
@@ -42,11 +40,11 @@
     </div>
 
     <div class="catalog-footer pagination">
-        {% element 'snippets/paginate' %}
+        {% element 'snippets/paginateCatalog' %}
     </div>
 
 {% else %}
-    
+
     <div class="catalog-empty">
         <img src="{{ asset('img/catalog-empty.svg') }}" alt="Sem produtos" width="150" height="150">
         <p>Nenhum produto encontrado nessa categoria.</p>

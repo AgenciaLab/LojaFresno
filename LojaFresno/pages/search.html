@@ -1,37 +1,38 @@
+<h1> Olá Mundo! </h1>
 <div class="catalog-header">
 
     {% if banner.title %}
     <div class="banner banner-title">
         {{ banner.title }}
     </div>
-    {% endif %}	
+    {% endif %}
 
     {% if search.word %}
         <h2 class="catalog-name">Exibindo resultados para: {{ search.word }}</h2>
     {% else %}
         <h2 class="catalog-name">Exibindo todos os produtos</h2>
     {% endif %}
-    
+
     <h2 class="catalog-name">{{ category.name }}</h2>
-    
+
     {% if products|length > 0 %}
-    
+
         {% if breadcrumb %}
             {% element 'snippets/breadcrumb' %}
         {% endif %}
-        
+
         <div class="system-filter">
             {% element 'snippets/filter' {
                 'brands': category.brands
             } %}
         </div>
-    
+
         <div class="pagination">
             {% element 'snippets/paginate' %}
         </div>
-        
+
     {% endif %}
-    
+
 </div>
 
 

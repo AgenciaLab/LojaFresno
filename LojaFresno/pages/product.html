@@ -2,15 +2,15 @@
     <div class="banner banner-title">
         {{ banner.title }}
     </div>
-{% endif %}	
+{% endif %}
 
 <section id="product-container" class="produto-wrapper product-detail" itemscope itemtype="http://schema.org/Product">
     <div class="clearfix">
-        
+
         {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
-        
+
         <div class="col-md-6 product-colum-left">
-            
+
             {% if product.images %}
                 <div id="visualBlock" class="product-gallery {{ product.images|length  <= 1 and not product.video ? 'hide-carousel' }}">
                     {{ productHelper.gallery() }}
@@ -20,22 +20,22 @@
                     <img src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada">
                 </div>
             {% endif %}
-            
+
 			{% if settings.social_position == 0 %}
 				<div class="product-social sidepicture">
 					{{ productHelper.social() }}
 				</div>
-			{% endif %} 
-            
+			{% endif %}
+
             <div class="product-labels">
                 {{ productHelper.labels() }}
             </div>
-            
+
         </div>
-        
+
         <div class="col-md-6 product-colum-right">
             {% if productHelper.banner() %}{{ productHelper.banner() }}{% endif %}
-            
+
             <h2 class="product-name" itemprop="name">{{ product.name }}</h2>
             {% element 'product/rating' %}
 
@@ -57,7 +57,7 @@
                     {{ productHelper.wishlist() }}
                 {% endif %}
                 {{ productHelper.shipping() }}
-                
+
                 {% if product.additional_message %}
                 <div class="additional-message">
                     {{ product.additional_message }}
@@ -70,8 +70,8 @@
 					{{ productHelper.social() }}
 				</div>
 			{% endif %}
-            
-            
+
+
         </div>
     </div>
 </section>
