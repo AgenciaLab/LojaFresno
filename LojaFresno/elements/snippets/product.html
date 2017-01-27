@@ -19,10 +19,10 @@
                 <div class="product-payment">
                     {{ product.payment }}
                 </div>
-            {% endif %}
+            {% endif%}
         </div>
     </a>
-    
+
     {% if pages.current == 'catalog' and settings.compare %}
     <div class="compare-buttons">
         {% set compareCSS = 'compare-hidden' %}
@@ -31,7 +31,7 @@
             <span class="filter-checkbox checked"></span>
             {{ Translation("remover_comparar") }}
         </a>
-        
+
         <a data-compare="add" href="{{ links.compare_add  ~ product.id }}" class="{{ product.compare ? compareCSS }}">
             <span class="filter-checkbox"></span>
             {{ Translation("comparar_produto") }}

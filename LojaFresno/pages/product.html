@@ -59,7 +59,7 @@
                     <h3>COD {{ product.id }}</h3>
                 </div>
 
-                <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
+            <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
 
