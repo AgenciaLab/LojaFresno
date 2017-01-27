@@ -106,3 +106,7 @@
     border-bottom: none;
     height: 460px;
 }
+
+.showcase>h2 {
+    margin-top: 20px;
+}

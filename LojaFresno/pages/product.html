@@ -1,167 +1,130 @@
-{% if banner.title %}
-    <div class="banner banner-title">
-        {{ banner.title }}
-    </div>
-{% endif %}	
-
-<section id="product-container" class="produto-wrapper product-detail" itemscope itemtype="http://schema.org/Product">
-    <div class="clearfix">
-        
-        {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
-        
-        <div class="col-md-6 product-colum-left">
-            
-            {% if product.images %}
-                <div id="visualBlock" class="product-gallery {{ product.images|length  <= 1 and not product.video ? 'hide-carousel' }}">
-                    {{ productHelper.gallery() }}
-                </div>
-            {% else %}
-                <div class="product-gallery no-image">
-                    <img src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada">
-                </div>
-            {% endif %}
-            
-			{% if settings.social_position == 0 %}
-				<div class="product-social sidepicture">
-					{{ productHelper.social() }}
-				</div>
-			{% endif %} 
-            
-            <div class="product-labels">
-                {{ productHelper.labels() }}
-            </div>
-            
+<section>
+    <div class="container">
+        <div class="product_Breadcrumb row">
+            {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
         </div>
-        
-        <div class="col-md-6 product-colum-right">
-            {% if productHelper.banner() %}{{ productHelper.banner() }}{% endif %}
-            
-            <h2 class="product-name" itemprop="name">{{ product.name }}</h2>
-            {% element 'product/rating' %}
+        <div class="product_Content row">
+            <!--<div class="col-md-2">
+                <div class="product_AreaPreviewImage col-md-12">
+                    {% for level1 in product.images %}
+                    <img class="img-responsive" src="{{ level1.large }}" alt="">
+                    {% endfor %}                   
+                </div>
+            </div>
+            <div class="product_AreaImage col-md-6">
+                <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">                
+            </div>-->
+            <div class="col-md-7">
+                {% if product.images %}
+                <div class="product-gallery">
 
-            <p class="product-details">
-                {% if settings.show_product_stock %}
-                    <span>Estoque: <b>{{ product.stock }}</b></span>
-                {% endif %}
-                {{ productHelper.details() }}
-                {{ productHelper.icons() }}
-            </p>
-            {{ productHelper.bonus() }}
-            <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-                {{ productHelper.pricing() }}
-                {{ productHelper.variants() }}
-                {{ productHelper.gifts() }}
-                {{ product.additional_information }}
-                {{ productHelper.form() }}
-                {% if not product.upon_request and product.available %}
-                    {{ productHelper.wishlist() }}
-                {% endif %}
-                {{ productHelper.shipping() }}
-                
-                {% if product.additional_message %}
-                <div class="additional-message">
-                    {{ product.additional_message }}
+                    <div class="thumbs-vertical" id="product-gallery">
+                        <div class="carousel-gallery carousel-trigger-{{ product.id }}">
+                            {% for key,product_image in product.images %}
+                            <a href="#" data-image="{{ product_image.full }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.full }}" alt="{{ product.name }}" title="{{ product.name }}">
+                                <img src="{{ product_image.large }}" alt="{{ product.name }}">
+                            </a>
+                            {% endfor %}
+                        </div>
+
+                        {% if product.variants.sku.Tamanho|length >= 2 %}
+                        {% for key,product_image in product.variants.sku.Tamanho %}
+                        <div class="carousel-gallery carousel-trigger-{{ product_image.id }}" style="display: none;">
+                            {% for key2,product_img in product_image.images %}
+                            <a href="#" data-image="{{ product_image.full }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.full }}" alt="{{ product.name }}" title="{{ product.name }}">
+                                <img src="{{ product_image.small }}" alt="{{ product.name }}">
+                            </a>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    {% if product.video %}
+                    <iframe width="560" height="315" src="{{ product.video }}" frameborder="0" allowfullscreen></iframe>
+                    {% endif %}
+
+                    <div class="container-imagem">
+                        <figure>
+                            <img src="{{ product.images[0].full }}" data-zoom-image="{{ product.images[0].full }}" class="zoom" alt="{{ product.name }}">
+                        </figure>
+                    </div>
+
                 </div>
                 {% endif %}
-            </form>
+            </div>
+            <div class="col-md-5">
+                <div class="product_Title">
+                    <h1>{{ product.name }}</h1>
+                    <h3>COD {{ product.id }}</h3>
+                </div>
 
-			{% if settings.social_position == 1 %}
-				<div class="product-social">
-					{{ productHelper.social() }}
-				</div>
-			{% endif %}
-            
-            
-        </div>
-    </div>
-</section>
+                <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
-<section id="ProdBlock" class="product-tabs">
-    <a name="formaPagto"></a>
-    <div id="ProdAbas" class="abasProduto tab-panel">
-        <ul class="clearfix">
-            {% for key, tab in productTabs %}
-              {% if tab.container_id %}
-              <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
-                <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+                    {% element 'snippets/productPrice' {"product": product} %}
 
-    <div id="descricao" class="prodBox">
-        <div class="board">
-            <div class="board_htm description">
-                {{ product.description ? product.description : product.description_small }}
+                    {% if productHelper.variants != '' %}
+                    <div style="position:relative;">
+                        {{ productHelper.variants() }}
+                    </div>
+                    {% endif %}
+
+                    <div class="product_TabelaMedidas">
+                        <a href="http://www.dizup.com.br/sac_bandup/medidas/medidas.html"><h3>tabela de medidas</h3></a>
+                    </div>
+
+                    {{ productHelper.gifts() }}
+                    {{ product.additional_information }}
+
+                    {% element 'snippets/buy-form' {"product": product} %}
+
+
+                    {% if not product.upon_request and product.available %}
+                    {% endif %}
+                    {{ productHelper.shipping() }}
+
+                    {% if product.additional_message %}
+                    <div class="additional-message">
+                        {{ product.additional_message }}
+                    </div>
+                    {% endif %}
+                </form>
             </div>
         </div>
-    </div>
-
-    <div id="itensInclusos" class="prodBox">
-        <div class="board">
-            {{ product.included_items }}
-        </div>
-    </div>
-
-    <div id="coments" class="prodBox">
-        <div class="board">
-            {% element 'product/comments' %}
-        </div>
-    </div>
-
-    <div id="caracteristicas" class="prodBox">
-        <div class='board'>
-            {% element 'product/properties' %}
-        </div>
-    </div>
-
-    {{ productTabs.custom.content }}
-    {{ productTabs.downloads.content }}
-
-    <div id="garantia" class="prodBox">
-        <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg"  />
-    </div>
-    <div data-app="product.payment-methods" id="formasPagto" class="prodBox"  ></div>
-</section>
-
-{% if productHelper.bundle() %}
-<section class="product-cross-sell">
-    <h4>Aproveite tamb&eacute;m e</h4>
-    <h3>Compre Junto</h3>
-    {{ productHelper.bundle() }}
-</section>
-{% endif %}
-
-
-{% if product.related_products %}
-<div id="prognoos_lsi"></div>
-<section class="products-related">
-    <h4>Quem viu, viu tamb&eacute;m!</h4>
-    <h3 class="related-title">Produtos Relacionados</h3>
-    <div class="row">
-        {% for related in product.related_products %}
-            <div class="col-sm-3">
-                {% element 'snippets/product' {"product": related} %}
+        <div class="row">
+            <div class="product_Details">
+                <div id="descricao" class="prodBox">
+                    <div class="board">
+                        <div class="board_htm description">
+                            {{ product.description ? product.description : product.description_small }}
+                        </div>
+                    </div>
+                </div>
             </div>
-        {% endfor %}
+        </div>
+        <div class="row">
+            <div class=" product_Details">
+
+
+                {% if product.related_products %}
+                <div class="products-related">
+
+                    <div class="showcase-produto">
+                        <h3 class="showcase-title-produto">QUEM VIU, TAMBÉM CURTIU...</h3>
+                    </div>
+
+                    <div class="row product-list">
+                        {% for related in product.related_products %}
+                        <div class="col-sm-3 product">
+                            {% element 'snippets/product' {"product": related} %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div> 
+
+        </div>
     </div>
 </section>
-{% endif %}
 
-<div id="prognoos_ib"></div>
-<section class="products-visited">
-    <h4>Confira os produtos</h4>
-    <h3 class="related-title">Visitados</h3>
-        {% element 'snippets/history' {
-            'store.id': store.id,
-            'pages.current': pages.current,
-            'product.id': product.id
-        } %}
-</section>
-
-{% if banner.bottom %}
-    <div class="banner banner-bottom">
-        {{ banner.bottom }}
-    </div>
-{% endif %}

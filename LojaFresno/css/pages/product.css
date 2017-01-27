@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/01/2017, 09:22:04
+    Author     : MarceloMacedo
+*/
+
+.page-product .product-detail {
+    border: none;
+}
+
+.product_AreaPreviewImage img {
+    margin: 10px auto;
+}
+
+.product_AreaImage img {
+    margin:auto;
+}
+
+.thumbs-vertical{width:80px; float:left; margin-right:15px;}
+.thumbs-vertical .carousel-gallery > a{display:block; margin-bottom:25px;}
+.container-imagem{text-align:center; margin-left:96px;}
+.container-imagem>div{max-width:100%; padding:0 0 5px; margin-bottom:10px; position:relative;}
+
+.product_Breadcrumb {
+    margin: 10px 0px;
+}
+
+.product_Title {
+    margin-bottom: 30px;
+}
+
+.product_Title h1 {
+    font-family: OxygenRegular;
+    text-transform: uppercase;
+    font-size: 18pt;
+    letter-spacing: 1px;
+}
+.product_Title h3 {
+    font-family: OxygenRegular;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.product_PriceArea h2 {
+    font-family: OxygenRegular;
+    font-size: 20pt;
+    letter-spacing: 1px;
+}
+
+.product_PriceArea h4 {
+    font-family: OxygenRegular;
+    font-size: 12pt;
+    float: left;
+    margin-right: 5px;
+    line-height: 30px;
+}
+
+.product_Price {
+    margin-bottom: 30px;
+}
+
+.page-product .lista_cor_variacao li, .page-product .lista_cor_variacao2 li {
+    border: 1px solid #a7a7a7;
+    height: 30px;
+    width: 45px;
+    text-align: center;
+}
+
+.page-product .lista_cor_variacao li div, .page-product .lista_cor_variacao2 li div {
+    height: 28px;
+    width: 45px;
+    color: #a7a7a7;
+    font-family: OxygenRegular;
+}
+
+.page-product #bt_comprar {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#button-buy {
+    min-width: 370px;
+    height: 45px;
+    background: #26ab65;
+}
+
+#button-buy span {
+    font-family: OxygenRegular;
+    letter-spacing: 8px;
+    font-weight: 300;
+    font-size: 11pt;
+    margin-top: -10px;
+}
+
+.product_Quantidade {
+    border: 1px solid #959595;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.product_Quantidade h3 {
+    line-height: 35px;
+    padding: 4px;
+    color: #959595;
+    margin-left: 5px;
+}
+
+.product_Quantidade input {
+    float: left;
+    height: 41px;
+    border: none;
+}
+
+.page-product #quant {
+    height: 41px;
+    border: none;
+    color: #959595;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+}
+
+.page-product .product-buy-button i {
+    display: none;
+}
+
+.product_TabelaMedidas a {
+    position: absolute;
+    z-index: 99;
+    right: 0px;
+}
+
+.product_TabelaMedidas h3 {
+    margin-top: -43px;
+    float: right;
+    margin-right: 60px;
+    text-decoration: underline;
+}
+
+.product_Details {
+    margin-top: 40px;
+    border-top: 1.4px solid #c2c2c2;
+    padding: 20px 40px;
+}
+
+.board_htm.description p {
+    margin: 0.5em 0;
+}
+
+.prodBox {
+    font-size: 120%;
+}
