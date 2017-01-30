@@ -1,5 +1,11 @@
 <ul class="level1">
-{% set categorias = [15,17,19,21,23,25] %}
+    <li  class="item-level1">
+        <h3>
+            <a class="link-level1" href="{{ links.home }}">HOME</a>
+        </h3>
+    </li>
+    
+{% set categorias = [17,19,21,23,25] %}
 {% for level1 in categories %}
     {% if loop.index <= limit or not limit %}
         {% if level1.id in categorias %}

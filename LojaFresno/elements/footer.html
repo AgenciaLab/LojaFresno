@@ -1,9 +1,11 @@
 {% set checkout = "checkout" in pages.current ? "true" : "false" %}
 <footer>
-    
-    <div class="footer_icon">
-        <img src="{{ themePath }}img/footer/icon_back.png"/> 
-    </div>
+
+    <a onclick="backToTop()" style="cursor: pointer">
+        <div class="footer_icon" >
+            <img src="{{ themePath }}img/footer/icon_back.png"/> 
+        </div>
+    </a>
 
     <div class="footer_content">
         <div class="container"> 
@@ -129,7 +131,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div calss="footer_options" style="margin-top: 35px;">
+                        <div class="footer_options" style="margin-top: 35px;">
                             <img src="{{ themePath }}img/footer/diamant_bit.png"/>
                         </div>
                     </div>
@@ -139,7 +141,13 @@
     </div>
     <div class="aboveFooter_content">
         <h4>Fan Store Entretendimento S.A. - bandUP! - Av.Pedro Ometto, 1570 - Vila Narcisa - 17340-000 - Barra Bonita (SP)</h4>
-        <h4>CNPJ: 01.424.397/0001-01 - Inscrição Estadual: 202.032.630.110</h4>
+        <h4 style="    padding-bottom: 2px;    position: absolute;    z-index: 99;    background-color: #fff;    width: 100%;"> CNPJ: 01.424.397/0001-01 - Inscrição Estadual: 202.032.630.110</h4>
     </div>
 
 </footer>
+
+<script>
+    function backToTop() {
+        $('html, body').animate({scrollTop: 0}, 'fast');
+    }
+</script>

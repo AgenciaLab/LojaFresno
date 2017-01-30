@@ -1,0 +1,39 @@
+.carrinho-tabs {
+    background: #fff;
+    border: none;
+    margin: 10px 0 30px;
+    padding: 20px 0;
+    float: left;
+}
+
+.board {
+    font-family: OxygenRegular;
+}
+
+.tablePage tbody tr th {
+    text-transform: uppercase;
+    font-size: 8pt;
+    line-height: 15px;
+    text-align: center;
+}
+
+.page-checkout_cart #tabela_carrinho a strong {
+    font-family: OxygenRegular;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.page-checkout_cart #tabela_carrinho td:first-child a {
+    padding: 0px;
+}
+
+.page-checkout_cart #tabela_carrinho tr:last-child td {
+    border-bottom: none;
+    padding: 10px 45px;
+    color: #000;
+    text-align: left;
+}
+
+.page-checkout_cart .caixa-total h3 {
+    font-family: OxygenRegular;
+}

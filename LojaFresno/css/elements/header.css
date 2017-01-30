@@ -88,7 +88,7 @@ header {
 .main-menu .item-level1:nth-child(5) .level2{left:calc(50% - 320px)}
 .main-menu h3 a{display:block;padding:30px 0;font-weight:900}
 @media screen and (min-width:769px){
-    .main-menu h3 a:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
+    .main-menu h3 a:before{border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
 }
 .main-menu .link-novidades{float:right;padding:30px 0}
 .main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}

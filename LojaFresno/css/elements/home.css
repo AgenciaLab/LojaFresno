@@ -212,3 +212,29 @@ body {
 .breadcrumb-item {
     font-family: OxygenRegular;
 }
+
+.page-catalog .catalog-name, .page-search .catalog-name {
+    color: #3d4445;
+    /* margin-bottom: 15px; */
+    font-family: OxygenRegular;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.page-search .pagination {
+    color: #3d4445;
+    font-size: 1.4rem;
+    line-height: 0px;
+}
+
+.page-search .catalog-footer {
+    background: none;
+    border: none;
+    margin: 15px 0px;
+    padding: 15px;    
+}
+
+#NavLogoTray {
+    display: none;
+}
