@@ -17,10 +17,10 @@
             <div itemprop="priceCurrency" content="BRL"><abbr class="currency" title="BRL">por: {{ settings.currency }}</abbr> {{ product.price|currency }}</div>
         </div>
         <div class="price-promotion">
-            <div itemprop="offers" class="price-off" itemscope itemtype="http://schema.org/Offer">por: R$ {{ product.price_offer|currency  }}</div>
+            <div itemprop="offers" class="price-off" itemscope itemtype="http://schema.org/Offer">por R$ {{ product.price_offer|currency  }}</div>
         </div>
         {% else %}
-        <h4>por:</h4>
+        <h4>por</h4>
         <h2 itemprop="priceCurrency" content="BRL"><strong>R$ {{ product.price|currency }}</strong></h2>
         {% endif %}
         {% endif %}
@@ -33,6 +33,6 @@
     </div>
 
     {% if product.payment %}                                    
-    <h4 style="line-height: 6px">{{ product.payment }}</h4>
+    <h4 style="line-height: 6px; font-size: 10pt;">{{ product.payment }}</h4>
     {% endif %}
 </div>

@@ -53,7 +53,7 @@ and open the template in the editor.
 
 .product_PriceArea h4 {
     font-family: OxygenRegular;
-    font-size: 12pt;
+    font-size: 11pt;
     float: left;
     margin-right: 5px;
     line-height: 30px;
@@ -65,13 +65,13 @@ and open the template in the editor.
 
 .page-product .lista_cor_variacao li, .page-product .lista_cor_variacao2 li {
     border: 1px solid #a7a7a7;
-    height: 30px;
+    height: 32px;
     width: 45px;
     text-align: center;
 }
 
 .page-product .lista_cor_variacao li div, .page-product .lista_cor_variacao2 li div {
-    height: 28px;
+    height: 30px;
     width: 45px;
     color: #a7a7a7;
     font-family: OxygenRegular;
@@ -153,5 +153,19 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .prodBox {
-    font-size: 120%;
+    font-size: 130%;
+    font-family: OxygenRegular;
+    margin-top: 20px;
+}
+
+.qtminus {
+    display: none;
+}
+
+.qtplus {
+    display: none;
+}
+
+#show_size_and_color_secondary_type {
+    display: none;
 }

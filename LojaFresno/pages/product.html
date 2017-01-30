@@ -15,6 +15,11 @@
                 <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">                
             </div>-->
             <div class="col-md-7">
+                {% if utils.is_mobile %}
+                <div class="product-gallery">
+                    {{ productHelper.gallery() }}
+                </div>
+                {% else %}
                 {% if product.images %}
                 <div class="product-gallery">
 
@@ -52,6 +57,10 @@
 
                 </div>
                 {% endif %}
+                {% endif %}
+                <!-- /Galeria -->
+
+        
             </div>
             <div class="col-md-5">
                 <div class="product_Title">
@@ -59,10 +68,10 @@
                     <h3>COD {{ product.id }}</h3>
                 </div>
 
-            <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
+                <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
-
+                    
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
                         {{ productHelper.variants() }}
@@ -70,7 +79,7 @@
                     {% endif %}
 
                     <div class="product_TabelaMedidas">
-                        <a href="http://www.dizup.com.br/sac_bandup/medidas/medidas.html"><h3>tabela de medidas</h3></a>
+                        <a target="_blank" href="http://www.dizup.com.br/sac_bandup/medidas/medidas.html"><h3>tabela de medidas</h3></a>
                     </div>
 
                     {{ productHelper.gifts() }}
