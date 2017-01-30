@@ -2,12 +2,6 @@
 	<form class="form-inline" data-form="filter">
 		<div class="form-group">
 			<label>Organizar por: </label>
-			      <!-- {% set categories = Categories() %}
-			      <select class="selectDesigner" name="filtrar_categorias">
-			          {% for categorie in categories %}
-			          <option value="{{ categorie.name }}">{{ categorie.name }}</option>
-			          {% endfor %}
-			      </select> -->
 
             <select name="order" id="select_ordem" class="selectDesigner" style="margin-left: 5px;">
                 {% for option in search.order_options %}
