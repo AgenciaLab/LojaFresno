@@ -49,6 +49,8 @@
     {{ googleTagManager.header(pages.current, tagManagerData) }}
 </head>
 <body>
+    {% element 'header' %}
+    
     {% spaceless %}
     {{ googleTagManager.top(pages.current, tagManagerData) }}
 
@@ -58,7 +60,7 @@
 
     <div class="application">
 
-        {% element 'header' %}
+        
 
         {% if pages.current == 'home' and banner.home %}
             <div class="banners banner-home container-fluid hidden-xs">
@@ -97,6 +99,25 @@
 
     <!-- theme scripts-->
     <script type="text/javascript" src="{{ asset('js/modules/theme.js') }}"></script>
+    
+    {% if pages.current == 'home' %}
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery('.bannerHomeMobile').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                });
+            });
+        </script>
+        <script src="{{ asset('js/slick.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
+    {% endif %}
     
     {% if settings.background_image %}
     <style>

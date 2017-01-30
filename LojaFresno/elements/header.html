@@ -1,56 +1,125 @@
 <header>
-    <div class="header_Atendimento">
-        <div class="container">
-            <div class="row">
-                <h4>ATENDIMENTO (11) 3522 6507</h4>
+    <div class="hidden-xs">
+        <div class="header_Atendimento">
+            <div class="container">
+                <div class="row">
+                    <h4>ATENDIMENTO (11) 3522 6507</h4>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header_Principal">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="{{ links.home }}">
-                        <img src="{{ themePath }}img/header/logo.png" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    {% element 'snippets/search' %}
-                </div>
-                <div class="col-md-4">
-                    <div class="header_AreaLinks">
-                        <div class="header_AreaLinksDivisor col-md-6">
-                            <div class="col-md-3">
-                                <img src="{{ themePath }}img/header/minhaConta.png" />
-                            </div>
-                            <div class="col-md-9">
-                                <a href="{{ links.login }}">
-                                    <h5>minha conta</h5>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="{{ links.orders }}">
+        <div class="header_Principal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="{{ links.home }}">
+                            <img src="{{ themePath }}img/header/logo.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        {% element 'snippets/search' %}
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header_AreaLinks">
+                            <div class="header_AreaLinksDivisor col-md-6">
                                 <div class="col-md-3">
-                                    <img src="{{ themePath }}img/header/minhaSacola.png" />
+                                    <img src="{{ themePath }}img/header/minhaConta.png" />
                                 </div>
                                 <div class="col-md-9">
-                                    <h5>sacola</h5>
+                                    <a href="{{ links.login }}">
+                                        <h5>minha conta</h5>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="{{ links.orders }}">
+                                    <div class="col-md-3">
+                                        <img src="{{ themePath }}img/header/minhaSacola.png" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h5>sacola</h5>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="header_Category">
+            <!-- category-list -->
+            <nav class="main-menu" role="navigation">
+                <div class="container">
+                    {% element "snippets/categories" %}
+                </div>
+            </nav>
+            <!-- /category-list -->
+        </div>
     </div>
-    <div class="header_Category">
-        <!-- category-list -->
-        <nav class="main-menu" role="navigation">
-            <div class="container">
-                {% element "snippets/categories" %}
+
+    <div class="visible-xs">
+        <div style="position: fixed;z-index: 800;">
+            <div id="topo-mob" class="mob_Menu">
+                <div class="menuMob_Content">
+                    <div class="col-xs-6">
+                        <div class="logo-mob">
+                            <a class="brand" href="{{ links.home }}" title="{{ store.name }}">
+                                <img src="{{ themePath }}img/header/logoMob.png" alt="{{ store.name }}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menuMob_ContentIcons col-xs-2">
+                        <a class="a-mob" id="menu-toggle-mob">
+                            <svg class="icon icon-menu51" viewBox="0 0 32 32">
+                            <path class="path1" d="M30.966 0.603h-29.932c-0.57 0-1.034 0.464-1.034 1.034v4.596c0 0.57 0.464 1.034 1.034 1.034h29.932c0.57 0 1.034-0.464 1.034-1.034v-4.596c0-0.57-0.464-1.034-1.034-1.034z"></path>
+                            <path class="path2" d="M30.966 12.668h-29.932c-0.57 0-1.034 0.464-1.034 1.034v4.596c0 0.57 0.464 1.034 1.034 1.034h29.932c0.57 0 1.034-0.464 1.034-1.034v-4.596c0-0.57-0.464-1.034-1.034-1.034z"></path>
+                            <path class="path3" d="M30.966 24.733h-29.932c-0.57 0-1.034 0.464-1.034 1.034v4.596c0 0.57 0.464 1.034 1.034 1.034h29.932c0.57 0 1.034-0.464 1.034-1.034v-4.596c0-0.57-0.464-1.034-1.034-1.034z"></path>
+                            </svg>
+                            <div class="nameMenu">Menu</div>
+                        </a>
+                    </div>
+                    <div class="menuMob_ContentIcons col-xs-2">
+                        <a class="a-mob" href="{{ links.central }}">
+                            <svg class="icon icon-user-mobile" viewBox="0 0 32 32">
+                            <path class="path1" d="M16 0c-8.852 0-16 7.17-16 16 0 8.84 7.161 16 16 16 8.879 0 16-7.194 16-16 0-8.851-7.175-16-16-16zM24.234 25.424c-2.281 1.999-5.173 3.091-8.234 3.091s-5.952-1.092-8.232-3.089c-0.309-0.27-0.448-0.686-0.366-1.087 0.788-3.848 3.239-6.883 6.359-7.881-1.628-0.964-2.746-2.944-2.746-5.232 0-3.234 2.232-5.856 4.985-5.856s4.985 2.622 4.985 5.856c0 2.288-1.117 4.267-2.745 5.231 3.12 0.998 5.571 4.033 6.359 7.881 0.082 0.401-0.058 0.817-0.366 1.087z"></path>
+                            </svg>
+                            <div class="nameMenu">Entrar</div>
+                        </a>
+                    </div>
+                    <div class="menuMob_ContentIcons col-xs-2">
+                        <a class="a-mob" href="{{ links.cart }}">
+                            <svg class="icon icon-shopping-cart" viewBox="0 0 32 32">
+                            <path class="path1" d="M13.594 27.555c0 1.502-1.217 2.719-2.719 2.719s-2.719-1.217-2.719-2.719c0-1.502 1.217-2.719 2.719-2.719s2.719 1.217 2.719 2.719z"></path>
+                            <path class="path2" d="M24.469 27.555c0 1.502-1.217 2.719-2.719 2.719s-2.719-1.217-2.719-2.719c0-1.502 1.217-2.719 2.719-2.719s2.719 1.217 2.719 2.719z"></path>
+                            <path class="path3" d="M0 1.726h5.438v2.719h-5.438v-2.719z"></path>
+                            <path class="path4" d="M7.585 7.164l-0.788-5.438h-1.359l-1.359 0.19 2.896 20.2h18.379l6.647-14.953h-24.415zM23.585 19.398h-14.246l-1.359-9.516h19.833l-4.228 9.516z"></path>
+                            </svg>
+                            <span class="contadorcarrinho" data-cart="amount">{{ cart.amount }}</span>
+                            <div class="nameMenu">Sacola</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    {% element 'snippets/search' %}
+                </div>
             </div>
-        </nav>
-        <!-- /category-list -->
+        </div>
     </div>
 </header>
+
+<script>
+    $('#menu-toggle-mob').click(function () {
+
+        var p = $(".menu-mobile");
+
+        if (p.position().left < 0)
+        {
+            $(".menu-mobile").animate({left: '280px'});
+            //$("#menu-toggle-mob svg").css("fill", "#232323");
+        } else
+        {
+            $(".menu-mobile").animate({left: '-100%'});
+            //$("#menu-toggle-mob svg").css("fill", "#fff");
+        }
+    });
+</script>

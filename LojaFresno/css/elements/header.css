@@ -1,6 +1,19 @@
-header {
-    margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+    header {
+        margin-bottom: 20px;
+    }
+
+    .search .search-button {
+        height: 35px;
+        padding: 5px 10px;
+        background: transparent;
+        color: #e2e2e2;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        border-right: 1px solid #e2e2e2;
+    }
 }
+
 
 .infobox {
     display: none;
@@ -43,15 +56,7 @@ header {
     padding: 15px;
 }
 
-.search .search-button {
-    height: 35px;
-    padding: 5px 10px;
-    background: transparent;
-    color: #e2e2e2;
-    border-top: 1px solid #e2e2e2;
-    border-bottom: 1px solid #e2e2e2;
-    border-right: 1px solid #e2e2e2;
-}
+
 
 .search-button svg {
     fill: #e2e2e2;
@@ -125,4 +130,171 @@ a, a:hover {
     font-family: OxygenRegular;
     letter-spacing: 1px;
     font-weight: 300;
+}
+
+/* ----------------------------------------------------------
+                #Layout Responsive - Menu Mobile
+-----------------------------------------------------------*/
+/* HEADER > MENU */
+#topo-mob{position:fixed; top:0; width:100%; background-color:#232323; z-index:10; -webkit-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); -moz-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); }
+#topo-mob .logo-mob{    
+    height: 69px;
+    max-width: 135px;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-top: 7px;
+}
+#topo-mob .logo-mob .brand{
+    font-size: 20px;
+    display: block;
+    padding: 8px 0px;
+}
+#topo-mob .logo-mob a img{max-height:56px;}
+#topo-mob .menutopo-mob{position:relative; z-index:2;}
+#topo-mob .menutopo-mob .li-mob{display:inline-block; padding:12px 13px; text-align:center;}
+#topo-mob .menutopo-mob .li-mob .nameMenu{font:10px 'lato', sans-serif; color:#fff; text-align:center; padding:2px 0 0;}
+#topo-mob .menutopo-mob ul{width:100%; text-align:right;}
+
+#topo-mob .menutopo-mob svg,
+#menu-categorias-mob svg{font-size:20px; width:26px; height:26px; text-align:center; color:#fff; line-height:26px; fill:#fff;}
+
+#topo-mob .menutopo-mob svg:hover,
+#menu-categorias-mob svg:hover{color:#777;}
+
+#topo-mob .menutopo-mob .li-mob .a-mob,
+#menu-categorias-mob .a-mob{display:inline-block;}
+
+#topo-mob .menutopo-mob .li-mob .a-mob{margin:0 1px; text-decoration:none;}
+
+#topo-mob .menutopo-mob .li-mob:hover .a-mob,
+#topo-mob .menutopo-mob .li-mob .a-mob:hover,
+#menu-categorias-mob:hover .a-mob,
+#menu-categorias-mob .a-mob:hover{}
+
+#topo-mob .menutopo-mob .contadorcarrinho{position:absolute; color:#fff; background-color:#ec423c; width:20px; height:20px; font:11px/20px 'lato', sans-serif; text-align:center; right:12px; top:6px; border-radius:100%; -moz-border-radius:100%; -webkit-border-radius:100%;}
+
+#menu-toggle-mob,
+#menu-toggle-mob2{display:block;}
+
+/*MENU NEW*/
+.menu-mobile{    
+    font-family: OxygenRegular;
+    background: #fff;
+    height: 90%;
+    left: -100%;
+    overflow-y: auto;
+    padding: 10px 6px;
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    z-index: 20;
+    -webkit-transform: translateX(-280px);
+    -moz-transform: translateX(-280px);
+    -ms-transform: translateX(-280px);
+    -o-transform: translateX(-280px);
+    transform: translateX(-280px);
+    border-radius: 0px 9px;
+}
+html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow-y:auto; padding:1em;position:fixed; top:0px !important; width:280px; z-index:20;-webkit-transform:translateX(-280px);-moz-transform:translateX(-280px);-ms-transform:translateX(-280px);-o-transform:translateX(-280px);transform:translateX(-280px)}
+
+.menu-mobile>h5{
+    color: #232323;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;    
+}
+.menu-mobile .level1{position:relative;overflow:hidden}
+.menu-mobile .link-level2{margin-top: -5px; font-size: 10pt;}
+
+.menu-mobile .item-level1{border-top:1px solid rgba(0,0,0,.25);margin-top:1px}
+.menu-mobile .item-level1:first-child{border-top:none}
+.menu-mobile .item-level2{margin-top:1px}
+.menu-mobile .level1-check{display:none}
+
+
+.menu-mobile .link-level1, .menu-mobile .link-level2, .menu-mobile .link-level3 {
+    font-family: OxygenRegular;
+}
+/*
+.menu-mobile .level1-check:checked~.level2{display:block;}
+.menu-mobile .level1-check:checked~.link-level1{font-weight:800 !important; text-transform:uppercase;}
+.menu-mobile .level1-check:checked~.link-level1 .arrow-menu-mobile{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}*/
+.menu-mobile .link-level1{color:#232323 !important;}
+.menu-mobile .link-level2,
+.menu-mobile .link-level3{color:#7f7f7f !important;}
+.menu-mobile .link-level1,
+.menu-mobile .link-level2,
+.menu-mobile .link-level3{display:block;padding:15px 5px; font-size: 12pt;font-weight:600;line-height:1}
+.menu-mobile .link-level1:hover,.menu-mobile .link-level2:hover,.menu-mobile .link-level3:hover{text-decoration:none}
+.menu-mobile .link-level1:active,.menu-mobile .link-level2:active,.menu-mobile .link-level3:active{}
+.menu-mobile .link-level2{border-bottom:1px solid #c6c6c6; padding-left:15px}
+.menu-mobile .item-level2:last-child .link-level2{border-bottom:0;}
+.menu-mobile .link-level3{border-bottom:1px solid #c6c6c6; padding-left:30px}
+
+
+.mob_Menu svg {
+    fill: #fff;
+}
+
+.nameMenu {
+    color: #fff;
+    font-family: OxygenRegular;
+}
+
+.menuMob_Content {
+    margin-top: 5px;
+}
+
+.menuMob_ContentIcons {
+    margin-top: 10px;
+    width: 32px;
+    padding-left: 3px;
+    padding-right: 0px;
+    margin-left: 14px;
+    text-align: center;
+}
+
+.contadorcarrinho {
+    position: absolute;
+    top: -5px;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    border-radius: 14px;
+    right: -8px;
+}
+
+.nameMenu {
+    margin-top: 5px;
+    font-size: 9pt;
+    font-weight: 200;
+}
+
+
+@media screen and (max-width: 768px) {
+    .search-button svg {
+        fill: #e2e2e2;
+    }
+
+    .search .search-button {
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        border-right: 1px solid #e2e2e2;
+        height: 35px;
+        padding: 5px 10px;
+        background: transparent;
+        color: #e2e2e2;
+    }
+    
+    .page-content {
+        margin-top: 150px;
+    }
+
 }

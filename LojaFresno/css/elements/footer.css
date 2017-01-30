@@ -55,17 +55,43 @@ and open the template in the editor.
 }
 
 .footer_options {
-    margin-top: 30px;
-    text-align: left;
-    padding: 0px 20px;
-    min-height: 120px;
+        margin-top: 30px;
+        text-align: left;
+        padding: 0px 20px;
+        min-height: 120px;
+    }
+
+
+@media (min-width: 768px)
+{
+    .footer_options h5 {
+        font-family: OswaldBold; 
+        font-size: 11pt;
+        line-height: 30px;
+        color: #434343;
+    }
+
+    
 }
 
-.footer_options h5 {
-    font-family: OswaldBold; 
-    font-size: 11pt;
-    line-height: 30px;
-    color: #434343;
+@media (max-width: 768px)
+{
+    .footer_options h5 {
+        font-family: OswaldBold; 
+        font-size: 10pt;
+        line-height: 30px;
+        color: #434343;
+    }
+
+    .footer_options {
+        text-align: center;
+    }
+    
+    #footer_bandup {
+        margin-top: 30px;
+        text-align: center;
+        min-height: 0px;
+    }
 }
 
 .footer_options h6 {

@@ -83,14 +83,6 @@ body {
     color: #fff;
 }
 
-.home_CadastreContainer {
-    width: 100%;
-    height: 265px;
-    text-align: center;
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .home_CadastreContainer h4 {
     font-family: OswaldRegular;
@@ -121,10 +113,42 @@ body {
     border: none;
 }
 
-.product .product-image {
-    border-bottom: none;
-    height: 460px;
+@media (min-width: 768px) {
+    .product .product-image {
+        border-bottom: none;
+        height: 460px;
+    }
+
+
+    .home_CadastreContainer {
+        width: 100%;
+        height: 265px;
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
+@media (max-width: 768px) {
+    .product .product-image {
+        border-bottom: none;
+        height: 100%;
+    }
+    .home_Cadastre {
+        margin-top: 20px;
+    }
+
+
+    .home_CadastreContainer {
+        width: 100%;
+        height: 265px;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+
 
 .showcase>h2 {
     margin-top: 20px;

@@ -33,31 +33,121 @@ and open the template in the editor.
     margin-bottom: 30px;
 }
 
-.product_Title h1 {
-    font-family: OxygenRegular;
-    text-transform: uppercase;
-    font-size: 18pt;
-    letter-spacing: 1px;
-}
-.product_Title h3 {
-    font-family: OxygenRegular;
-    text-transform: uppercase;
-    font-size: 10pt;
+@media (min-width: 768px) {
+    .product_Title h1 {
+        font-family: OxygenRegular;
+        text-transform: uppercase;
+        font-size: 18pt;
+        letter-spacing: 1px;
+    }
+
+    .product_Title h3 {
+        font-family: OxygenRegular;
+        text-transform: uppercase;
+        font-size: 10pt;
+    }
+
+    .product_PriceArea h2 {
+        font-family: OxygenRegular;
+        font-size: 20pt;
+        letter-spacing: 1px;
+    }
+
+    .product_PriceArea h4 {
+        font-family: OxygenRegular;
+        font-size: 11pt;
+        float: left;
+        margin-right: 5px;
+        line-height: 30px;
+    }
+
+    .product_TabelaMedidas h3 {
+        margin-top: -43px;
+        float: right;
+        margin-right: 60px;
+        text-decoration: underline;
+    }
+
+    #button-buy {
+        min-width: 370px;
+        height: 45px;
+        background: #26ab65;
+    }
 }
 
-.product_PriceArea h2 {
-    font-family: OxygenRegular;
-    font-size: 20pt;
-    letter-spacing: 1px;
+@media (max-width: 768px) {
+    .product_Title h1 {
+        font-family: OxygenRegular;
+        text-transform: uppercase;
+        font-size: 18pt;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .product_Title h3 {
+        font-family: OxygenRegular;
+        text-transform: uppercase;
+        font-size: 10pt;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .product_Price {
+        text-align: center;
+    }
+
+    .product_PriceArea {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .product_PriceArea h2 {
+        font-family: OxygenRegular;
+        font-size: 20pt;
+        letter-spacing: 1px;
+    }
+
+    .product_PriceArea h4 {
+        font-family: OxygenRegular;
+        font-size: 11pt;
+        float: left;
+        margin-right: 5px;
+        line-height: 30px;
+    }
+
+    .page-product #menuVars {
+    }
+
+    .product_TabelaMedidas h3 {
+        margin-top: -35px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+
+    .page-product .lista_cor_variacao, .page-product .lista_cor_variacao2 {
+        display: block;
+        overflow: hidden;
+        padding: 2px 2px 0;
+        max-width: 223px;
+        margin-bottom: 9px;
+    }
+
+    #button-buy {
+        min-width: 100%;
+        height: 45px;
+        background: #26ab65;
+    }
+    
+    .areaBreadCrumb {
+        text-align: left;
+    }
 }
 
-.product_PriceArea h4 {
-    font-family: OxygenRegular;
-    font-size: 11pt;
-    float: left;
-    margin-right: 5px;
-    line-height: 30px;
-}
+
+
+
+
 
 .product_Price {
     margin-bottom: 30px;
@@ -82,11 +172,7 @@ and open the template in the editor.
     padding-top: 20px;
 }
 
-#button-buy {
-    min-width: 370px;
-    height: 45px;
-    background: #26ab65;
-}
+
 
 #button-buy span {
     font-family: OxygenRegular;
@@ -135,12 +221,7 @@ input::-webkit-calendar-picker-indicator {
     right: 0px;
 }
 
-.product_TabelaMedidas h3 {
-    margin-top: -43px;
-    float: right;
-    margin-right: 60px;
-    text-decoration: underline;
-}
+
 
 .product_Details {
     margin-top: 40px;
@@ -174,3 +255,7 @@ input::-webkit-calendar-picker-indicator {
     background-color: #232323;
     color: #fff;
 } 
+
+#foto_a {
+    margin: auto;
+}
