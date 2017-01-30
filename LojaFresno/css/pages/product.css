@@ -169,3 +169,8 @@ input::-webkit-calendar-picker-indicator {
 #show_size_and_color_secondary_type {
     display: none;
 }
+
+.page-product .lista_cor_variacao li div.cor_selecionada {
+    background-color: #232323;
+    color: #fff;
+} 
