@@ -6,7 +6,6 @@
       <span class="breadcrumb-item" id="capitalize">
         <a href="{{ item.link}}" title="{{ item.name }}"> {{ item.name }}</a>
       </span>
-      <span class="icon-breadcrumb"></span>
     {% endfor %}
     <br><br>
 
@@ -14,6 +13,6 @@
 
     <span class="icon-breadcrumb"></span>
 
-    <span class="breadcrumb-item">{{ pages.current == 'product' ? product.name : category.name }}</span>
+    <span class="breadcrumb-item">{{  products|length }} Produtos</span>
   {% endif %}
 </div>

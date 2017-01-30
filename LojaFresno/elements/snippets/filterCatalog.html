@@ -9,7 +9,7 @@
 			          {% endfor %}
 			      </select> -->
 
-            <select name="order" id="select_ordem" class="selectDesigner">
+            <select name="order" id="select_ordem" class="selectDesigner" style="margin-left: 5px;">
                 {% for option in search.order_options %}
                     {% set selected = option.selected ? 'selected="selected"' : '' %}
                     <option value="{{ option.value }}" {{ selected }}>{{ option.name }}</option>

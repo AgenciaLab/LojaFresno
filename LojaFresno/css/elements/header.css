@@ -94,13 +94,22 @@ header {
 .main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
 .main-menu .link-novidades ul{opacity:0;position:absolute;right:0;text-align:right;top:80%;visibility:hidden;width:600px}
 .main-menu .link-novidades:hover ul{opacity:1;visibility:visible}
-.main-menu .level2{background-color:#fff;border-bottom:1px solid #939596;border-left:1px solid #939596;border-right:1px solid #939596;border-top:6px solid #259ed6;opacity:0;padding-bottom:26px;padding-top:16px;position:absolute;top:80%;visibility:hidden;width:640px}
+.main-menu .level2{background-color:#fff;border-bottom:1px solid #232323;border-left:1px solid #232323;border-right:1px solid #232323;border-top:6px solid #232323;opacity:0;padding-bottom:26px;padding-top:16px;position:absolute;top:80%;visibility:hidden;width:640px}
 .main-menu .level2 img{float:right;margin-top:-16px;margin-bottom:-26px}
 .main-menu .level2 div{overflow:hidden}
-.main-menu .item-level2{border-left:1px solid #939596;float:left;margin-left:-1px;padding-left:25px;width:50%}
-.main-menu .link-level2{color:#259ed6;font:700 12px/12px Lato,sans-serif;margin-bottom:6px}
+.main-menu .item-level2{border-left:1px solid #232323;float:left;margin-left:-1px;padding-left:25px;width:50%}
+.main-menu .link-level2{color:#232323;font:700 12px/12px Lato,sans-serif;margin-bottom:6px}
 .main-menu .item-level3{margin-top:10px}
 .main-menu .link-level3{color:#4c4c4c;font:700 11px/11px Lato,sans-serif}
+.level2 {
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width:767px){
     .main-menu,.main-menu li.item-level1.link-novidades{display:none}
     .main-menu .container{width:auto}

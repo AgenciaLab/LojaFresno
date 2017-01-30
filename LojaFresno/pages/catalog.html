@@ -1,28 +1,52 @@
 {% element 'snippets/top-category' %}
 <div class="row">
     <div class="col-sm-12">
+
+
         <div class="catalog-header">
 
-            {% if products|length > 0 %}
+            <div class="breadcrumb">
+                <span class="breadcrumb-item"><a href="/">Home</a></span>
+                <span class="iconGoin"> > </span>
                 {% if breadcrumb %}
-                    {% element 'snippets/breadc-catalog' %}
+                {% for item in breadcrumb %}
+                <span class="breadcrumb-item" id="capitalize">
+                    <a href="{{ item.link}}" title="{{ item.name }}"> {{ item.name }}</a>
+                </span>
+                {% endfor %}
+                <br><br>
+
                 {% endif %}
-            {% endif %}
+            </div>
 
         </div>
 
+    </div>
+</div>
+<div class="row" style="margin-left: 0px; margin-right: 0px;">
+
+    <div class="col-md-2" style="line-height: 32px;">
+        <a id="breadcrumDestaq" href="{{ breadcrumb[0].link}}" title="{{ breadcrumb[0].name }}"> {{ breadcrumb[0].name }} </a>
+
+        <span class="icon-breadcrumb"></span>
+
+        <span class="breadcrumb-item">{{  products|length }} Produtos</span>
+    </div>
+
+    <div class="col-sm-7">
         {% if products|length > 0 %}
-            {% if breadcrumb %}
+        {% if breadcrumb %}
 
 
-            {% element 'snippets/filterCatalog' {
-                'brands': category.brands
-            } %}
+        {% element 'snippets/filterCatalog' {
+        'brands': category.brands
+        } %}
 
-            {% endif %}
+        {% endif %}
         {% endif %}
 
-
+    </div>
+    <div class="col-sm-3">
         <div class="paginateCatalogtop">
             {% element 'snippets/paginateCatalog' %}
         </div>
@@ -33,35 +57,35 @@
 
 {% if products|length > 0 %}
 
-    <div class="catalog-content row">
-        {% element 'showcase-catalog' {
-            "products": products
-        } %}
-    </div>
+<div class="catalog-content row">
+    {% element 'showcase-catalog' {
+    "products": products
+    } %}
+</div>
 
-    <div class="catalog-footer pagination">
-        {% element 'snippets/paginateCatalog' %}
-    </div>
+<div class="catalog-footer pagination">
+    {% element 'snippets/paginateCatalog' %}
+</div>
 
 {% else %}
 
-    <div class="catalog-empty">
-        <img src="{{ asset('img/catalog-empty.svg') }}" alt="Sem produtos" width="150" height="150">
-        <p>Nenhum produto encontrado nessa categoria.</p>
-    </div>
+<div class="catalog-empty">
+    <img src="{{ asset('img/catalog-empty.svg') }}" alt="Sem produtos" width="150" height="150">
+    <p>Nenhum produto encontrado nessa categoria.</p>
+</div>
 
 {% endif %}
 
 <div style="display:none;">
     {% element 'snippets/history' {
-        'store.id': store.id,
-        'pages.current': pages.current,
-        'category.id': category.id
+    'store.id': store.id,
+    'pages.current': pages.current,
+    'category.id': category.id
     } %}
 </div>
 
 {% if banner.bottom %}
-    <div class="banner banner-bottom">
-        {{ banner.bottom }}
-    </div>
+<div class="banner banner-bottom">
+    {{ banner.bottom }}
+</div>
 {% endif %}

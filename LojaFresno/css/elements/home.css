@@ -55,11 +55,27 @@ body {
 .product .product-name {
     height: auto;
     margin-bottom: 3px;
+    font-family: OxygenRegular;
+    line-height: 15px;
 }
 
 .product .product-price {
     height: auto;
     margin-bottom: 3px;
+    line-height: 15px;
+}
+
+.product-price span {
+    font-family: OxygenBold;
+}
+
+.product-price strong {
+    font-size: 16pt;
+    letter-spacing: -1px;
+}
+
+.product-payment span {
+    font-family: OxygenBold;
 }
 
 .home_Cadastre {
@@ -112,12 +128,13 @@ body {
 
 .showcase>h2 {
     margin-top: 20px;
-    
+}
+
 #breadcrumDestaq {
-        font-family: OswaldBold;
-        font-size: 12pt;
-        font-weight: bold;
-        color: #232323;
+    font-family: OswaldBold;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #232323;
 }
 
 #capitalize {
@@ -151,7 +168,6 @@ body {
 }
 
 .personalizedFilter {
-    margin-top: 25px;
     font-family: OxygenRegular;
     font-size: 9pt;
 }
@@ -163,11 +179,13 @@ body {
 }
 .page-catalog .catalog-footer {
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .paginateCatalog {
     float: right;
+    font-size: 10pt;
+    margin-top: 8px;
 }
 
 .paginateCatalogtop {
@@ -176,10 +194,21 @@ body {
 
 .page-catalog .page-link.page-current {
     font-weight: 900;
-    color: #000;
+    color: #000;        
 }
 
 .page-catalog .btns-paginator, .page-catalog .page-link, .page-search .btns-paginator, .page-search .page-link {
     border: none;
-    font-family: OxygenRegular
+    font-family: OxygenRegular;
+    color: #232323;
+}
+
+
+.page-catalog .btns-paginator, .page-catalog .page-link, .page-search .btns-paginator, .page-search .page-link {
+    font-family: OxygenRegular;
+    border: none;
+    margin: 0px;
+}
+.breadcrumb-item {
+    font-family: OxygenRegular;
 }
