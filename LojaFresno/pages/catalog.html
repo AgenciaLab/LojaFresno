@@ -9,14 +9,17 @@
                 <span class="breadcrumb-item"><a href="/">Home</a></span>
                 <span class="iconGoin"> > </span>
                 {% if breadcrumb %}
-                {% for item in breadcrumb %}
-                <span class="breadcrumb-item" id="capitalize">
-                    <a href="{{ item.link}}" title="{{ item.name }}"> {{ item.name }}</a>
-                </span>
-                {% endfor %}
-                <br><br>
-
+                    {% for item in breadcrumb %}
+                        <span class="breadcrumb-item" id="capitalize">
+                            <a href="{{ item.link}}" title="{{ item.name }}"> {{ item.name }}</a>
+                        </span>
+                        <span class="iconGoin"> > </span>
+                    {% endfor %}
                 {% endif %}
+                    <span class="breadcrumb-item" id="capitalize">
+                        <a href="{{ category.link}}" title="{{ category.name }}"> {{ category.name }}</a>
+                    </span>
+                    <br><br>
             </div>
 
         </div>
@@ -25,15 +28,15 @@
 </div>
 <div class="row" style="margin-left: 0px; margin-right: 0px;">
 
-    <div class="col-md-2" style="line-height: 32px;">
-        <a id="breadcrumDestaq" href="{{ breadcrumb[0].link}}" title="{{ breadcrumb[0].name }}"> {{ breadcrumb[0].name }} </a>
+    <div class="col-md-4" style="line-height: 32px;">
+        <a id="breadcrumDestaq" href="{{ category.link}}" title="{{ category.name }}"> {{ category.name }} </a>
 
         <span class="icon-breadcrumb"></span>
 
         <span class="breadcrumb-item">{{  products|length }} Produtos</span>
     </div>
 
-    <div class="col-sm-7">
+    <div class="col-sm-5">
         {% if products|length > 0 %}
         {% if breadcrumb %}
 
