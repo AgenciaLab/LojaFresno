@@ -73,6 +73,12 @@ and open the template in the editor.
         height: 45px;
         background: #26ab65;
     }
+
+    .product_Details {
+        margin-top: 40px;
+        border-top: 1.4px solid #c2c2c2;
+        padding: 20px 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -120,7 +126,7 @@ and open the template in the editor.
     }
 
     .product_TabelaMedidas h3 {
-        margin-top: -35px;
+        margin-top: -20px;
         margin-right: 10px;
         text-decoration: underline;
     }
@@ -138,9 +144,34 @@ and open the template in the editor.
         height: 45px;
         background: #26ab65;
     }
-    
+
     .areaBreadCrumb {
         text-align: left;
+    }
+
+    .board_htm, .description {
+        max-width: 300px;
+        overflow: scroll;
+    }
+
+    .product_Details {
+        max-width: 300px;
+        overflow: scroll;
+        padding: 20px 10px;
+        margin-top: 40px;
+        border-top: 1.4px solid #c2c2c2;
+    }
+    
+    .showcase>h2 strong {
+        line-height: 35px;
+    }
+    
+    .product {
+        padding: 0px;
+    }
+    
+    .product_Galeria {
+        max-width: 98%;
     }
 }
 
@@ -223,11 +254,7 @@ input::-webkit-calendar-picker-indicator {
 
 
 
-.product_Details {
-    margin-top: 40px;
-    border-top: 1.4px solid #c2c2c2;
-    padding: 20px 40px;
-}
+
 
 .board_htm.description p {
     margin: 0.5em 0;
