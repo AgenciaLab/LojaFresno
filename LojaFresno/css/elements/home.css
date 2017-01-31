@@ -118,6 +118,7 @@ body {
         border-bottom: none;
         height: 370px;
     }
+    
 
 
     .home_CadastreContainer {
@@ -138,7 +139,15 @@ body {
     .home_Cadastre {
         margin-top: 20px;
     }
-
+    .product .product-image {
+        border-bottom: none;
+        height: 370px;
+        max-width: 100%;
+    }
+    
+    .product .product-image img {
+        max-width: 90%;
+    }
 
     .home_CadastreContainer {
         width: 100%;
