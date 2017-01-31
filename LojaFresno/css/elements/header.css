@@ -122,14 +122,28 @@ a, a:hover {
     .main-menu .item-level1:hover .level2{display:none}
 }
 
-.main-menu h3 a {
-    font-size: 11pt;
-    color: #232323;
-    padding: 0px 15px;
-    text-transform: uppercase;
-    font-family: OxygenRegular;
-    letter-spacing: 1px;
-    font-weight: 300;
+@media screen and (min-width:992px) {
+    .main-menu h3 a {
+        font-size: 10pt;
+        color: #232323;
+        padding: 0px 12px;
+        text-transform: uppercase;
+        font-family: OxygenRegular;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main-menu h3 a {
+        font-size: 10pt;
+        color: #232323;
+        padding: 0px 4px;
+        text-transform: uppercase;
+        font-family: OxygenRegular;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
 }
 
 /* ----------------------------------------------------------
@@ -257,18 +271,17 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     width: 32px;
     padding-left: 3px;
     padding-right: 0px;
-    margin-left: 14px;
     text-align: center;
 }
 
 .contadorcarrinho {
     position: absolute;
-    top: -5px;
     background-color: red;
+    top: 0px;
     color: #fff;
     padding: 4px;
     border-radius: 14px;
-    right: -8px;
+    margin-left: 10px;
 }
 
 .nameMenu {
@@ -292,7 +305,7 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
         background: transparent;
         color: #e2e2e2;
     }
-    
+
     .page-content {
         margin-top: 150px;
     }
