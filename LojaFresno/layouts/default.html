@@ -1,133 +1,159 @@
 <!doctype html>
 <html lang="pt-br" data-theme="{{ settings.extension_id }}" data-store="{{ store.id }}" class="page-{{ pages.current }}">
-<head>
+    <head>
 
-    <!-- tray charset -->
-    {{ html.charset() }}
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- tray charset -->
+        {{ html.charset() }}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- tray meta tags -->
-    {{ tray.meta }}
+        <!-- tray meta tags -->
+        {{ tray.meta }}
 
-    <!-- tray styles -->
-    {{ tray.styles }}
+        <!-- tray styles -->
+        {{ tray.styles }}
 
-    <!-- theme styles -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/custom.css', {dynamic: true}) }}" type="text/css">
+        <!-- theme styles -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/custom.css', {dynamic: true}) }}" type="text/css">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/elements/header.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/elements/footer.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/elements/cart.css') }}" type="text/css">
+        <!-- styles -->
+        <link rel="stylesheet" href="{{ asset('css/fonts.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/elements/header.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/elements/footer.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/elements/cart.css') }}" type="text/css">
 
-    <link rel="stylesheet" href="{{ asset('css/elements/home.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/pages/product.css') }}" type="text/css">
-    
-    
+        <link rel="stylesheet" href="{{ asset('css/elements/home.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/pages/product.css') }}" type="text/css">
 
-    <style>
-        {{ settings.custom_css }}
-    </style>
 
-    <!-- tray scripts -->
-    {{ tray.scripts }}
-    
-    {% if pages.current == 'product' %}
+
+        <style>
+            {{ settings.custom_css }}
+        </style>
+
+        <!-- tray scripts -->
+        {{ tray.scripts }}
+
+        {% if pages.current == 'product' %}
         <script type="text/javascript" src="{{ asset('js/thumb-maior.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
-    {% endif %}
+        {% endif %}
 
-    <!-- tray analytics -->
-    {{ tray.analytics }}
+        <!-- tray analytics -->
+        {{ tray.analytics }}
 
-    <!-- google tag manager -->
-    {{ googleTagManager.header(pages.current, tagManagerData) }}
-</head>
-<body>
-    {% element 'header' %}
-    
-    {% spaceless %}
-    {{ googleTagManager.top(pages.current, tagManagerData) }}
+        <!-- google tag manager -->
+        {{ googleTagManager.header(pages.current, tagManagerData) }}
+    </head>
+    <body>
+        {% element 'header' %}
 
-    {% element 'snippets/messages' %}
+        {% spaceless %}
+        {{ googleTagManager.top(pages.current, tagManagerData) }}
 
-    {% element 'snippets/menu-mobile' %}
+        {% element 'snippets/messages' %}
 
-    <div class="application">
+        {% element 'snippets/menu-mobile' %}
 
-        
+        <div class="application">
 
-        {% if pages.current == 'home' and banner.home %}
+
+
+            {% if pages.current == 'home' and banner.home %}
             <div class="banners banner-home container-fluid hidden-xs">
                 {{ banner.home }}
             </div>
-        {% endif %}
+            {% endif %}
 
-        <main class="site-main container">
-            <div class="row">
+            <main class="site-main container">
+                <div class="row">
 
-                <!--{% if "central" in pages.current %}-->
+                    <!--{% if "central" in pages.current %}-->
                     <!--{%  element 'sidebar-central' %}-->
-                <!--{% else %}-->
+                    <!--{% else %}-->
                     <!--{%  element 'sidebar-left' %}-->
-                <!--{% endif %}-->
+                    <!--{% endif %}-->
 
-                <section class="page-content col-sm-12">
-                    {{ content_for_layout }}
-                </section>
-            </div>
-        </main>
+                    <section class="page-content col-sm-12">
+                        {{ content_for_layout }}
+                    </section>
+                </div>
+            </main>
 
-        {% element 'footer' %}
-    </div>
+            {% element 'footer' %}
+        </div>
 
-    {% element 'snippets/credits' %}
+        {% element 'snippets/credits' %}
 
-    {{ googleTagManager.bottom(pages.current, tagManagerData) }}
+        {{ googleTagManager.bottom(pages.current, tagManagerData) }}
 
-    <!-- tray -->
-    {% element 'snippets/modal' %}
-    {{ googleTagManager.bottom(pages.current, tagManagerData) }}
-    {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
-    {% element 'snippets/pageview' %}
-    {{ store.chat }}
+        <!-- tray -->
+        {% element 'snippets/modal' %}
+        {{ googleTagManager.bottom(pages.current, tagManagerData) }}
+        {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
+        {% element 'snippets/pageview' %}
+        {{ store.chat }}
 
-    <!-- theme scripts-->
-    <script type="text/javascript" src="{{ asset('js/modules/theme.js') }}"></script>
-    
-    {% if pages.current == 'home' %}
+        <!-- theme scripts-->
+        <script type="text/javascript" src="{{ asset('js/modules/theme.js') }}"></script>
+
+        {% if pages.current == 'home' %}
         <script type="text/javascript">
             jQuery(document).ready(function(){
-                jQuery('.bannerHomeMobile').slick({
-                    dots: true,
+            jQuery('.bannerHomeMobile').slick({
+            dots: true,
                     infinite: true,
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 5000
-                });
+            });
             });
         </script>
         <script src="{{ asset('js/slick.min.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
         <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
-    {% endif %}
-    
-    {% if settings.background_image %}
-    <style>
-        body{
-            background-image: url('{{ themePath }}{{ settings.background_image }}');
-        }
-    </style>
-    {% endif %}
+        {% endif %}
 
-    {% endspaceless %}
-    
-</body>
+        {% if settings.background_image %}
+        <style>
+            body{
+                background-image: url('{{ themePath }}{{ settings.background_image }}');
+            }
+        </style>
+        {% endif %}
+
+        {% endspaceless %}
+
+        <script>
+            var lastScrollTop = 0;
+            jQuery(window).scroll(function(event){
+            var st = jQuery(this).scrollTop();
+            if (st > lastScrollTop){
+            jQuery("#produtoAreaPesquisa").fadeOut(300);
+            } else {
+            jQuery("#produtoAreaPesquisa").fadeIn(300);
+            }
+            lastScrollTop = st;
+            });
+            jQuery('#menu-toggle-mob').click(function () {
+
+            var p = jQuery(".menu-mobile");
+            if (p.position().left < 0)
+            {
+            jQuery(".menu-mobile").animate({left: '280px'});
+            //$("#menu-toggle-mob svg").css("fill", "#232323");
+            } else
+            {
+            jQuery(".menu-mobile").animate({left: '-100%'});
+            //$("#menu-toggle-mob svg").css("fill", "#fff");
+            }
+            });
+        </script>
+
+    </body>
 </html>
