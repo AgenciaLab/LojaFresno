@@ -116,15 +116,15 @@
 
 
                 {% if product.related_products %}
-                <div class="products-related">
+                <div class="showcase">
 
-                    <div class="showcase-produto">
-                        <h3 class="showcase-title-produto">QUEM VIU, TAMBÉM CURTIU...</h3>
-                    </div>
-
+                    <h2 class="titleProducts">
+                        <strong>QUEM COMPROU, TAMBÉM GOSTOU DE...</strong>
+                    </h2>
+                        
                     <div class="row product-list">
                         {% for related in product.related_products %}
-                        <div class="col-sm-3 product">
+                        <div class="col-sm-4 product">
                             {% element 'snippets/product' {"product": related} %}
                         </div>
                         {% endfor %}
