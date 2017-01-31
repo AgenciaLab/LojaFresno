@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 27/01/2017, 09:22:04
     Author     : MarceloMacedo
 */
@@ -75,6 +75,7 @@ and open the template in the editor.
     }
 
     .product_Details {
+        max-width: 100%;
         margin-top: 40px;
         border-top: 1.4px solid #c2c2c2;
         padding: 20px 40px;
@@ -155,21 +156,21 @@ and open the template in the editor.
     }
 
     .product_Details {
-        max-width: 300px;
+        max-width: 100%;
         overflow: scroll;
         padding: 20px 10px;
         margin-top: 40px;
         border-top: 1.4px solid #c2c2c2;
     }
-    
+
     .showcase>h2 strong {
         line-height: 35px;
     }
-    
+
     .product {
         padding: 0px;
     }
-    
+
     .product_Galeria {
         max-width: 98%;
     }
@@ -281,7 +282,7 @@ input::-webkit-calendar-picker-indicator {
 .page-product .lista_cor_variacao li div.cor_selecionada {
     background-color: #232323;
     color: #fff;
-} 
+}
 
 #foto_a {
     margin: auto;

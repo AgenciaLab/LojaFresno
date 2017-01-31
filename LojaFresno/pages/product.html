@@ -8,11 +8,11 @@
                 <div class="product_AreaPreviewImage col-md-12">
                     {% for level1 in product.images %}
                     <img class="img-responsive" src="{{ level1.large }}" alt="">
-                    {% endfor %}                   
+                    {% endfor %}
                 </div>
             </div>
             <div class="product_AreaImage col-md-6">
-                <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">                
+                <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">
             </div>-->
             <div class="col-md-7">
                 {% if utils.is_mobile %}
@@ -60,7 +60,7 @@
                 {% endif %}
                 <!-- /Galeria -->
 
-        
+
             </div>
             <div class="col-md-5">
                 <div class="product_Title">
@@ -71,7 +71,7 @@
                 <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
-                    
+
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
                         {{ productHelper.variants() }}
@@ -121,7 +121,7 @@
                     <h2 class="titleProducts">
                         <strong>QUEM COMPROU, TAMBÉM GOSTOU DE...</strong>
                     </h2>
-                        
+
                     <div class="row product-list">
                         {% for related in product.related_products %}
                         <div class="col-sm-4 product">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 {% endif %}
-            </div> 
+            </div>
 
         </div>
     </div>
