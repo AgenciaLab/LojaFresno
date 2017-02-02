@@ -3,12 +3,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 26/01/2017, 11:40:46
     Author     : MarceloMacedo
 */
 
 .footer_content {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
     background-color: #ececec;
     text-align: center;
 }
@@ -31,7 +33,7 @@ and open the template in the editor.
 }
 
 .footer_contact h5 {
-    font-family: OswaldBold; 
+    font-family: OswaldBold;
     font-size: 11pt;
     line-height: 30px;
     letter-spacing: 1px;
@@ -65,19 +67,19 @@ and open the template in the editor.
 @media (min-width: 768px)
 {
     .footer_options h5 {
-        font-family: OswaldBold; 
+        font-family: OswaldBold;
         font-size: 11pt;
         line-height: 30px;
         color: #434343;
     }
 
-    
+
 }
 
 @media (max-width: 768px)
 {
     .footer_options h5 {
-        font-family: OswaldBold; 
+        font-family: OswaldBold;
         font-size: 10pt;
         line-height: 30px;
         color: #434343;
@@ -86,7 +88,7 @@ and open the template in the editor.
     .footer_options {
         text-align: center;
     }
-    
+
     #footer_bandup {
         margin-top: 30px;
         text-align: center;

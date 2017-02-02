@@ -101,15 +101,21 @@
                         <div class="footer_options">
                             <h5>Compre com Segurança</h5>
 
-                            <ul class="foo-seals">
-                                {% if seals.ebit %}
-                                <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
-                                {% endif %}
-                                {% if seals.hackersafe %}
-                                <li>{{ seals.hackersafe }}</li>
-                                {% endif %}
-                            </ul>
-
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
+                                    <img src="{{ themePath }}img/footer/diamant_bit.png"/>
+                                </div>
+                                <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
+                                    <ul class="list-inline">
+                                        {% if seals.ebit %}
+                                            <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
+                                        {% endif %}
+                                        {% if seals.hackersafe %}
+                                            <li>{{ seals.hackersafe }}</li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
                             <h6>Site 100% Seguro</h6>
                         </div>
                     </div>
@@ -131,18 +137,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div id="footer_bandup" class="footer_options" style="margin-top: 35px;">
-                            <h6>Essa loja e seus produtos são desenvolvidos por:</h6>
-                            <a target="_blank" href="http://www.bandup.com.br">
-                                <img src="{{ themePath }}img/footer/logo_bandup.png"/>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="row">
-                        <div class="footer_options" style="padding: 0px 60px;">
+                    <div class="row" style="margin: 0 0 10px 0; padding: 0;">
+                        <div class="footer_options" style="padding: 0px 60px; min-height: auto;">
                             <a target="_blank" href="https://www.facebook.com/FresnoShopOficial">
                                 <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
                                     <img src="{{ themePath }}img/footer/icon_facebook.png"/>
@@ -161,9 +159,21 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="footer_options hidden-xs" style="margin-top: 35px;    text-align: center;">
-                            <img src="{{ themePath }}img/footer/diamant_bit.png"/>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="row" style="margin: 0; padding: 0;">
+                                <h4>Produtos desenvolvidos por:</h4>
+                                <a target="_blank" href="http://www.bandup.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logo_bandup.png"/>
+                                </a>
+                            </div>
+                            <div class="row" style="margin: 0; padding: 0;">
+                                <h4 style="margin-bottom: 15px;">Loja desenvolvida por:</h4>
+                                <a target="_blank" href="http://www.bandup.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logoLab.png"/>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

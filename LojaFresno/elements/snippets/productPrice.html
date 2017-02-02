@@ -2,15 +2,15 @@
     <div class="product_PriceArea" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
         {% if product.available %}
 
-        {% if product.stock > 0 %} 
+        {% if product.stock > 0 %}
 
         {% if product.upon_request %}
         <p>Produto Sob Consulta</p>
         {% else %}
 
         {% if product.has_other_prices %}
-        <span class="price-various">{{ Translation('a_partir_de') }}</span> 
-        {% endif %} 
+        <span class="price-various">{{ Translation('a_partir_de') }}</span>
+        {% endif %}
 
         {% if product.price_offer > 0 and product.show_price %}
         <div class="price-before">
@@ -25,14 +25,14 @@
         {% endif %}
         {% endif %}
 
-        {% else %} 
+        {% else %}
         <p>Esgotado!</p>
-        {% endif %} 
-        {% endif %} 
+        {% endif %}
+        {% endif %}
 
     </div>
 
-    {% if product.payment %}                                    
+    {% if product.payment %}
     <h4 style="line-height: 6px; font-size: 10pt;">{{ product.payment }}</h4>
     {% endif %}
 </div>

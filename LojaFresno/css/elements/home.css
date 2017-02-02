@@ -118,7 +118,7 @@ body {
         border-bottom: none;
         height: 370px;
     }
-    
+
 
 
     .home_CadastreContainer {
@@ -144,7 +144,7 @@ body {
         height: 370px;
         max-width: 100%;
     }
-    
+
     .product .product-image img {
         max-width: 90%;
     }
@@ -227,7 +227,7 @@ body {
 
 .page-catalog .page-link.page-current {
     font-weight: 900;
-    color: #000;        
+    color: #000;
 }
 
 .page-catalog .btns-paginator, .page-catalog .page-link, .page-search .btns-paginator, .page-search .page-link {
@@ -265,7 +265,7 @@ body {
     background: none;
     border: none;
     margin: 15px 0px;
-    padding: 15px;    
+    padding: 15px;
 }
 
 #NavLogoTray {

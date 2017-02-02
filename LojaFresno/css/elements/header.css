@@ -12,6 +12,10 @@
         border-bottom: 1px solid #e2e2e2;
         border-right: 1px solid #e2e2e2;
     }
+
+    .topCategory {
+        margin: 10px 0 0 0;
+    }
 }
 
 
@@ -26,7 +30,7 @@
 
 .header_Atendimento h4 {
     color: #fff;
-    font-size: 11pt;  
+    font-size: 11pt;
     text-align: right;
     font-family: OswaldRegular;
 }
@@ -151,7 +155,7 @@ a, a:hover {
 -----------------------------------------------------------*/
 /* HEADER > MENU */
 #topo-mob{position:fixed; top:0; width:100%; background-color:#232323; z-index:10; -webkit-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); -moz-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.42); }
-#topo-mob .logo-mob{    
+#topo-mob .logo-mob{
     height: 69px;
     max-width: 135px;
     width: 100%;
@@ -194,7 +198,7 @@ a, a:hover {
 #menu-toggle-mob2{display:block;}
 
 /*MENU NEW*/
-.menu-mobile{    
+.menu-mobile{
     font-family: OxygenRegular;
     background: #fff;
     height: 90%;
@@ -222,7 +226,7 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     font-size: 16pt;
     font-weight: 700;
     line-height: 1;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 .menu-mobile .level1{position:relative;overflow:hidden}
 .menu-mobile .link-level2{margin-top: -5px; font-size: 10pt;}
@@ -307,8 +311,30 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     }
 
     .page-content {
-        margin-top: 150px;
+        margin: 15px 0 0 0;
+        padding: 0;
     }
-    
-    
+
+    .mobile-banner {
+        margin: 150px 0 0 0;
+    }
+
+    .topCategory {
+        margin: 150px 0 0 0;
+    }
+
+    .product {
+        margin: 150px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-product .product-gallery #foto_p img {
+        max-width: 100%!important;
+        margin: 90px 0 0 0;
+    }
+
+    .page-checkout_cart #tabela_carrinho {
+        margin: 50px 0 0 0;
+    }
 }
