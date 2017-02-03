@@ -278,15 +278,7 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     text-align: center;
 }
 
-.contadorcarrinho {
-    position: absolute;
-    background-color: red;
-    top: 0px;
-    color: #fff;
-    padding: 4px;
-    border-radius: 14px;
-    margin-left: 10px;
-}
+
 
 .nameMenu {
     margin-top: 5px;
@@ -294,6 +286,18 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     font-weight: 200;
 }
 
+@media screen and (min-width: 768px) {
+    .contadorcarrinho {
+        position: absolute;
+        background-color: transparent;
+        top: -3px;
+        left: -17px;
+        color: #000;
+        padding: 4px;
+        border-radius: 14px;
+        margin-left: 10px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .search-button svg {
@@ -325,6 +329,16 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
 
     .product {
         margin: 150px 0 0 0;
+    }
+
+    .contadorcarrinho {
+        position: absolute;
+        background-color: red;
+        top: 0px;
+        color: #fff;
+        padding: 4px;
+        border-radius: 14px;
+        margin-left: 10px;
     }
 }
 
