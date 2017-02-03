@@ -1,6 +1,6 @@
 <div itemscope itemtype="http://schema.org/Product" class="product">
     <a href="{{ product.link }}" data-tray-tst="vitrine_produto_link_imagem">
-        <div class="product-image" style="height: auto;">
+        <div class="product-image">
             {% if product.images %}
                 <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">
             {% else %}

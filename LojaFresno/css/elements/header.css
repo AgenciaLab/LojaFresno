@@ -323,9 +323,6 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
         margin: 150px 0 0 0;
     }
 
-    .product {
-        margin: 150px 0 0 0;
-    }
 }
 
 @media screen and (max-width: 767px) {

@@ -1,3 +1,10 @@
+.page-checkout_cart .caixa-total table {
+    margin: 20px 0 0 0;
+}
+.page-checkout_cart #tabela_carrinho .qntd {
+    border-radius: 5px;
+}
+
 .carrinho-tabs {
     background: #fff;
     border: none;
