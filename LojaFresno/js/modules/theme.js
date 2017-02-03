@@ -1,5 +1,18 @@
 (function($){
-    
+
+    // cart products
+    $.getJSON( "/mvc/store/cart/count?loja=249009", function( data ) {
+        var cartItem,
+            cartItemHtml = '',
+            totalItemsCart = data.cart.Products.length;
+
+        for(cartItem = 0; cartItem < totalItemsCart; cartItem++){
+            cartItemHtml += '<li><img class="item-image" src="'+data.cart.Products[cartItem].ProductImage[0].https +'"><span class="item-name">'+ data.cart.Products[cartItem].name +'</span><span class="item-price">R$ '+ data.cart.Products[cartItem].price +'</span></li>';
+        }
+
+        $('.cart .list ul').prepend(cartItemHtml);
+    }); 
+
     // plugins init
     if( $.fn.jcarousel ){
         $(".product-list > ul").jcarousel({ scroll: 4 });

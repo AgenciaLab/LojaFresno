@@ -44,3 +44,53 @@
 .page-checkout_cart .caixa-total h3 {
     font-family: OxygenRegular;
 }
+
+.cart {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width:350px;
+    top: 40px;
+    right: 0px;
+    padding: 10px;
+    border: 1px solid #232323;
+    z-index: 999;
+}
+
+.cart button {
+    background-color: #60bd2c;
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 10pt;
+    height: 100%;
+}
+
+.cart .list .subtotal{color:#3c3c3c;font:700 11px/14px Lato,sans-serif;text-align:left;text-transform:none; line-height: 20px; margin-top: 20px;}
+.cart .list .subtotal span{float:right}
+.cart .list .subtotal button:before{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABLFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////98NJAmAAAAY3RSTlMAAQIDBAUGBwgKCw0QExUXGBobHB0iIyYnKCkqMDI0NTY3QENESE9RW2BhYmdub3Byc3R1e4CEipGUoqSlpqeqsLS2ubu+xMXGy87S2tze3+Dh5OXm6err7u/w8vP19vj8/f489dyoAAAA5UlEQVR4AX3MaTcCcRzF8UuI7ItCZJGlsTQMWSI7Cc1MIhHTuO//PfiP35n/OeOBz8N77vmiUq87a/jDJnnRgagF84yNQn5Hs8w5APPvjKoAGLxn27WF81T7ZgvKEd8y02kxueGzAGXd9xYRsvicgpJ2eQCIgVue90JJXPIGEJkm8/i1z9fV1Exg6pAvszKueGxU3YDt8Sou40iZWntTl8ztLbGb68e/4hM9CAwPQUuePpwkgS6jfGd0QnSXSB4nkP0kv5YgxqskH8ewR8UKi0WSxT5kW+THMsJrqXk9CsRyNceIAT8zmTmcNFqc/AAAAABJRU5ErkJggg==);display:inline-block;line-height:12px;margin-right:7px;vertical-align:middle}
+
+.list img {
+    width: 25%;
+    position: relative;
+}
+
+.item-image{width:25%; }
+.list span[class="item-name"]{
+    text-align: left;
+    text-transform: none;
+    width: 50%;
+    display: inline-block;
+    line-height: 15px;
+    font-size: 9pt;
+    padding: 5px;
+}
+.list span[class="item-price"]{
+    width: 25%;
+    font-size: 9pt;
+    float: right;
+    text-align: right;
+    line-height: 65px;
+}
