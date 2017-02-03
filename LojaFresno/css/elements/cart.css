@@ -1,6 +1,4 @@
-.page-checkout_cart .caixa-total table {
-    margin: 20px 0 0 0;
-}
+
 .page-checkout_cart #tabela_carrinho .qntd {
     border-radius: 5px;
 }
@@ -34,12 +32,7 @@
     padding: 0px;
 }
 
-.page-checkout_cart #tabela_carrinho tr:last-child td {
-    border-bottom: none;
-    padding: 10px 45px;
-    color: #000;
-    text-align: right
-}
+
 
 .page-checkout_cart .caixa-total h3 {
     font-family: OxygenRegular;
@@ -93,4 +86,81 @@
     float: right;
     text-align: right;
     line-height: 65px;
+}
+
+.calculoFrete {
+    text-align: left;
+}
+
+.page-checkout_cart #tabela_carrinho h5 {
+    font-size: 8pt;
+    line-height: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .color { 
+        margin-top: 5px
+    }
+
+    .page-checkout_cart #tabela_carrinho tr:last-child td {
+         border-bottom: none;
+        padding: 0px 5px;
+        color: #000;
+        text-align: center;
+    }
+
+    .sub-total-value {
+        float: right;
+        margin-top: -15px;
+    }
+
+    .valores_carrinho {
+    }
+
+    #calculoFrete {
+        float: left;
+        width: 100%;
+    }
+
+    #mostra_total {
+        display: inline;
+    }
+
+    .page-checkout_cart .caixa-total table {
+        margin: 20px 0 10px 0;
+    }
+
+    .wrap-shipping-forms td["align:right"] {
+        float: right;
+        margin-top: -55px;
+    }
+
+    #cupon {
+        width: 80%;
+        margin: 20px 0px 20px 2px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-checkout_cart #tabela_carrinho tr:last-child td {
+        border-bottom: none;
+        padding: 10px 45px;
+        color: #000;
+        text-align: right
+    }
+
+    .page-checkout_cart .caixa-total table {
+        margin: 20px 0 0 0;
+    }
+
+    #calculoFrete {
+        float: left;
+    }
+
+    .wrap-cupom {
+        float: left;
+        margin: 20px 0px;
+    }
 }
