@@ -87,6 +87,11 @@ and open the template in the editor.
 }
 
 @media (max-width: 768px) {
+
+    .product_Content {
+       margin-top: 80px;
+    }
+
     .product_Title h1 {
         font-family: OxygenRegular;
         text-transform: uppercase;
