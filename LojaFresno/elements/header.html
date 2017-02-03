@@ -31,7 +31,8 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <a href="{{ links.cart }}">
+                                
+                                <a href="{{ links.cart }}" class="header_CarrinhoArea">
                                     <div class="col-md-3">
                                         <img src="{{ themePath }}img/header/minhaSacola.png" />
                                     </div>
@@ -41,6 +42,8 @@
                                     </div>
                                 </a>
                             </div>
+                            
+                            {% element 'snippets/cart' %}
                         </div>
                     </div>
                 </div>
@@ -86,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <a href="{{ links.orders }}">
+                                <a href="{{ links.cart }}">
                                     <div class="col-sm-3">
                                         <img src="{{ themePath }}img/header/minhaSacola.png" />
                                     </div>
@@ -95,6 +98,7 @@
                                     </div>
                                 </a>
                             </div>
+                             
                         </div>
                     </div>
                     <div class="col-sm-12">

@@ -134,25 +134,34 @@
             jQuery(window).scroll(function(event){
             var st = jQuery(this).scrollTop();
             if (st > lastScrollTop){
-            jQuery("#produtoAreaPesquisa").fadeOut(300);
-            } else {
-            jQuery("#produtoAreaPesquisa").fadeIn(300);
-            }
-            lastScrollTop = st;
-            });
-            jQuery('#menu-toggle-mob').click(function () {
+                jQuery("#produtoAreaPesquisa").fadeOut(300);
+                } else {
+                jQuery("#produtoAreaPesquisa").fadeIn(300);
+                }
+                lastScrollTop = st;
+                });
+                jQuery('#menu-toggle-mob').click(function () {
 
-            var p = jQuery(".menu-mobile");
-            if (p.position().left < 0)
-            {
-            jQuery(".menu-mobile").animate({left: '280px'});
-            //$("#menu-toggle-mob svg").css("fill", "#232323");
-            } else
-            {
-            jQuery(".menu-mobile").animate({left: '-100%'});
-            //$("#menu-toggle-mob svg").css("fill", "#fff");
-            }
+                var p = jQuery(".menu-mobile");
+                if (p.position().left < 0)
+                {
+                jQuery(".menu-mobile").animate({left: '280px'});
+                //$("#menu-toggle-mob svg").css("fill", "#232323");
+                } else
+                {
+                jQuery(".menu-mobile").animate({left: '-100%'});
+                //$("#menu-toggle-mob svg").css("fill", "#fff");
+                }
             });
+            
+            jQuery(".header_CarrinhoArea").mouseenter(function() {
+                jQuery(".cart").css("display", "block");
+            });
+
+            jQuery(".header_CarrinhoArea").mouseleave(function() {
+                jQuery(".cart").css("display", "none");
+            });
+    
         </script>
 
     </body>
