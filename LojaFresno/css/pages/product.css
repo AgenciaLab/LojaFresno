@@ -88,10 +88,6 @@ and open the template in the editor.
 
 @media (max-width: 768px) {
 
-    .product_Content {
-       margin-top: -80px;
-    }
-
     .product_Title h1 {
         font-family: OxygenRegular;
         text-transform: uppercase;
@@ -223,12 +219,22 @@ and open the template in the editor.
     margin-top: -10px;
 }
 
+.page-product .product-quantity {
+    width: 100% !important;
+}
+
 .product_Quantidade {
     border: 1px solid #959595;
     border-radius: 3px;
-    width: 135px;
-    margin-bottom: 20px;
+    margin:  10px 0 20px 0;
     height: 45px;
+}
+
+.product_Quantidade h2 {
+    line-height: 35px;
+    padding: 4px;
+    color: #959595;
+    margin-left: 5px;
 }
 
 .product_Quantidade h3 {
@@ -237,16 +243,49 @@ and open the template in the editor.
     color: #959595;
     margin-left: 5px;
 }
+.product_TabelaMedidas a  h3{
+    text-decoration: none;
+    border: none;
+}
 
 .product_Quantidade input {
     float: left;
-    height: 41px;
+    height: 44px;
     border: none;
+}
+
+.page-product #quantidade {
+    margin: 0;
+}
+
+#plus {
+    position: absolute;
+    margin: 6px 0 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #e9e9e9;
+    border: 1px solid #999;
+    color: #666;
+    line-height: 0;
+    
+}
+
+#minus {
+    position: absolute;
+    left: 112px;
+    height: 30px;
+    width: 30px;
+    margin: 6px 0 0 0 ;
+    line-height: 0;
+    background-color: #e9e9e9;
+    border: 1px solid #999;
+    color: #666;
+    
 }
 
 .page-product #quant {
     height: auto;
-    margin: -10px 0 0 20px;
+    margin: -10px 0 0 40px;
     border: none;
     color: #959595;
 }

@@ -12,7 +12,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer_contact">
-                        <div class="footer_contactus row">
+                        <div class="footer_contactus hidden-xs">
+                            <img src="{{ themePath }}img/footer/icon_faleConosco.png"/>
+                            <h5>FALE COM A GENTE</h5>
+                        </div>
+                        <div class="footer_contactus col-xs-offset-3 visible-xs ">
                             <img src="{{ themePath }}img/footer/icon_faleConosco.png"/>
                             <h5>FALE COM A GENTE</h5>
                         </div>
@@ -103,17 +107,17 @@
 
                             <div class="row">
                                 <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
-                                    <img src="{{ themePath }}img/footer/diamant_bit.png"/>
+                                    <center>
+                                        <img src="{{ themePath }}img/footer/diamant_bit.png"/>
+                                    </center>
                                 </div>
                                 <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
-                                    <ul class="list-inline">
                                         {% if seals.ebit %}
-                                            <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
+                                            {{ seals.ebit }}
                                         {% endif %}
                                         {% if seals.hackersafe %}
-                                            <li>{{ seals.hackersafe }}</li>
-                                        {% endif %}
-                                    </ul>
+                                            {{ seals.hackersafe }}
+                                        {% endif %}                                  
                                 </div>
                             </div>
                             <h6>Site 100% Seguro</h6>
