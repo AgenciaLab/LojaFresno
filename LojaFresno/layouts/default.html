@@ -41,6 +41,13 @@
         <script type="text/javascript" src="{{ asset('js/thumb-maior.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
         {% endif %}
+        
+        {% if utils.is_mobile %}
+        {% if pages.current in ['product'] %}
+            <link rel="stylesheet" href="{{ asset('css/open-mobile-v2.css') }}">
+            <script type="text/javascript" src="{{ asset('js/open-mobilev2.js') }}"></script>
+        {% endif %}
+    {% endif %}
 
         <!-- tray analytics -->
         {{ tray.analytics }}
