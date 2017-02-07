@@ -4,16 +4,6 @@
             {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
         </div>
         <div class="product_Content row">
-            <!--<div class="col-md-2">
-                <div class="product_AreaPreviewImage col-md-12">
-                    {% for level1 in product.images %}
-                    <img class="img-responsive" src="{{ level1.large }}" alt="">
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="product_AreaImage col-md-6">
-                <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">
-            </div>-->
             <div class="col-md-7">
                 {% if utils.is_mobile %}
                 <div class="product-gallery">

@@ -30,7 +30,7 @@ and open the template in the editor.
 .container-imagem>div{max-width:100%; padding:0 0 5px; margin-bottom:10px; position:relative;}
 
 .product_Breadcrumb {
-    margin: 10px 0px;
+    margin: 20px 0px 0 0;
 }
 
 .product_Title {
@@ -89,7 +89,7 @@ and open the template in the editor.
 @media (max-width: 768px) {
 
     .product_Content {
-       margin-top: 80px;
+       margin-top: -80px;
     }
 
     .product_Title h1 {
