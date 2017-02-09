@@ -27,8 +27,7 @@
 
         <link rel="stylesheet" href="{{ asset('css/elements/home.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/pages/product.css') }}" type="text/css">
-
-
+        <link rel="stylesheet" href="{{ asset('css/pages/search.css') }}" type="text/css">
 
         <style>
             {{ settings.custom_css }}
@@ -153,11 +152,9 @@
                 if (p.position().left < 0)
                 {
                 jQuery(".menu-mobile").animate({left: '280px'});
-                //$("#menu-toggle-mob svg").css("fill", "#232323");
                 } else
                 {
                 jQuery(".menu-mobile").animate({left: '-100%'});
-                //$("#menu-toggle-mob svg").css("fill", "#fff");
                 }
             });
             

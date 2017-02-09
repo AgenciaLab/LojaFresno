@@ -33,7 +33,9 @@
     padding: 0px;
 }
 
-
+.page-checkout_cart div.bt-continuar-comprando {
+    width: 50%;
+}
 
 .page-checkout_cart .caixa-total h3 {
     font-family: OxygenRegular;
@@ -164,4 +166,22 @@
         float: left;
         margin: 20px 0px;
     }
+
+    .bt-cep img {
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+
+    .bt-cupom img {
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+}
+
+.container2 {
+    height: 0px;
+}
+
+.page-checkout_cart #tabela_carrinho {
+    margin-top: -15px;
 }

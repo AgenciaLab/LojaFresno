@@ -1,7 +1,7 @@
 (function($){
 
     // cart products
-    $.getJSON( "/mvc/store/cart/count?loja=365499", function( data ) {
+    $.getJSON( "/mvc/store/cart/count?loja=249009", function( data ) {
         var cartItem,
             cartItemHtml = '',
             totalItemsCart = data.cart.Products.length;

@@ -10,30 +10,30 @@ and open the template in the editor.
 
 @font-face {
     font-family: OswaldRegular;
-    src: url('fonts/oswald/Oswald-Regular.ttf');
+    src: url('fonts/oswald/Oswald-Regular.ttf'), url('fonts/oswald/Oswald-Regular.eot');
 }
 
 @font-face {
     font-family: OswaldBold;
-    src: url('fonts/oswald/Oswald-Bold.ttf');
+    src: url('fonts/oswald/Oswald-Bold.ttf'), url('fonts/oswald/Oswald-Bold.eot');
 }
 
 @font-face {
     font-family: OxygenBold;
-    src: url('fonts/oxygen/Oxygen-Bold.ttf');
+    src: url('fonts/oxygen/Oxygen-Bold.ttf'), url('fonts/oxygen/Oxygen-Bold.eot');
 }
 
 @font-face {
     font-family: OxygenRegular;
-    src: url('fonts/oxygen/Oxygen-Regular.ttf');
+    src: url('fonts/oxygen/Oxygen-Regular.ttf'), url('fonts/oxygen/Oxygen-Regular.eot');
 }
 
 @font-face {
     font-family: BebasNeueBook;
-    src: url('fonts/bebas-neue-book/BebasNeueBook.ttf');
+    src: url('fonts/bebas-neue-book/BebasNeueBook.ttf'), url('fonts/bebas-neue-book/BebasNeueBook.eot');
 }
 
 @font-face {
     font-family: OxygenLight;
-    src: url('fonts/oxygen/Oxygen-Light.ttf');
+    src: url('fonts/oxygen/Oxygen-Light.ttf'), url('fonts/oxygen/Oxygen-Light.eot');
 }

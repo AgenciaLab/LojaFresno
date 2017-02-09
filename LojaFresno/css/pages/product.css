@@ -38,6 +38,62 @@ and open the template in the editor.
 }
 
 @media (min-width: 768px) {
+
+    .product {
+        margin: 0px;
+    }
+
+    .product-image {
+        margin-left: -15px;
+    }
+
+    .product .product-image {
+        margin-bottom: 5px;
+    }
+
+    .page-product #quant {
+        height: auto;
+        margin: -9px 0 0 13px;
+        border: none;
+        color: #959595;
+    }
+
+    #plus {
+        position: absolute;
+        margin: 9px 0 0 -7px;
+        width: 25px;
+        height: 25px;
+        background-color: #e9e9e9;
+        border: 1px solid #999;
+        color: #666;
+        line-height: 0;
+        
+    }
+
+    #minus {
+        position: absolute;
+        left: 75px;
+        height: 25px;
+        width: 25px;
+        margin: 9px 0 0 0;
+        line-height: 0;
+        background-color: #e9e9e9;
+        border: 1px solid #999;
+        color: #666;        
+    }
+
+    .page-product #quantidade {
+        margin: 0;
+        max-width: 175px;
+    }
+
+    .product_Quantidade {
+        border: 1px solid #b1b1b1;
+        border-radius: 0px;
+        margin:  10px 0 20px 0;
+        height: 45px;
+    }
+
     .product_Title h1 {
         font-family: OxygenRegular;
         text-transform: uppercase;
@@ -84,9 +140,60 @@ and open the template in the editor.
         border-top: 1.4px solid #c2c2c2;
         padding: 20px 40px;
     }
+
+    .product_Quantidade h2 {
+        line-height: 35px;
+        padding: 4px 0px;
+        color: #959595;
+    }
 }
 
 @media (max-width: 768px) {
+
+    
+
+    .page-product #quant {
+        height: auto;
+        margin: -10px 0 0 40px;
+        border: none;
+        color: #959595;
+    }
+
+    #plus {
+        position: absolute;
+        margin: 6px 0 0 10px;
+        width: 30px;
+        height: 30px;
+        background-color: #e9e9e9;
+        border: 1px solid #999;
+        color: #666;
+        line-height: 0;
+        
+    }
+
+    #minus {
+        position: absolute;
+        left: 112px;
+        height: 30px;
+        width: 30px;
+        margin: 6px 0 0 0 ;
+        line-height: 0;
+        background-color: #e9e9e9;
+        border: 1px solid #999;
+        color: #666;
+        
+    }
+
+    .product_Quantidade {
+        border: 1px solid #b1b1b1;
+        border-radius: 3px;
+        margin:  10px 0 20px 0;
+        height: 45px;
+    }
+
+    .page-product #quantidade {
+        margin: 0;
+    }
 
     .product_Title h1 {
         font-family: OxygenRegular;
@@ -131,10 +238,33 @@ and open the template in the editor.
     .page-product #menuVars {
     }
 
+    .product_TabelaMedidas {
+        height: 10px;
+    }
+
+    #cepbox a {
+        position: absolute;
+        margin-top: -2px;
+    }
+
     .product_TabelaMedidas h3 {
-        margin-top: -20px;
+        margin-top: -10px;
         margin-right: 10px;
         text-decoration: underline;
+    }
+
+    .page-product .product-name {
+        margin-top: 10px;
+    }
+
+    .varCont ul li ul li {
+        display: block;
+        border: none;
+        background: #FFF;
+        font-weight: 400;
+        font-size: 11px;
+        margin: 0;
+        color: #555;
     }
 
     .page-product .lista_cor_variacao, .page-product .lista_cor_variacao2 {
@@ -149,6 +279,7 @@ and open the template in the editor.
         min-width: 100%;
         height: 45px;
         background: #26ab65;
+        line-height: 2px;
     }
 
     .areaBreadCrumb {
@@ -178,6 +309,13 @@ and open the template in the editor.
 
     .product_Galeria {
         max-width: 98%;
+    }
+
+    .product_Quantidade h2 {
+        line-height: 35px;
+        padding: 4px;
+        color: #959595;
+        margin-left: 5px;
     }
 }
 
@@ -223,19 +361,9 @@ and open the template in the editor.
     width: 100% !important;
 }
 
-.product_Quantidade {
-    border: 1px solid #959595;
-    border-radius: 3px;
-    margin:  10px 0 20px 0;
-    height: 45px;
-}
 
-.product_Quantidade h2 {
-    line-height: 35px;
-    padding: 4px;
-    color: #959595;
-    margin-left: 5px;
-}
+
+
 
 .product_Quantidade h3 {
     line-height: 35px;
@@ -254,41 +382,11 @@ and open the template in the editor.
     border: none;
 }
 
-.page-product #quantidade {
-    margin: 0;
-}
 
-#plus {
-    position: absolute;
-    margin: 6px 0 0 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #e9e9e9;
-    border: 1px solid #999;
-    color: #666;
-    line-height: 0;
-    
-}
 
-#minus {
-    position: absolute;
-    left: 112px;
-    height: 30px;
-    width: 30px;
-    margin: 6px 0 0 0 ;
-    line-height: 0;
-    background-color: #e9e9e9;
-    border: 1px solid #999;
-    color: #666;
-    
-}
 
-.page-product #quant {
-    height: auto;
-    margin: -10px 0 0 40px;
-    border: none;
-    color: #959595;
-}
+
+
 
 input::-webkit-calendar-picker-indicator {
     opacity: 100;

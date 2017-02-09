@@ -1,0 +1,17 @@
+.page-search .catalog-name {
+    font-size: 14pt;
+    line-height: 10px;
+}
+
+.search-counter {
+    font-size: 11pt;
+    margin-left: 10px;
+}
+
+.personalizedFilter .form-group {
+    margin-top: -5px;
+}
+
+.page-search .catalog-content {
+    margin-top: -15px;
+}

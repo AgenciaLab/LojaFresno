@@ -14,10 +14,12 @@
                 <h2 class="catalog-name">Exibindo todos os produtos</h2>
                 {% endif %}
 
+                <div class="search-counter">
+                    {{ paginate.counter('Encontramos {:count} produto(s) em {:pages} p&aacute;gina(s)') }}
+                </div>
+
             </div>
             <div class="col-sm-6" style="text-align: right;">
-                <h2 class="catalog-name">{{ category.name }}</h2>
-
                 {% if products|length > 0 %}
 
                 {% if breadcrumb %}

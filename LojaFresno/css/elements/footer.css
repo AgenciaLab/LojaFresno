@@ -38,10 +38,7 @@ and open the template in the editor.
     letter-spacing: 1px;
 }
 
-.footer_contactus {
-    max-width: 185px;
-    padding: 0px 5px;
-}
+
 
 .footer_contactus img {
     float:left;
@@ -54,16 +51,22 @@ and open the template in the editor.
     margin-top: 5px;
 }
 
-.footer_options {
-        margin-top: 30px;
-        text-align: left;
-        padding: 0px 20px;
-        min-height: 120px;
-    }
+
 
 
 @media (min-width: 768px)
 {
+    .footer_contactus {
+        padding: 0px 2px;
+        margin-right: -22px;
+    }
+
+    .footer_contactus img {
+        float: left;
+        position: absolute;
+        left: 58px;
+    }
+
     .footer_options h5 {
         font-family: OswaldBold;
         font-size: 11pt;
@@ -71,11 +74,42 @@ and open the template in the editor.
         color: #434343;
     }
 
+    .footer_options {
+        margin-top: 30px;
+        text-align: left;
+        min-height: 120px;
+    }
+
+    .footer_options h6 {
+        font-family: OxygenRegular;
+        font-size: 10pt;
+        color: #232323;
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+
 
 }
 
 @media (max-width: 768px)
 {
+    .footer_contactus {
+        margin: auto;
+    }
+
+    .aboveFooter_content h4 {
+        padding: 0px 2px;
+    }
+
+    .aboveFooter_content {
+        background: white;
+    }
+    
+    .footer_contactus {
+        max-width: 185px;
+        padding: 0px 5px;
+    }
+
     .footer_options h5 {
         font-family: OswaldBold;
         font-size: 10pt;
@@ -92,14 +126,22 @@ and open the template in the editor.
         text-align: center;
         min-height: 0px;
     }
+
+    .footer_options {
+        margin-top: 30px;
+        text-align: left;
+        min-height: 120px;
+    }
+
+    .footer_options h6 {
+        font-family: OxygenRegular;
+        font-size: 10pt;
+        color: #232323;
+        margin-top: 4px;
+    }
 }
 
-.footer_options h6 {
-    font-family: OxygenRegular;
-    font-size: 10pt;
-    color: #232323;
-    margin-top: 4px;
-}
+
 
 .aboveFooter_content {
     text-align: center;
