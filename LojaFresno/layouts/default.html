@@ -40,7 +40,7 @@
         <script type="text/javascript" src="{{ asset('js/thumb-maior.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
         {% endif %}
-        
+
         {% if utils.is_mobile %}
         {% if pages.current in ['product'] %}
             <link rel="stylesheet" href="{{ asset('css/open-mobile-v2.css') }}">
@@ -69,7 +69,7 @@
 
 
             {% if pages.current == 'home' and banner.home %}
-            <div class="banners banner-home container-fluid mobile-banner">
+            <div class="banners banner-home">
                 {{ banner.home }}
             </div>
             {% endif %}
@@ -157,7 +157,7 @@
                 jQuery(".menu-mobile").animate({left: '-100%'});
                 }
             });
-            
+
             jQuery(".header_CarrinhoArea").mouseenter(function() {
                 jQuery(".cart").css("display", "block");
             });
@@ -165,7 +165,7 @@
             jQuery(".header_CarrinhoArea").mouseleave(function() {
                 jQuery(".cart").css("display", "none");
             });
-    
+
         </script>
 
     </body>
