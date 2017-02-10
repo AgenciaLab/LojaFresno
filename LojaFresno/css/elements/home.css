@@ -41,6 +41,11 @@ body {
     border: 1.4px solid #000;
     margin: 10px -8px 10px 2px;
 }
+.lineSeparateFooter {
+    display: block;
+    border: 1.4px solid #000;
+    margin: 10px 11px 10px 2px;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .lineSeparate {
@@ -87,7 +92,6 @@ body {
 .home_Cadastre {
     background-color: #232323;
     color: #fff;
-    min-width:360px;
 }
 
 .home_CadastreContainer h4 {
