@@ -7,6 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+
         <!-- tray meta tags -->
         {{ tray.meta }}
 
@@ -28,6 +30,14 @@
         <link rel="stylesheet" href="{{ asset('css/elements/home.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/pages/product.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/pages/search.css') }}" type="text/css">
+
+        <!--[if IE]>
+        <style>
+            .actual-form table {
+                width: 100%;
+            }
+        </style>
+        <![endif]-->
 
         <style>
             {{ settings.custom_css }}
