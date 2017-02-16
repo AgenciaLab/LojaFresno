@@ -1,10 +1,10 @@
-<section>
+<section> 
     <div class="container">
         <div class="product_Breadcrumb row">
             {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
         </div>
         <div class="product_Content row">
-            <div class="col-md-7">
+            <div class="col-md-7" style="padding-left: 0px;">
                 {% if utils.is_mobile %}
                 <div class="product-gallery">
                     {{ productHelper.gallery() }}
@@ -31,7 +31,7 @@
                             </a>
                             {% endfor %}
                         </div>
-                        {% endfor %}
+                        {% endfor %} 
                         {% endif %}
                     </div>
 
@@ -53,7 +53,7 @@
 
             </div>
             <div class="col-md-5">
-                <div class="product_Title">
+                <div class="product_Title"> 
                     <h1>{{ product.name }}</h1>
                     <h3>COD {{ product.id }}</h3>
                 </div>
@@ -61,6 +61,13 @@
                 <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
+                                        
+                    <div class="produto-formas-pagamento" align="left">                        
+                        <a href="#formaPagto" rel="nofollow" id="showPaymentMethods" class="color">
+                            <span class="glyphicon glyphicon-plus"></span>
+                            ver todas as formas de pagamento
+                        </a> 
+                    </div>
 
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
@@ -69,7 +76,7 @@
                     {% endif %}
 
                     <div class="product_TabelaMedidas">
-                        <a target="_blank" href="http://www.dizup.com.br/sac_bandup/medidas/medidas.html"><h3>tabela de medidas</h3></a>
+                        <a target="_blank" href="http://www.dizup.com.br/sac_bandup/medidas/medidas.html"><h3>Tabela de medidas</h3></a>
                     </div>
 
                     {{ productHelper.gifts() }}
@@ -86,6 +93,12 @@
                     <div class="additional-message">
                         {{ product.additional_message }}
                     </div>
+                    {% endif %}
+                    
+                    {% if productHelper.social != '' %}
+                        <div class="redesSociaisProd">
+                            {{ productHelper.social() }}
+                        </div>
                     {% endif %}
                 </form>
             </div>
@@ -123,6 +136,7 @@
                 {% endif %}
             </div>
 
-        </div>
+        </div>        
     </div>
-</section>
+</section> 
+  

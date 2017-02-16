@@ -21,7 +21,7 @@
         </div>
         {% else %}
         <h4>por</h4>
-        <h2 itemprop="priceCurrency" content="BRL"><strong>R$ {{ product.price|currency }}</strong></h2>
+        <h2 itemprop="priceCurrency" content="BRL"><strong style="font-family: 'OxygenRegular'; color: #232323; font-weight: 800;">R$ {{ product.price|currency }}</strong></h2>
         {% endif %}
         {% endif %}
 
@@ -33,6 +33,6 @@
     </div>
 
     {% if product.payment %}
-    <h4 style="line-height: 6px; font-size: 10pt;">{{ product.payment }}</h4>
+    <h4 style="line-height: 6px; font-size: 10pt; font-weight: bold;">{{ product.payment }}</h4>
     {% endif %}
 </div>
