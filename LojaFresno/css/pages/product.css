@@ -24,9 +24,9 @@ and open the template in the editor.
     margin:auto;
 }
 
-.thumbs-vertical{width:80px; float:left; margin-right:15px;}
+.thumbs-vertical{width:91px; float:left; margin-right:15px;}
 .thumbs-vertical .carousel-gallery > a{display:block; margin-bottom:25px;}
-.container-imagem{text-align:center; margin-left:96px;}
+.container-imagem{text-align:center; margin-left:110px;}
 .container-imagem>div{max-width:100%; padding:0 0 5px; margin-bottom:10px; position:relative;}
 
 .product_Breadcrumb {

@@ -77,22 +77,31 @@ body {
 .product .product-name {
     height: auto;
     margin-bottom: 3px;
-    font-family: OxygenRegular;
+    font-family: LatoRegular;
     line-height: 15px;
+    padding: 3px 0px;    
+    font-size: 10pt;
+    margin-top: 4px;
+}
+
+.product {
+    padding: 10px;
 }
 
 .product .product-price {
     height: auto;
     margin-bottom: 3px;
-    line-height: 15px;
+    line-height: 18px;
+    font-family: LatoRegular;
+    font-size: 12pt;
 }
 
 .product-price span {
-    font-family: OxygenBold;
+    font-family: LatoRegular;
 }
 
 .product-price strong {
-    font-size: 16pt;
+    font-size: 14pt;
     letter-spacing: -1px;
 }
 
@@ -137,7 +146,7 @@ body {
 @media (min-width: 768px) {
     .product .product-image {
         border-bottom: none;
-        height: 320px;
+        height: 440px;
     }
     
     .home_CadastreContainer {
