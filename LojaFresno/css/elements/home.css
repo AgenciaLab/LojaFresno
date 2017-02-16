@@ -297,3 +297,9 @@ body {
 #NavLogoTray {
     display: none;
 }
+
+@media (max-width: 768px) {
+    #owl-demo{
+        top: 145px;
+    }
+}

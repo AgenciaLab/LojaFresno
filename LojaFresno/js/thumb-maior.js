@@ -9,8 +9,4 @@ jQuery(document).ready(function(){
         });
     }
 
-
-    jQuery('<input class="qtminus" type="button" id="plus" value="-" onclick="process(-1)">').insertBefore('#quant');
-    jQuery('<input class="qtplus" type="button" id="minus" value="+" onclick="process(1)">').insertAfter('#quant');
-
 });

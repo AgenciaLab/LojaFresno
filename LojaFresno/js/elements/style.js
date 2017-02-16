@@ -35,3 +35,12 @@ jQuery(".header_loginBox").mouseenter( function() {
 jQuery(".header_loginBox").mouseleave(function() {
     jQuery(".loginBox").css("display", "none");
 });
+
+$(document).ready(function() {
+    $("#owl-demo").owlCarousel({
+      singleItem:true,
+      loop:true,
+      autoPlay : 5000,
+      stopOnHover : false
+    });
+  });
