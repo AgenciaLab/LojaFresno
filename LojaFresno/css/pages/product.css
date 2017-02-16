@@ -24,9 +24,13 @@ and open the template in the editor.
     margin:auto;
 }
 
-.thumbs-vertical{width:91px; float:left; margin-right:15px;}
+.thumbs-vertical{
+    width:110px; float:left;
+}
 .thumbs-vertical .carousel-gallery > a{display:block; margin-bottom:25px;}
-.container-imagem{text-align:center; margin-left:110px;}
+.container-imagem{
+    text-align:center; margin-left:110px;
+}
 .container-imagem>div{max-width:100%; padding:0 0 5px; margin-bottom:10px; position:relative;}
 
 .product_Breadcrumb {
@@ -34,10 +38,19 @@ and open the template in the editor.
 }
 
 .product_Title {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
+
 @media (min-width: 768px) {
+    
+    .redesSociaisProd {
+        margin-top: 100px;
+    }
+    
+    .page-product .lista_cor_variacao, .page-product .lista_cor_variacao2 {
+        padding: 5px 2px 0;
+    }
 
     .product {
         margin: 0px;
@@ -55,7 +68,7 @@ and open the template in the editor.
         height: auto;
         margin: -9px 0 0 13px;
         border: none;
-        color: #959595;
+        color: #232323;
     }
 
     #plus {
@@ -69,7 +82,7 @@ and open the template in the editor.
         line-height: 0;
         
     }
-
+ 
     #minus {
         position: absolute;
         left: 75px;
@@ -95,41 +108,44 @@ and open the template in the editor.
     }
 
     .product_Title h1 {
-        font-family: OxygenRegular;
+        font: 800 21px/27px 'OxygenRegular', sans-serif;
         text-transform: uppercase;
-        font-size: 18pt;
-        letter-spacing: 1px;
+        font-size: 13pt; 
+        /* letter-spacing: 1px; */
+        /* margin-top: 5px; */ 
+        line-height: 25px;
     }
 
     .product_Title h3 {
         font-family: OxygenRegular;
         text-transform: uppercase;
         font-size: 10pt;
+        line-height: 50px;
     }
 
     .product_PriceArea h2 {
-        font-family: OxygenRegular;
+        font: 600 14px 'OxygenRegular', sans-serif;
         font-size: 20pt;
         letter-spacing: 1px;
     }
 
     .product_PriceArea h4 {
-        font-family: OxygenRegular;
+        font: 600 14px 'OxygenRegular', sans-serif;
         font-size: 11pt;
         float: left;
         margin-right: 5px;
-        line-height: 30px;
+        margin-top: 15px;
     }
 
     .product_TabelaMedidas h3 {
-        margin-top: -43px;
+        margin-top: -91px;
         float: right;
         margin-right: 60px;
         text-decoration: underline;
     }
 
     #button-buy {
-        min-width: 370px;
+        min-width: 430px;
         height: 45px;
         background: #26ab65;
     }
@@ -145,6 +161,18 @@ and open the template in the editor.
         line-height: 35px;
         padding: 4px 0px;
         color: #959595;
+    }
+    
+    .texto_variacao {
+        margin-top: 20px;
+    }
+     
+    .produto-formas-pagamento {
+        padding-bottom: 20px;
+    }
+    
+    .produto-formas-pagamento a:hover{
+        text-decoration: underline;
     }
 }
 
@@ -301,13 +329,13 @@ and open the template in the editor.
 
     .showcase>h2 strong {
         line-height: 35px;
-    }
+    } 
 
     .product {
         padding: 0px;
     }
 
-    .product_Galeria {
+    .product_Galeria { 
         max-width: 98%;
     }
 
@@ -317,6 +345,11 @@ and open the template in the editor.
         color: #959595;
         margin-left: 5px;
     }
+     
+    .produto-formas-pagamento {
+        padding-bottom: 10px;
+    } 
+   
 }
 
 
@@ -325,7 +358,7 @@ and open the template in the editor.
 
 
 .product_Price {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .page-product .lista_cor_variacao li, .page-product .lista_cor_variacao2 li {
@@ -336,10 +369,11 @@ and open the template in the editor.
 }
 
 .page-product .lista_cor_variacao li div, .page-product .lista_cor_variacao2 li div {
-    height: 30px;
+        height: 30px;
     width: 45px;
-    color: #a7a7a7;
+    color: #121212;
     font-family: OxygenRegular;
+    font-size: 10pt;
 }
 
 .page-product #bt_comprar {
@@ -372,7 +406,8 @@ and open the template in the editor.
     margin-left: 5px;
 }
 .product_TabelaMedidas a  h3{
-    text-decoration: none;
+    text-decoration: underline;
+    font-style: italic;
     border: none;
 }
 
@@ -382,9 +417,17 @@ and open the template in the editor.
     border: none;
 }
 
+.prodBox .board {
+    margin: 0px;
+}
 
-
-
+.produto-formas-pagamento a {
+    color: #8d3757 !important;
+    font-weight: 600 !important;
+    background: none !important;
+    text-transform: none !important;
+        font-size: 10pt;
+}
 
 
 
@@ -413,7 +456,7 @@ input::-webkit-calendar-picker-indicator {
 .prodBox {
     font-size: 130%;
     font-family: OxygenRegular;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .qtminus {
@@ -435,4 +478,23 @@ input::-webkit-calendar-picker-indicator {
 
 #foto_a {
     margin: auto;
+}
+
+#select_ordem {
+        margin-left: 5px;
+    border-radius: 0;
+    display: inline-block;
+    font: 600 12px 'OxygenRegular',sans-serif;
+    margin: 0;
+    width: auto;
+    height: 34px;
+    padding: 6px 12px;
+        background-color: #fff;
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+#catalog_OrganizarLbl {
+    color: #433f3f;
+    font: 700 12px 'OxygenRegular',sans-serif;
 }
