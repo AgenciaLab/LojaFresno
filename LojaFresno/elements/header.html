@@ -21,14 +21,16 @@
                     <div class="col-md-4">
                         <div class="header_AreaLinks">
                             <div class="header_AreaLinksDivisor col-md-6">
-                                <div class="col-md-3">
-                                    <img src="{{ themePath }}img/header/minhaConta.png" />
-                                </div>
-                                <div class="col-md-9">
-                                    <a href="{{ links.login }}">
-                                        <h5>minha conta</h5>
-                                    </a>
-                                </div>
+                                
+                                <a href="{{ links.login }}" class="header_loginBox">
+                                    <div class="col-md-3">
+                                        <img src="{{ themePath }}img/header/minhaConta.png" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <span class="frameUserLogged" data-logged-user="false">{{ loginBox }}</span>
+                                            <h5>minha conta</h5>
+                                    </div>                                   
+                                </a>
                             </div>
                             <div class="col-md-6">
                                 
@@ -44,6 +46,8 @@
                             </div>
                             
                             {% element 'snippets/cart' %}
+                            
+                            {% element 'snippets/loginBox' %}
                         </div>
                     </div>
                 </div>
@@ -79,14 +83,14 @@
                     <div class="col-sm-6">
                         <div class="header_AreaLinks">
                             <div class="header_AreaLinksDivisor col-sm-6">
-                                <div class="col-sm-3">
-                                    <img src="{{ themePath }}img/header/minhaConta.png" />
-                                </div>
-                                <div class="col-sm-9">
-                                    <a href="{{ links.login }}">
-                                        <h5>minha conta</h5>
-                                    </a>
-                                </div>
+                                <a href="{{ links.login }}">
+                                    <div class="col-sm-3">
+                                        <img src="{{ themePath }}img/header/minhaConta.png" />
+                                    </div>
+                                    <div class="col-sm-9">
+                                            <h5>minha conta</h5>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-sm-6">
                                 <a href="{{ links.cart }}">

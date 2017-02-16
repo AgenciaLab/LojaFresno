@@ -41,6 +41,86 @@
     font-family: OxygenRegular;
 }
 
+.loginBox {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width:270px;
+    top: 40px;
+    right: 173px;
+    padding: 10px;
+    border: 1px solid #232323;
+    z-index: 999;
+    margin-top: -5px;
+}
+
+
+.loginBox input {
+    background-color: #ebebeb;
+    outline: 0;
+    border: 0;
+    color: #232323;
+    display: block;
+    font: 400 11px/1.4 'Oxygen',sans-serif;
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 0 7px;
+    width: 100%;
+}
+
+.loginBox button {
+    background-color: #232323;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.loginBox h3 {
+    color: #232323;
+    font: 600 12px/30px 'Oxygen',sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #232323;
+    text-align: center;
+}
+
+.loginBox a {
+    background-color: #8d3756;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    font: 500 12px/40px 'Oxygen',sans-serif;
+    height: 40px;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    display: block;
+}
+
+.loginBox button {
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    font: 500 12px/40px 'Oxygen',sans-serif;
+    height: 40px;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+.loginBox button + div {
+    border-bottom: 1px dashed #232323;
+    width: 98%;
+    height: 1px;
+    margin: 0px auto 6px;
+}
+
 .cart {
     display: none;
     position: absolute;
@@ -51,6 +131,7 @@
     padding: 10px;
     border: 1px solid #232323;
     z-index: 999;
+    margin-top: -4px;
 }
 
 .cart button {
@@ -102,7 +183,7 @@
 }
 
 @media (max-width: 768px) {
-    .color { 
+    .color {
         margin-top: 5px
     }
 
