@@ -99,12 +99,32 @@
 
 .main-menu{position:relative}
 .main-menu .container{max-width:1040px;}
-.main-menu .item-level1{float:left;margin-left:47px;position:relative}
-.main-menu .item-level1:first-child,.main-menu .item-level1:nth-child(2){margin-left:0}
+.main-menu .item-level1{
+    float:left;
+    position:relative;
+    width: 168px;
+}
+.main-menu .item-level1:first-child,.main-menu .item-level1:nth-child(2){
+    margin-left:0
+}
+
 .main-menu .item-level1:hover .level2{opacity:1;visibility:visible;    z-index: 999;}
 .main-menu .item-level1:last-child .level2,.main-menu .item-level1:nth-child(6) .level2{right:0}
 .main-menu .item-level1:nth-child(5) .level2{left:calc(50% - 320px)}
-.main-menu h3 a{display:block;padding:30px 0;font-weight:900}
+.main-menu h3 a{
+        font-size: 10pt;
+    color: #232323;
+    padding: 0px 12px;
+    text-transform: uppercase;
+    font-family: OxygenBold;
+    letter-spacing: 1px;
+}
+
+.level1 {
+    background: pink;
+    width: 100%;
+    text-align: center;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
@@ -116,7 +136,7 @@
 }
 
 @media screen and (min-width:769px){
-    .main-menu h3 a:before{border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
+    .main-menu h3 a:before{border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;}
 }
 .main-menu .link-novidades{float:right;padding:30px 0}
 .main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
@@ -151,9 +171,8 @@ a, a:hover {
         color: #232323;
         padding: 0px 12px;
         text-transform: uppercase;
-        font-family: OxygenRegular;
+        font-family: OxygenBold;
         letter-spacing: 1px;
-        font-weight: 300;
     }
 }
 
@@ -375,3 +394,17 @@ html.menu-open .menu-mobile2{background:#fff; height:100%; left:-320px; overflow
     }
 }
 
+.container_skitter {
+    width: 100%!important; 
+    height: 100%!important;
+}
+
+.box_skitter {
+    width: 100%!important;
+    height: 100%!important;
+    min-height: 67px!important;
+}
+
+.image_main {
+    max-width: 100%;
+}

@@ -37,3 +37,8 @@ and open the template in the editor.
     font-family: OxygenLight;
     src: url('fonts/oxygen/Oxygen-Light.ttf'), url('fonts/oxygen/Oxygen-Light.eot');
 }
+
+@font-face {
+    font-family: LatoRegular;
+    src: url('fonts/lato/Lato-Regular.ttf'), url('fonts/oxygen/Oxygen-Light.eot');
+}
