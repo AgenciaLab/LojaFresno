@@ -3,16 +3,12 @@
 		<div class="form-group">
 			<label id='catalog_OrganizarLbl'>Organizar por: </label>
 
-            <select name="order" id="select_ordem" class="selectDesigner" style="margin-left: 5px;">
+            <select name="order" id="select_ordem" class="selectDesigner" style="margin-left: 5px; min-height: 45px;">
                 {% for option in search.order_options %}
                     {% set selected = option.selected ? 'selected="selected"' : '' %}
                     <option value="{{ option.value }}" {{ selected }}>{{ option.name }}</option>
                 {% endfor %}
             </select>
-
-
-
-
 
       	</div>
     </form>
