@@ -105,12 +105,62 @@
         </div>
         <div class="row">
             <div class="product_Details">
-                <div id="descricao" class="prodBox">
-                    <div class="board">
-                        <div class="board_htm description">
-                            {{ product.description ? product.description : product.description_small }}
+                <div id="ProdBlock">
+                    <div id="loading-tab-container">
+                        <img src='{{ tray.paths.system_image }}/big-loading.svg' />
+                    </div>
+                    <a name="formaPagto"></a>
+
+                    <div id="ProdAbas" class="abasProduto">
+                        <ul>
+                            {% for key, tab in productTabs %}
+                                {% if tab.container_id %}
+                                    <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
+                                        <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">
+                                            {{ tab.description }}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+
+                    <div id="descricao" class="prodBox">
+                        <div class="board">
+                            <div class="board_htm description">
+                                {{ product.description ? product.description : product.description_small }}
+                            </div>
                         </div>
                     </div>
+
+                    <div id="itensInclusos" class="prodBox">
+                        <div class="board">
+                            {{ product.included_items }}
+                        </div>
+                    </div>
+
+                    <div id="coments" class="prodBox">
+                        <div class="board">
+                            {% element 'product/comments' %}
+                        </div>
+                    </div>
+
+                    <div id="caracteristicas" class="prodBox">
+                        <div class='board'>
+                            {% element 'product/properties' %}
+                        </div>
+                    </div>
+
+
+                    {{ productTabs.custom.content }}
+                    {{ productTabs.downloads.content }}
+
+
+                    <div id="garantia" class="prodBox">
+                        <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg" style="display:none;" />
+                    </div>
+                    <div data-app="product.payment-methods" id="formasPagto" class="prodBox" style="display:none;"></div>
                 </div>
             </div>
         </div>
