@@ -2,7 +2,7 @@
     <a href="{{ product.link }}" data-tray-tst="vitrine_produto_link_imagem">
         <div class="product-image">
             {% if product.images %}
-                <img data-original="{{ product.images[0].full }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">
+                <img data-original="{{ product.images[0].medium }}" class="img-responsive lazy" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}">
             {% else %}
                 <img src="{{ asset('img/no-image.svg') }}" alt="Nenhuma imagem foi cadastrada" width="100">
             {% endif %}

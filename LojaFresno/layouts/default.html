@@ -82,15 +82,29 @@
 
         {% if pages.current == 'home' and banner.home %}
 
-            <div id="owl-demo" class="owl-carousel owl-theme">
-                {% for slide in banners.home.slides %}
-                <div class="item">
-                    <a href="{{ slide.link }}">
-                    <img src="{{ slide.image }}" alt="{{ slide.label}}">
-                    </a>
+            {% if utils.is_mobile %}
+                <div class="banners banner-home" id="BannerMobile">
+                    <ul class="bannerHomeMobile">
+                        {% for slide in banners.extra6.slides %}
+                            <li>
+                                <a href="{{ slide.link }}" target="{{ slide.target }}">
+                                    <img src="{{ slide.image }}" alt="{{ slide.label }}">
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-                {% endfor %}
-            </div>
+            {% else %}
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    {% for slide in banners.home.slides %}
+                    <div class="item">
+                        <a href="{{ slide.link }}">
+                        <img src="{{ slide.image }}" alt="{{ slide.label}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
 
             <!-- <div class="banners banner-home">
                 {{ banner.home }}

@@ -302,4 +302,10 @@ body {
     #owl-demo{
         top: 145px;
     }
+    #BannerMobile{
+        top:145px;
+    }
+    .bannerHomeMobile button.slick-prev, .bannerHomeMobile button.slick-next {
+        display: none !important;
+    }
 }
