@@ -57,11 +57,12 @@ and open the template in the editor.
     }
 
     .product-image {
-        margin-left: -15px;
+        margin-left: -3px;
     }
 
     .product .product-image {
         margin-bottom: 5px;
+        text-align: inherit;
     }
 
     .page-product #quant {

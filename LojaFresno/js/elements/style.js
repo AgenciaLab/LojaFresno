@@ -20,24 +20,8 @@ jQuery('#menu-toggle-mob').click(function () {
     }
 });
 
-jQuery(".header_CarrinhoArea").mouseenter(function() {
-    jQuery(".cart").css("display", "block");
-});
-
-jQuery(".header_CarrinhoArea").mouseleave(function() {
-    jQuery(".cart").css("display", "none");
-});
-
-jQuery(".header_loginBox").mouseenter( function() {
-    jQuery(".loginBox").css("display", "block"); 
-});
-
-jQuery(".header_loginBox").mouseleave(function() {
-    jQuery(".loginBox").css("display", "none");
-});
-
-$(document).ready(function() {
-    $("#owl-demo").owlCarousel({
+jQuery(document).ready(function() {
+    jQuery("#owl-demo").owlCarousel({
       singleItem:true,
       loop:true,
       autoPlay : 5000,
