@@ -499,3 +499,194 @@ input::-webkit-calendar-picker-indicator {
     color: #433f3f;
     font: 700 12px 'OxygenRegular',sans-serif;
 }
+
+
+@media (min-width: 768px) {
+    #Page{display:block;padding:10px;width:auto}
+    #Page br{font-size:0;line-height:0}
+    #Page fieldset{display:block;margin:5px 0 15px 0;text-align:left}
+    #Page fieldset > div{margin:20px 0 0 0}
+    #Page label{color:#959595;font-size:11px;font-weight:400;line-height:13px}
+    #Page .text{display:inline-block;height:27px !important}
+    #Page .text,#Page .select,#Page .textarea,#Page select,#Page textarea{background:white;border:1px solid #d7d7d7;border-radius:3px;color:#959595;font-size:12px;font-weight:400;line-height:15px;height:27px;margin:7px 0 13px 0;outline:0 none;padding:6px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+    #Page .obriga select{margin-bottom:0}
+    #Page .textarea,#Page textarea{display:block;line-height:14px;min-height:150px;padding:6px;width:100%}
+    #Page .text[readonly],#Page .text[readonly]:hover,#Page .text[readonly]:focus,#Page input[readonly],#Page input[readonly]:hover,#Page input[readonly]:focus{background-color:#f9f9f9;border-color:#d7d7d7;box-shadow:none;cursor:normal}
+    #Page .text:hover,#Page .select:hover,#Page input:hover,#Page select:hover{border-color:#bfbfbf}
+    #Page .text:focus,#Page .select:focus,#Page input:focus,#Page select:focus{border-color:#bbb;box-shadow:0 1px 2px 0px #bbb}
+    #Page span.obriga{margin-top:7px}
+    #Page .obriga .select{margin-top:0}
+    #Page .obriga{border-left:2px solid red;border-radius:3px}
+    #spanTextarea.obriga{border-left:0 none}
+    #Page .inputErro,#Page .inputErro:focus{background-color:#ffe5e5;border:1px solid red}
+    #Page .mensagensErro{color:red;font:400 10px/10px inherit;margin:0 0 0 4px}
+    #Page .check,#Page .checkbox,#Page input[type=checkbox],#Page .radio,#Page input[type=radio]{background-color:transparent;border:0 none;height:auto;margin:0 0 15px 2px;padding:0}
+    #Page button,#Page input[type=submit],#Page input[type=image]{margin:0 0 15px 0}
+    #pf_span_sexo{border:0 none}
+    #pf_span_sexo span{vertical-align:middle !important}
+    #CadastroAbas,#ProdAbas{border-bottom:1px solid #ddd;display:block;font-size:0;margin:15px 0 23px 0;padding:0 0 0 8px}
+    #CadastroAbas ul,#ProdAbas ul{overflow:visible}
+    #CadastroAbas li,#ProdAbas li,#CadastroAbas .aberta,#ProdAbas .aberta{float:none;display:inline-block;margin:0 0 0 2px;vertical-align:top}
+    #CadastroAbas li:first-child,#ProdAbas li:first-child{margin-left:0}
+    #CadastroAbas li a,#ProdAbas li a,#CadastroAbas .aberta a,#ProdAbas .aberta a{background-color:#c9c9c9;border-left:1px solid #ddd;border-right:1px solid #ddd;border-top:1px solid #ddd;border-radius:5px 5px 0 0;color:white;display:block;font-size:12px;font-weight:700;letter-spacing:0;line-height:31px;margin:0 0 -1px 0;padding:0 10px;text-transform:uppercase}
+    #CadastroAbas .aberta a,#ProdAbas .aberta a{background-color:white;color:#747474}
+    #CadastroAbas a:hover,#ProdAbas a:hover{color:white}
+    #CadastroAbas .aberta a:hover,#ProdAbas .aberta a:hover{color:#747474}
+    .tablePage,table,.Pedidos{border:0 none;margin:10px 0;width:100%}
+    .board_htm.description table{width:inherit;margin:inherit}
+
+    #CadastroAbas li a, #ProdAbas.abasProduto li a, #CadastroAbas .aberta a, #ProdAbas.abasProduto .aberta a {
+        font-size: 26px !important;
+        font-weight: normal !important;
+        font-family: 'Oswald', sans-serif !important;
+    }
+
+    #ProdAbas .aberta, #ProdAbas li:hover {
+        background-color: #fff !important;
+        border-bottom: 4px solid #232323 !important;
+    }
+
+    /* -----------------------------------------------
+        Abas - Descrição / Pgto / Comentário
+    ----------------------------------------------- */
+    #ProdBlock{padding-bottom:0 !important; border-bottom:0 !important; margin:15px 0 !important;}
+    #ProdBlock > div{border:0 !important;}
+
+    /*#ProdBlock #formasPagto,
+    #ProdBlock #coments,*/
+    #ProdBlock .board{background-color:#f9f9f9 !important; border:0 !important; padding: 25px;}
+
+    /*
+    #ProdBlock .board .board_htm,
+    #ProdBlock .board .board_htm p,
+    #ProdBlock .board .board_htm p > span,
+    #ProdBlock .board .board_htm p span{font:14px 'Oxygen', sans-serif !important; color:#909090 !important;}
+    */
+
+    .page-product #comentario_cliente form#form-comments label{width:100%;}
+    .page-product #comentario_cliente form#form-comments label input.checkbox{display:inline-block;}
+    .page-product #comentario_cliente .stars{font-size:0}
+    .page-product #comentario_cliente .starn{background:url(/imggeral/loja/img01/stars-old.png);display:inline-block;width:37px;height:35px;text-align:left;cursor:pointer}
+    .page-product #comentario_cliente .star-on{background-position:0 -38px!important}
+    .page-product #comentario_cliente .rateBlock+img{background:url(../img/comment-button.jpg);cursor:pointer;height:0;margin-top:20px;padding:23px 91px;width:0}
+    .page-product .tray-hide{display:none;}
+
+
+    #ProdAbas li{margin:0 30px !important;border-bottom:4px solid rgba(255,255,255,0) !important;}
+
+    #ProdAbas li a,
+    #ProdAbas .aberta a{padding:14px 0 !important;}
+
+    #CadastroAbas li a,
+    #ProdAbas li a,
+    #CadastroAbas .aberta a,
+    #ProdAbas .aberta a{border:0 !important; border-radius:inherit !important; -webkit-border-radius:inherit !important; -moz-border-radius:inherit !important; margin: 0 !important;}
+
+    .page-product #CadastroAbas,
+    .page-product #ProdAbas{background-color:#fff !important; padding:0 !important; margin:0;}
+
+    #ProdAbas li a{outline:0; background-color: transparent !important; text-decoration:none !important;}
+    #ProdAbas .aberta,
+    #ProdAbas li:hover{background-color:#fff !important;border-bottom:4px solid #232323 !important;}
+
+    #ProdAbas .aberta a{color: #232323 !important;}
+    #ProdAbas li a{color:#232323 !important;}
+    #ProdAbas li a:hover,
+    #ProdAbas .aberta a:hover{color:#232323 !important;}
+
+    #CadastroAbas li a,
+    #ProdAbas.abasProduto li a,
+    #CadastroAbas .aberta a,
+    #ProdAbas.abasProduto .aberta a{font-size:26px !important;font-weight:normal !important;font-family:'Oswald', sans-serif !important;}
+    /*#ProdAbas.abasProduto{margin-bottom:20px !important;}*/
+
+
+    #form_pagamento h2{color:black !important;padding:0 12px}
+    #form_pagamento th{background:none}
+    .tablePage h3{color:black;font-size:16px;line-height:16px}
+    #form_pagamento .tit-valor-frete h3,#form_pagamento .caixa-frete .tit-frete{color:#747474;font-size:16px;font-weight:700;line-height:16px}
+    #form_pagamento .caixa-frete .tit-frete{padding:31px 9px;text-transform:uppercase}
+    .caixa-detalhes-compra .tit-nome-produto > div{margin-left:20px !important}
+    .caixa-detalhes-compra .tit-produto-total{width:110px}
+    .caixa-detalhes-compra .tit-qtde{text-align:center}
+    #form_pagamento .tit-produto-total h3{color:#555;font-size:14px}
+    .caixa-dados-entrega{background:#f9f9f9;padding:16px 21px 26px}
+    .board .caixa-dados-entrega tr{background:transparent}
+    .caixa-dados-entrega td,.caixa-dados-entrega th,.caixa-dados-entrega tr:first-child th{border:0 none;margin:0;padding:0}
+    #form_pagamento .caixa-dados-entrega h3{color:red;font:700 13px/13px 'Oxygen', sans-serif;margin:10px 0 0 0}
+    .escolha-forma-pagamento .tit-escolha-forma{color:black;display:block;margin:37px 0}
+    #form_pagamento .bt-altera-compra{background-color:white}
+    .Forma2{border:0 none;display:block;display:flex;width:auto}
+    .Forma2 > li{background-color:#f9f9f9;border:0 none;flex:1 auto;margin:0;padding:0;width:50%}
+    .Forma2 h3{background-color:#f0f0f0;border-bottom:0 none;border-left:2px solid white;border-right:0 none;border-top:0 none;color:black !important;font:700 16px/16px 'Oxygen', sans-serif;margin:0;padding:32px 21px;text-align:left}
+    .Forma2 > li:first-child h3{border-left:0 none}
+    .Forma2 ul{display:block;border-top:6px solid white;padding:10px 18px;text-align:left}
+    .caixa-formas-pagamento .Forma2 ul > li{display:inline-block;float:none;margin:5px 10px 0 0;vertical-align:middle;width:auto}
+    .caixa-formas-pagamento .Forma2 ul > li:first-child{margin-top:0}
+    .caixa-formas-pagamento .Forma2 ul > li:last-child{margin-right:0}
+    .caixa-formas-pagamento a{display:block}
+    .caixa-lista-formas #ProdAbas{border:0 none;margin:6px 0 0 0;padding:0}
+    .caixa-lista-formas #ProdAbas li{background:#f0f0f0;display:block;padding:30px 23px}
+    .caixa-lista-formas #ProdAbas a{background-color:transparent;border:0 none;border-radius:0;color:black;font:700 16px/16px 'Oxygen', sans-serif;letter-spacing:0;margin:0;padding:0}
+    #FormasPagamento fieldset{margin:0}
+    #FormasPagamento legend{background:none;border:0 none;display:block;margin-bottom:0;padding:0}
+    #FormasPagamento fieldset > span{min-height:53px;padding:10px 0 0 0;width:78%}
+    .Forma1 li{background:#f0f0f0;border:0 none}
+    .Forma1 li:nth-child(odd){background:white}
+    .Forma1 li:hover{background:#ddd}
+    .Forma1 .tablePags{border:1px solid #ddd;display:none;margin:15px}
+    .Forma1 .item-parcela{margin:8px 0 0 0}
+    .Forma1 tr,.Forma1 tr:first-child{background-color:white}
+
+    .page-product .Forma1 li, .page-product .Forma1 li:hover {
+        border: none;
+        margin: 0px 0;
+        padding: 20px;
+        background: #f9f9f9;
+    }
+
+    .Forma1 li:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .tablePags img { 
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    
+    .Forma1 .tablePags, .caixa-formas-pagamento {
+        display: contents;
+    }
+    
+    .page-product .Forma1 td {
+        width: 100%;
+    }
+    
+    .page-product .Forma1 .item-parcela:first-child {
+        border-top: none;
+        
+    }
+        
+    .page-product .Forma1 .item-parcela {
+        border-bottom: none;
+    }
+    
+    .page-product .Forma1 td:nth-child(2) {
+            text-align: center;
+            width: 50%;
+            padding: 5px!important;
+            float: left;
+    }
+    
+    .page-product .Forma1 td:nth-child(3) {
+        display: list-item; 
+        width: 50%; 
+        float: left;
+        padding: 5px!important;
+    }
+
+}
