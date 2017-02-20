@@ -426,8 +426,8 @@
             // }
 
 
-            var aberto = false;
-            $('.abasProduto > ul').append('<li class="mais-info"><a>Mais<br> Informacoes<span class="ico-seta" style="right:5px !important; top: 21px !important"></span></a></li>').click(function(){
+            var aberto = true;
+            /*$('.abasProduto > ul').append('<li class="mais-info"><a>Mais<br> Informacoes<span class="ico-seta" style="right:5px !important; top: 21px !important"></span></a></li>').click(function(){
                 if(aberto == false){
                     $('.abasProduto  > ul li').css('display','table');
                     aberto = true;
@@ -436,7 +436,7 @@
                      $('.abasProduto  > ul li').css('display','none');
                     aberto = false;
                 }
-            });
+            }); */
             
 
             $('.abasProduto > ul li').not('.mais-info').click(function(){

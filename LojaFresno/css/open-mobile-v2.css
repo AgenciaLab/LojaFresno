@@ -694,7 +694,7 @@
   }
 
   .btn-proxima-pagina a:after {
-    content: "Próxima Página \25b6";
+    content: "Prï¿½xima Pï¿½gina \25b6";
     display: inline-block !important;
     text-decoration: none;
     font-size: 12px;
@@ -715,7 +715,7 @@
   }
 
   .btn-pagina-anterior a:before {
-    content: "  \25c0 Página Anterior";
+    content: "  \25c0 Pï¿½gina Anterior";
     display: inline-block !important;
     margin-right: 10px;
     text-decoration: none;
@@ -1456,7 +1456,7 @@
     line-height: 50px;
     display: none;
     border-radius: 5px;
-    top: 86px;
+    top: 52px;
   }
 
   li.atendimento-fale-conosco {
@@ -1464,7 +1464,7 @@
   }
 
   #ProdAbas .aberta {
-    width: 48% !important;
+    width: 100% !important;
     position: absolute;
     top: 0;
     left: 0;

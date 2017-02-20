@@ -36,12 +36,10 @@ and open the template in the editor.
 .product_Breadcrumb {
     margin: 20px 0px 0 0;
 }
-
 .product_Title {
     margin-bottom: 5px;
 }
-
-
+    
 @media (min-width: 768px) {
     
     .redesSociaisProd {
@@ -123,6 +121,10 @@ and open the template in the editor.
         font-size: 10pt;
         line-height: 50px;
     }
+    
+    .product_Price {
+        margin-bottom: 15px;
+    }
 
     .product_PriceArea h2 {
         font: 600 14px 'OxygenRegular', sans-serif;
@@ -177,9 +179,7 @@ and open the template in the editor.
     }
 }
 
-@media (max-width: 768px) {
-
-    
+@media (max-width: 767px) {
 
     .page-product #quant {
         height: auto;
@@ -230,7 +230,7 @@ and open the template in the editor.
         font-size: 18pt;
         letter-spacing: 1px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .product_Title h3 {
@@ -238,11 +238,13 @@ and open the template in the editor.
         text-transform: uppercase;
         font-size: 10pt;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .product_Price {
         text-align: center;
+        margin-bottom: 45px;
     }
 
     .product_PriceArea {
@@ -353,15 +355,6 @@ and open the template in the editor.
    
 }
 
-
-
-
-
-
-.product_Price {
-    margin-bottom: 15px;
-}
-
 .page-product .lista_cor_variacao li, .page-product .lista_cor_variacao2 li {
     border: 1px solid #a7a7a7;
     height: 32px;
@@ -382,8 +375,6 @@ and open the template in the editor.
     padding-top: 20px;
 }
 
-
-
 #button-buy span {
     font-family: OxygenRegular;
     letter-spacing: 8px;
@@ -395,10 +386,6 @@ and open the template in the editor.
 .page-product .product-quantity {
     width: 100% !important;
 }
-
-
-
-
 
 .product_Quantidade h3 {
     line-height: 35px;
@@ -430,8 +417,6 @@ and open the template in the editor.
         font-size: 10pt;
 }
 
-
-
 input::-webkit-calendar-picker-indicator {
     opacity: 100;
 }
@@ -445,10 +430,6 @@ input::-webkit-calendar-picker-indicator {
     z-index: 99;
     right: 0px;
 }
-
-
-
-
 
 .board_htm.description p {
     margin: 0.5em 0;
