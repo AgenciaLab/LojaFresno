@@ -669,5 +669,18 @@ input::-webkit-calendar-picker-indicator {
         float: left;
         padding: 5px!important;
     }
+    
+    #CadastroAbas li a, #ProdAbas.abasProduto li a, #CadastroAbas .aberta a, #ProdAbas.abasProduto .aberta a {
+        font-size: 26px !important;
+        font-weight: normal !important;
+        font-family: 'Oswald', sans-serif !important;
+    }
+    
+    #ProdAbas .aberta>a, .caixa-lista-formas #ProdAbas>li>a {
+        background-color: #fff !important; 
+        border-radius: 0!important;
+        /* padding: 10px 0 !important; */
+        color: #000 !important;
+    }
 
 }

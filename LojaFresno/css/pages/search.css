@@ -1,17 +1,44 @@
-.page-search .catalog-name {
-    font-size: 14pt;
-    line-height: 10px;
+@media (min-width: 768px) {
+    .page-search .catalog-name {
+        font-size: 14pt;
+        line-height: 10px;
+    }
+
+    .search-counter {
+        font-size: 11pt;
+        margin-left: 10px;
+    }
+
+    .personalizedFilter .form-group {
+        margin-top: 0px;
+    }
+
+    .page-search .catalog-content {
+        margin-top: -15px;
+    }
 }
 
-.search-counter {
-    font-size: 11pt;
-    margin-left: 10px;
-}
+@media (max-width: 768px) {
+    .page-search .catalog-name {
+        font-size: 12pt;
+        line-height: 20px;
+        margin-top: 10px;
+    }
 
-.personalizedFilter .form-group {
-    margin-top: 0px;
-}
+    .search-counter {
+        font-size: 9pt;
+        margin-bottom: 20px;
+    }
 
-.page-search .catalog-content {
-    margin-top: -15px;
+    .personalizedFilter .form-group {
+        margin-top: 0px;
+    }
+
+    .page-search .catalog-content {
+        margin-top: -15px;
+    }
+    
+    .system-filter {
+        text-align: left;
+    }
 }

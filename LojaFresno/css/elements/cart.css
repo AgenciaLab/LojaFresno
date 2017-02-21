@@ -225,6 +225,18 @@
         margin: 20px 0px 20px 2px;
         padding: 5px;
     }
+    
+    .page-checkout_cart .caixa-botoes .botao-commerce.botao-prosseguir-compra {
+        width: 48%;
+        height: 47px;
+        line-height: 10px;
+    }
+    
+    .page-checkout_cart #tabela_carrinho td:first-child img {
+        padding: 5px;
+    }
+    
+    
 }
 
 @media (min-width: 768px) {
@@ -256,6 +268,22 @@
     .bt-cupom img {
         margin-top: -5px;
         margin-left: 10px;
+    }
+    
+    .page-checkout_cart #tabela_carrinho td:first-child img {
+        padding: 5px;
+    }
+    
+    .page-checkout_cart #tabela_carrinho tr:last-child td:last-child {
+        text-align: left;
+    }
+       
+    .page-checkout_cart #tabela_carrinho tr:last-child td, .page-checkout_cart #tabela_carrinho th, .page-checkout_cart #tabela_carrinho a strong, .page-checkout_cart #tabela_carrinho .valores_carrinho, .page-checkout_cart #tabela_carrinho .valores_carrinho {
+        font-size: 9pt;
+    }
+    
+    .page-checkout_cart .caixa-produto {
+        margin-bottom: 30px;
     }
 }
 

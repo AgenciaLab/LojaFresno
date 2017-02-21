@@ -1450,12 +1450,11 @@
     background: #eee;
     z-index: 1;
     width: 100%;
-    border-radius: 0;
+    border-radius: 0px;
     margin: 2px;
     height: 50px;
     line-height: 50px;
     display: none;
-    border-radius: 5px;
     top: 52px;
   }
 
@@ -1480,9 +1479,9 @@
   }
 
   .abasProduto .aberta {
-    background: #666 !important;
-    color: #fff;
+    background: #fff !important;
     display: inline-block !important;
+    border-bottom: 2px solid #000;
   }
 
   #CadastroAbas li {
@@ -2073,10 +2072,10 @@
   }
   
 #ProdAbas .aberta>a, .caixa-lista-formas #ProdAbas>li>a {
-    /*background-color: #666 !important;*/
+    background-color: #fff !important;
     border-radius: 0!important;
     /*padding: 10px 0 !important;*/
-    color: #fff !important;
+    color: #000 !important;
 }
   .caixa-lista-formas #ProdAbas li a:after {
     content: "";

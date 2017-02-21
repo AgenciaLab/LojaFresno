@@ -34,14 +34,14 @@
 <div class="container">
     {% if banner.extra1 and banner.extra2 %}
     <div class="row rowNoSpacing" >
-        <div class="col-sm-6 hidden-xs" >
+        <div class="col-sm-6" >
             {% if banner.extra1 %}
             <a href="{{ banners.extra1.link }}" target="{{ banners.extra1.target }}">
                 <img src="{{ banners.extra1.src }}" class="imgBannerEx3" alt="{{ banners.extra1.alt }}" >
             </a>
             {% endif %}
         </div>
-        <div class="col-sm-6 hidden-xs">
+        <div class="col-sm-6">
             {% if banner.extra2 %}
             <a href="{{ banners.extra2.link }}" target="{{ banners.extra2.target }}">
                 <img src="{{ banners.extra2.src }}" class="imgBannerEx3" alt="{{ banners.extra2.alt }}" >
