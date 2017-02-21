@@ -56,6 +56,7 @@ and open the template in the editor.
 
     .product-image {
         margin-left: -3px;
+        height: auto !important;
     }
 
     .product .product-image {

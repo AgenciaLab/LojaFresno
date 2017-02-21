@@ -10,16 +10,6 @@ jQuery(window).scroll(function(event){
     lastScrollTop = st;
 });
             
-jQuery('#menu-toggle-mob').click(function () {
-
-    var p = jQuery(".menu-mobile");
-    if (p.position().left < 0) {
-        jQuery(".menu-mobile").animate({left: '280px'});
-    } else {
-        jQuery(".menu-mobile").animate({left: '-100%'});
-    }
-});
-
 jQuery(document).ready(function() {
     jQuery("#owl-demo").owlCarousel({
       singleItem:true,

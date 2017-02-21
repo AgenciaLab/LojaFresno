@@ -38,7 +38,7 @@ body {
 @media (min-width: 768px) {
     .lineSeparateFooter {
         display: block;
-        border: 1.4px solid #000;
+        border: 1px solid #000;
         margin: 10px 11px 10px 2px;
     }
     .nospacing {
@@ -151,7 +151,7 @@ body {
 @media (min-width: 768px) {
     .product .product-image {
         border-bottom: none;
-        height: 440px;
+        
     }
     
     .home_CadastreContainer {
