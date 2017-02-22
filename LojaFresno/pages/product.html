@@ -16,7 +16,7 @@
                     <div class="thumbs-vertical" id="product-gallery">
                         <div class="carousel-gallery carousel-trigger-{{ product.id }}">
                             {% for key,product_image in product.images %}
-                            <a href="#" data-image="{{ product_image.full }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.full }}" alt="{{ product.name }}" title="{{ product.name }}">
+                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}" alt="{{ product.name }}" title="{{ product.name }}">
                                 <img src="{{ product_image.large }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}
@@ -26,7 +26,7 @@
                         {% for key,product_image in product.variants.sku.Tamanho %}
                         <div class="carousel-gallery carousel-trigger-{{ product_image.id }}" style="display: none;">
                             {% for key2,product_img in product_image.images %}
-                            <a href="#" data-image="{{ product_image.full }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.full }}" alt="{{ product.name }}" title="{{ product.name }}">
+                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}" alt="{{ product.name }}" title="{{ product.name }}">
                                 <img src="{{ product_image.small }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}

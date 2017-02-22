@@ -182,7 +182,7 @@
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
     .color {
         margin-top: 5px
     }
@@ -293,4 +293,9 @@
 
 .page-checkout_cart #tabela_carrinho {
     margin-top: -15px;
+}
+
+.page-checkout_cart .caixa-botoes .botao-commerce.botao-prosseguir-compra a{
+    color: #fff !important;
+    
 }

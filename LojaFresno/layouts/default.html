@@ -181,6 +181,8 @@
         {% endspaceless %}
 
     <script>
+        var lastScrollTop = 0;
+        
         jQuery(".header_CarrinhoArea").mouseenter(function() {
             jQuery(".cart").css("display", "block");
         });
@@ -205,7 +207,17 @@
             } else {
                 jQuery(".menu-mobile").animate({left: '-100%'});
             }
-        });        
+        });
+        jQuery(window).scroll(function(event){
+            var st = jQuery(this).scrollTop();
+
+            if (st > lastScrollTop){
+                jQuery("#produtoAreaPesquisa").fadeOut(300);
+            } else {
+                jQuery("#produtoAreaPesquisa").fadeIn(300);
+            }
+            lastScrollTop = st;
+        });
     </script>
 
     </body>

@@ -309,7 +309,7 @@ body {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #owl-demo{
         top: 145px;
     }
@@ -337,6 +337,9 @@ body {
     
     #CadastroAbas>li, #ProdAbas .aberta, #ProdAbas li {
         display: block !important;
+        height: auto !important;
     }
-
+    #ProdAbas .aberta >a, #ProdAbas li>a {
+        margin: auto !important;
+    }
 }
