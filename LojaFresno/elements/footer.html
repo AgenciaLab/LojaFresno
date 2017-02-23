@@ -12,11 +12,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer_contact">
-                        <div class="footer_contactus hidden-xs">
-                            <img src="{{ themePath }}img/footer/icon_faleConosco.png"/>
-                            <h5>FALE COM A GENTE</h5>
-                        </div>
-                        <div class="footer_contactus visible-xs ">
+                        <div class="footer_contactus">
                             <img src="{{ themePath }}img/footer/icon_faleConosco.png"/>
                             <h5>FALE COM A GENTE</h5>
                         </div>
@@ -30,11 +26,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-6">
+                <div class="col-md-2 col-xs-12">
                     <div class="row">
                         <div class="footer_options">
                             <h5>INSTITUCIONAL</h5>
-
                             <ul>
                                 <li>
                                     <a href="{{ links.company }}">
@@ -72,7 +67,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2  col-xs-6">
+                
+                <div class="col-md-2  col-xs-12">
                     <div class="row">
                         <div class="footer_options">
                             <h5>DÚVIDAS</h5>
@@ -101,17 +97,13 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="footer_options">
                             <h5>Compre com Segurança</h5>
 
-                            <div class="row">
-                                <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
-                                    <center>
-                                        <img src="{{ themePath }}img/footer/diamant_bit.png"/>
-                                    </center>
-                                </div>
-                                <div class="col-md-6 col-xs-12" style="padding: 0; margin:0;">
+                            <div class="row" style="text-align: left;">
+                                <div class="col-md-12 col-xs-12" style="padding: 0; margin:0; ">
                                         {% if seals.hackersafe %}
                                             {{ seals.hackersafe }}
                                         {% endif %}                                  
@@ -121,6 +113,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-2">
                     <div class="row">
                         <div class="footer_options">
@@ -138,7 +131,27 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="row" id="logosBdpLab">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="row" style="margin: 0; padding: 0;">
+                                <h4>Produtos desenvolvidos por:</h4>
+                                <a target="_blank" href="http://www.bandup.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logo_bandup.png"/>
+                                </a>
+                            </div>
+                            <div class="row" >
+                                <h4 style="margin-bottom: 15px;">Loja desenvolvida por:</h4>
+                                <a target="_blank" href="http://www.lab17340.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logoLab.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+                
                 <div class="col-md-3">
                     <div class="row" style="margin: 0 0 10px 0; padding: 0;">
                         <div class="footer_options" style="padding: 0px 60px; min-height: auto;">
@@ -159,22 +172,17 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <div class="row" style="margin: 0; padding: 0;">
-                                <h4>Produtos desenvolvidos por:</h4>
-                                <a target="_blank" href="http://www.bandup.com.br">
-                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logo_bandup.png"/>
-                                </a>
-                            </div>
-                            <div class="row" >
-                                <h4 style="margin-bottom: 15px;">Loja desenvolvida por:</h4>
-                                <a target="_blank" href="http://www.lab17340.com.br">
-                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logoLab.png"/>
-                                </a>
+                        <div class="footer_options" style="text-align: left;">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12" style="padding: 0; margin:0;">
+                                    <div class="Aligncenter">
+                                        <img class="img-responsive" src="{{ themePath }}img/footer/diamant_bit.png"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
