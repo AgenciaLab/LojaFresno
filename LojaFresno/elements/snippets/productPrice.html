@@ -8,20 +8,26 @@
         <p>Produto Sob Consulta</p>
         {% else %}
 
-        {% if product.has_other_prices %}
-        <span class="price-various">{{ Translation('a_partir_de') }}</span>
-        {% endif %}
-
         {% if product.price_offer > 0 and product.show_price %}
         <div class="price-before">
-            <div itemprop="priceCurrency" content="BRL"><abbr class="currency" title="BRL">por: {{ settings.currency }}</abbr> {{ product.price|currency }}</div>
+            <div itemprop="priceCurrency" content="BRL"><abbr class="currency" title="BRL">De: {{ settings.currency }}</abbr> {{ product.price|currency }}</div>
         </div>
         <div class="price-promotion">
-            <div itemprop="offers" class="price-off" itemscope itemtype="http://schema.org/Offer">por R$ {{ product.price_offer|currency  }}</div>
+            <div itemprop="offers" class="price-off" itemscope itemtype="http://schema.org/Offer">
+                <span class="color-tone-2 txt-por">Por:</span>
+                <abbr class="newValue" title="BRL"> R$ </abbr>
+                <span data-app="product.price" id="variacaoPreco" data-tray-tst="price_product">
+                    {{ product.price_offer|currency  }}
+                </span>
+            </div>
         </div>
         {% else %}
         <h4>por</h4>
-        <h2 itemprop="priceCurrency" content="BRL"><strong style="font-family: 'OxygenRegular'; color: #232323; font-weight: 800;">R$ {{ product.price|currency }}</strong></h2>
+        <h2 itemprop="priceCurrency" content="BRL">
+            <strong style="font-family: 'OxygenRegular'; color: #232323; font-weight: 800;">
+                R $ {{ product.price|currency }}
+            </strong>
+        </h2>
         {% endif %}
         {% endif %}
 

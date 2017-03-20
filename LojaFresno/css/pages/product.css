@@ -126,6 +126,29 @@ and open the template in the editor.
     .product_Price {
         margin-bottom: 15px;
     }
+    .price-before {
+        font-size: 16px;
+        color: #b4b4b4;
+        margin-bottom: 5px;
+    }
+    
+    span.color-tone-2 {
+        font: 600 14px 'Oxygen', sans-serif;
+        color: #232323;
+    }
+    
+    .newValue {
+        font-weight: 800;
+        font-size: 28px;
+        text-decoration: none;
+        color: #232323;
+    }
+    
+    #variacaoPreco {
+        font-weight: 800;
+        font-size: 28px;
+        color: #232323;
+    }
 
     .product_PriceArea h2 {
         font: 600 14px 'OxygenRegular', sans-serif;
@@ -506,9 +529,9 @@ input::-webkit-calendar-picker-indicator {
     #Page button,#Page input[type=submit],#Page input[type=image]{margin:0 0 15px 0}
     #pf_span_sexo{border:0 none}
     #pf_span_sexo span{vertical-align:middle !important}
-    #CadastroAbas,#ProdAbas{border-bottom:1px solid #ddd;display:block;font-size:0;margin:15px 0 23px 0;padding:0 0 0 8px}
+    #CadastroAbas,#ProdAbas{display:block;font-size:0;margin:15px 0 23px 0;}
     #CadastroAbas ul,#ProdAbas ul{overflow:visible}
-    #CadastroAbas li,#ProdAbas li,#CadastroAbas .aberta,#ProdAbas .aberta{float:none;display:inline-block;margin:0 0 0 2px;vertical-align:top}
+    #CadastroAbas li,#ProdAbas li,#CadastroAbas .aberta,#ProdAbas .aberta{min-height: 40px;float:none;display:inline-block;margin:0 0 0 2px;vertical-align:top}
     #CadastroAbas li:first-child,#ProdAbas li:first-child{margin-left:0}
     #CadastroAbas li a,#ProdAbas li a,#CadastroAbas .aberta a,#ProdAbas .aberta a{background-color:#c9c9c9;border-left:1px solid #ddd;border-right:1px solid #ddd;border-top:1px solid #ddd;border-radius:5px 5px 0 0;color:white;display:block;font-size:12px;font-weight:700;letter-spacing:0;line-height:31px;margin:0 0 -1px 0;padding:0 10px;text-transform:uppercase}
     #CadastroAbas .aberta a,#ProdAbas .aberta a{background-color:white;color:#747474}
@@ -579,7 +602,7 @@ input::-webkit-calendar-picker-indicator {
     #CadastroAbas li a,
     #ProdAbas.abasProduto li a,
     #CadastroAbas .aberta a,
-    #ProdAbas.abasProduto .aberta a{font-size:26px !important;font-weight:normal !important;font-family:'Oswald', sans-serif !important;}
+    #ProdAbas.abasProduto .aberta a{font-size:14px !important; min-height: 38px; font-weight:normal !important;font-family:'Oswald', sans-serif !important;}
     /*#ProdAbas.abasProduto{margin-bottom:20px !important;}*/
 
 

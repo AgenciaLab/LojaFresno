@@ -86,6 +86,18 @@
             $('.qntd').addClass('text');
             $('.caixa-cupom').parents('tr').addClass('wrap-cupom');
             $('#tab').parents('tr').addClass('wrap-shipping-forms');
+            
+            /*var tabs = $('.passo-num');
+            var count = tabs.size();
+            for ( i = 0; i < count; i++ ) {
+                console.log(tabs.append());
+                if(i == '1') {
+                    $( "<li class='liAfter'></li>" ).insertAfter( ".carrinho-tabs li" );
+                }
+            }
+            console.log(count); */
+            
+                        //console.log(tabs.length);
 
             // Carrinho adicionando linha sub-total
             var subTotalAux = $('#tabela_carrinho .valores_carrinho'),
