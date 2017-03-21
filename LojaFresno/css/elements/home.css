@@ -29,6 +29,10 @@ body {
     padding-left: 0;
 }
 
+.showcaseRow ul {
+    margin-left: 10px;
+}
+
 .lineSeparate {
     display: block;
     border: 1.4px solid #000;

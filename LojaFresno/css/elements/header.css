@@ -112,7 +112,7 @@
 .main-menu .item-level1:last-child .level2,.main-menu .item-level1:nth-child(6) .level2{right:0}
 .main-menu .item-level1:nth-child(5) .level2{left:calc(50% - 320px)}
 .main-menu h3 a{
-        font-size: 10pt;
+    font-size: 10pt;
     color: #232323;
     padding: 0px 12px;
     text-transform: uppercase;
@@ -140,7 +140,7 @@
 .main-menu .link-novidades h3:before{border-top:4px solid #1b77b8;border-left:4px solid transparent;border-right:4px solid transparent;content:'';float:right;margin-top:4px;margin-left:4px}
 .main-menu .link-novidades ul{opacity:0;position:absolute;right:0;text-align:right;top:80%;visibility:hidden;width:600px}
 .main-menu .link-novidades:hover ul{opacity:1;visibility:visible}
-.main-menu .level2{background-color:#fff;border-bottom:1px solid #232323;border-left:1px solid #232323;border-right:1px solid #232323;border-top:6px solid #232323;opacity:0;padding-bottom:26px;padding-top:16px;position:absolute;top:80%;visibility:hidden;width:640px}
+.main-menu .level2{background-color:#fff;border-bottom:1px solid #232323;border-left:1px solid #232323;margin-top:1px;border-right:1px solid #232323;border-top:6px solid #232323;opacity:0;padding-bottom:26px;padding-top:16px;position:absolute;top:80%;visibility:hidden;width:640px}
 .main-menu .level2 img{float:right;margin-top:-16px;margin-bottom:-26px}
 .main-menu .level2 div{overflow:hidden}
 .main-menu .item-level2{border-left:1px solid #232323;float:left;margin-left:-1px;padding-left:25px;width:50%; text-align: left;}
