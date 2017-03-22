@@ -33,7 +33,7 @@
 
 <div class="container">
     {% if banner.extra1 and banner.extra2 %}
-    <div class="row rowNoSpacing" >
+    <div class="row rowNoSpacing" style="margin-right: 1px;">
         <div class="col-sm-6 hidden-xs" >
             {% if banner.extra1 %}
             <a href="{{ banners.extra1.link }}" target="{{ banners.extra1.target }}">
@@ -52,7 +52,7 @@
     {% endif %}
 
     {% if banner.extra3 %}
-    <div class="row nospacing" style="margin-top: 10px;">
+    <div class="row nospacing" style="margin-top: 10px; margin-right: 6px;">
         <a href="{{ banners.extra3.link }}" target="{{ banners.extra3.target }}">
             <img src="{{ banners.extra3.src }}" class="imgBannerEx3 hidden-xs" alt="{{ banners.extra3.alt }}" >
         </a>
@@ -60,7 +60,7 @@
     {% endif %}
 
 
-    <div class="row nospacing" style="margin-bottom: 20px;">
+    <div class="row nospacing" style="margin-bottom: 20px; padding-right: 5px;">
 
         <div class="row nospacing" style="    padding-left: 0px;">
 
@@ -76,7 +76,7 @@
             </a>
             {% endif %}
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding-right: 0px;">
             <div class="home_Cadastre">
                 <div class="newsletter">
                     {% element 'snippets/newsletter' %}
