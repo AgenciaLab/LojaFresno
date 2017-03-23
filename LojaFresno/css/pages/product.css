@@ -1,3 +1,33 @@
+.varCont ul li ul li {
+    border: none;
+    float: left;
+    width: 60px;
+    height: 50px;
+}
+
+.lista-radios-input {
+        border: 1px solid #a7a7a7;
+    height: 40px;
+    width: 46px;
+    text-align: center;
+    padding: 10px 0px;
+    z-index: 9999;
+    position: absolute;
+}
+
+.selecionada .lista-radios-input {
+    background: #000;
+    color: #fff;
+}
+
+.lista-radios-input label {
+        height: 30px;
+    width: 45px;
+    color: #121212;
+    font-family: OxygenRegular;
+    font-size: 10pt;
+}
+
 .row {
     margin-right: 0;
     margin-left: 0;

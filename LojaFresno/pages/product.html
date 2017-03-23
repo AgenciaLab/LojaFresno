@@ -20,7 +20,7 @@
                                 <img src="{{ product_image.small }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}
-                        </div>
+                        </div> 
 
                         {% if product.variants.sku.Tamanho|length >= 2 %}
                         {% for key,product_image in product.variants.sku.Tamanho %}
@@ -189,4 +189,22 @@
         </div>        
     </div>
 </section> 
-  
+
+
+<script>
+    (function($){
+
+        $("#vars0").css("display", "none");
+
+        $(".lista-radios-input input").css("visibility", "hidden");
+        $(".lista-radios-input input").css("width", "0px");
+
+        $(".lista-radios-input span").css("fontSize", "12pt");
+
+        $(".lista-radios-input").each(function(index) {
+            $(this).html($(this).html().replace("Tamanho \\", ""))
+        });
+
+        $(".lista-radios-input").first().css("display", "none");
+    })(jQuery);
+</script>
