@@ -171,12 +171,15 @@
     display: none;
 }
 
-.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar font.btn-avancar {
-    min-width: 200px;
-    float: right;
-    border: 1px doted #cdcdcd;
-    background-color: #28A527;
-    color:#fff;
+.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
+    line-height: 0;
+    margin-bottom: 20px;
+    padding: 23px 60px 23px 60px;
+    background: #28A527;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 2rem;
 }
 
 .page-checkout_cart div.bt-continuar-comprando {
