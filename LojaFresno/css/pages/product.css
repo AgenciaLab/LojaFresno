@@ -235,6 +235,17 @@ and open the template in the editor.
 
 @media (max-width: 767px) {
 
+    .price-before {
+        font-size: 10pt;
+        color: gray; 
+        margin-bottom: 5px;
+    }
+
+    .price-promotion {
+        font-size: 18pt;
+        font-family: oswaldbold;
+    }
+
     .page-product #quant {
         height: auto;
         margin: -10px 0 0 40px;
