@@ -2,11 +2,12 @@
     <div class="showcaseRow" >
         <div class="lineSeparate"></div>
 
-        <div class="showcase clearfix product-list" data-tray-tst="vitrine_home">
+        <div class="showcase clearfix " data-tray-tst="vitrine_home">
             <h2 class="titleProducts">
                 <strong>{{ showcaseTitle }}</strong>
             </h2>
-            <ul>
+            <ul style="display: block">
+
             {% for product in products %}
                 {% set ranking = product.ranking %}
                 <li class="col-sm-4" data-tray-tst="vitrine_produto" style="padding: auto 0px auto 0px;">
@@ -14,13 +15,44 @@
                 </li>
 
                 {% if loop.index is divisible by(3) %}
-                    </ul><ul class="row">
+                    </ul><ul class="row" style="display: none">
                 {% endif %}
 
             {% endfor %}
             </ul>
+            
+            <a onclick="anteriorEvento()">
+                <span>Anterior</span>
+            </a>
+
+            <a onclick="proximoEvento()">
+                <span>Proximo</span>
+            </a>
         </div>
 
         <div class="lineSeparateFooter"></div>
+
+        
     </div>
 {% endif %}
+
+<script>
+    function proximoEvento() 
+    {
+        var i = 0;
+
+        $(".showcase ul").each(function(key) {
+            var atual = $($(".showcase ul")[i]);
+            
+            if (atual.css("display") === "block")
+            {
+                atual.css("display", "none");            
+                $(this).next().css("display", "block");
+                    
+            }
+
+            i++;
+
+        });
+    }
+</script>

@@ -6,13 +6,13 @@
 }
 
 .lista-radios-input {
-        border: 1px solid #a7a7a7;
+        
     height: 40px;
     width: 46px;
     text-align: center;
     padding: 10px 0px;
-    z-index: 9999;
-    position: absolute;
+   /* z-index: 9999;
+    position: absolute;*/
 }
 
 .selecionada .lista-radios-input {
@@ -195,7 +195,7 @@ and open the template in the editor.
     }
 
     .product_TabelaMedidas h3 {
-        margin-top: -91px;
+        margin-top: -20px; 
         float: right;
         margin-right: 60px;
         text-decoration: underline;
@@ -546,7 +546,7 @@ input::-webkit-calendar-picker-indicator {
     font: 700 12px 'OxygenRegular',sans-serif;
 }
 
-#label_valor1_var00 {
+/*#label_valor1_var00 {
     font-size: 12pt;
     margin-top: 20px;
     position: absolute;
@@ -568,7 +568,52 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 20px;
     height: 20px;
     padding-bottom: 20px;
+}*/
+
+
+.varCont ul.lista_radios li{display:inline-block; background-color:#ffffff !important; padding:0 4px 7px 0 !important; font-size:12px !important; font-weight: normal !important; color:#0f55c5 !important;}
+.varCont ul.lista_radios li label.lista-radios-input span{color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif;}
+.varCont ul.lista_radios li label.lista-radios-input .on span{color:#fff;}
+.varCont ul.lista_radios li label.lista-radios-input input[type=radio]{
+     height:100%; 
+     left:0; 
+     margin:0; 
+     position:absolute; 
+     top:0; 
+    visibility:hidden;
+    opacity:0;
+     width:100%; 
 }
+
+.varCont ul.lista_radios[data-tray-tst="variation_type_radio"] li label.lista-radios-input input[type=radio] ~ span{
+    border:1px solid #b1b1b1;
+    height:27px;
+    line-height:25px;
+    padding:0;
+    text-align:center;
+    width:45px;
+    display:block;
+}
+
+.varCont ul.lista_radios li label.lista-radios-input input[type=radio] ~ span{
+    border:1px solid #b1b1b1;
+    height:27px;
+    line-height:25px;
+    padding:0;
+    text-align:center;
+    width:120px;
+    display:block;
+}
+
+.varCont ul.lista_radios li label.lista-radios-input input[type=radio]:checked ~ span {
+  border:1px solid #000;
+  background: #000;
+  color:#fff;
+}
+
+.varCont ul.lista_radios li#variacao_texto_0{display:block !important; font:400 12px/12px 'Oxygen',sans-serif !important; color:#000 !important; margin-top:10px;}
+.varCont ul.lista_radios li#variacao_texto_0 input[type=text].text.obriga{font-size:14px !important; color:#000 !important; width:100% !important; margin-top:6px;}
+
 
 
 @media (min-width: 768px) {
