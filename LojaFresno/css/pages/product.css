@@ -546,8 +546,14 @@ input::-webkit-calendar-picker-indicator {
     font: 700 12px 'OxygenRegular',sans-serif;
 }
 
+.product_TabelaMedidas {
+    position: relative;
+    top: 30px;
+    right: -50px;
+}
 
-.varCont ul.lista_radios li{display:inline-block; background-color:#ffffff !important; padding:0 4px 7px 0 !important; font-size:12px !important; font-weight: normal !important; color:#0f55c5 !important;}
+.varCont ul.lista_radios li{display:inline-block; background-color:#ffffff !important; font-weight: normal !important; color:#0f55c5 !important;}
+.page-product .onVar, .page-product .onVar:hover { display: none;}
 .varCont ul.lista_radios li label.lista-radios-input span{color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif;}
 .varCont ul.lista_radios li label.lista-radios-input .on span{color:#fff;}
 .varCont ul.lista_radios li label.lista-radios-input input[type=radio]{

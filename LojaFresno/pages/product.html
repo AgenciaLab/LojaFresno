@@ -16,7 +16,7 @@
                     <div class="thumbs-vertical" id="product-gallery">
                         <div class="carousel-gallery carousel-trigger-{{ product.id }}">
                             {% for key,product_image in product.images %}
-                            <a href="#" data-image="{{ product_image.small }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.small }}" alt="{{ product.name }}" title="{{ product.name }}">
+                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}" alt="{{ product.name }}" title="{{ product.name }}">
                                 <img src="{{ product_image.small }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}
@@ -62,22 +62,33 @@
 
                     {% element 'snippets/productPrice' {"product": product} %}
                                         
-                    <div class="produto-formas-pagamento" align="left">                        
-                        <a href="#formaPagto" rel="nofollow" id="showPaymentMethods" class="color">
-                            <span class="glyphicon glyphicon-plus"></span>
-                            ver todas as formas de pagamento
-                        </a> 
+                    <div class="produto-formas-pagamento" align="left">   
+                        
+                        {% for key, tab in productTabs %}
+                            {% if tab.container_id %}
+
+                                {% if tab.container_id == '#formasPagto' %}
+                                    <a href="#formaPagto" onclick="clickFormasPgmt()" rel="nofollow" id="showPaymentMethods" class="color">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        ver todas as formas de pagamento
+                                    </a> 
+                                   
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}                       
+
                     </div>
 
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
+                        <div class="product_TabelaMedidas">
+                            <a target="_blank" href="http://www.usebandup.hospedagemdesites.ws/sac_bandup/medidas/medidas.html"><h3>Tabela de medidas</h3></a>
+                        </div>
                         {{ productHelper.variants() }}
                     </div>
                     {% endif %}
 
-                    <div class="product_TabelaMedidas">
-                        <a target="_blank" href="http://www.usebandup.hospedagemdesites.ws/sac_bandup/medidas/medidas.html"><h3>Tabela de medidas</h3></a>
-                    </div>
+                   
 
                     {{ productHelper.gifts() }}
                     {{ product.additional_information }}
@@ -176,10 +187,14 @@
                     </h2>
 
                     <div class="row product-list">
+                        {% set cont = 0 %}
                         {% for related in product.related_products %}
-                        <div class="col-sm-4 product">
-                            {% element 'snippets/product' {"product": related} %}
-                        </div>
+                            {% if cont < 3 %}
+                                <div class="col-sm-4 product">
+                                    {% element 'snippets/product' {"product": related} %}
+                                </div>
+                            {% endif %}
+                            {% set cont = cont+1 %}
                         {% endfor %}
                     </div>
                 </div>
@@ -192,6 +207,7 @@
 
 
 <script>
+
     (function($){
 
         $("#vars0").css("display", "none");
@@ -205,6 +221,5 @@
             $(this).html($(this).html().replace("Tamanho \\", ""))
         });
 
-        $(".lista-radios-input").first().css("display", "none");
     })(jQuery);
 </script>

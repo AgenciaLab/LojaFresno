@@ -204,6 +204,21 @@
     display: none;
 }
 
+.page-checkout_cart .caixa-forma-frete #formas_envio_frete {
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    padding-left: 30px;
+}
+
+.wrap-shipping-forms td  {
+    width: 100%;
+}
+
+.wrap-shipping-forms h3 {
+    width: 250px;
+}
+
 .page-checkout_cart .Seguro+.board {
     text-align: left;
 }
