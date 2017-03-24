@@ -225,7 +225,7 @@ and open the template in the editor.
     }
      
     .produto-formas-pagamento {
-        padding-bottom: 20px;
+        padding-bottom: 35px;
     }
     
     .produto-formas-pagamento a:hover{
@@ -235,6 +235,17 @@ and open the template in the editor.
 
 @media (max-width: 767px) {
 
+    .price-before {
+        font-size: 10pt;
+        color: gray; 
+        margin-bottom: 5px;
+    }
+ 
+    .price-promotion {
+        font-size: 18pt;
+        font-family: oswaldbold;
+    }
+ 
     .page-product #quant {
         height: auto;
         margin: -10px 0 0 40px;
@@ -535,6 +546,29 @@ input::-webkit-calendar-picker-indicator {
     font: 700 12px 'OxygenRegular',sans-serif;
 }
 
+#label_valor1_var00 {
+     font-size: 12pt;
+     margin-top: 20px;
+     position: absolute;
+     top: -38px;
+     width: 200px;
+     left: -27px;
+     margin-bottom: 20px;
+     height: 20px;
+     padding-bottom: 20px;
+ }
+ 
+ #label_valor1_var01 {
+     font-size: 12pt;
+     margin-top: 20px;
+     position: absolute;
+     top: -38px;
+     width: 200px;
+     left: -45px;
+     margin-bottom: 20px;
+     height: 20px;
+     padding-bottom: 20px;
+ }
 
 @media (min-width: 768px) {
     #Page{display:block;padding:10px;width:auto}
@@ -589,7 +623,7 @@ input::-webkit-calendar-picker-indicator {
 
     /*#ProdBlock #formasPagto,
     #ProdBlock #coments,*/
-    #ProdBlock .board{background-color:#f9f9f9 !important; border:0 !important; padding: 25px;}
+    #ProdBlock .board{ border:0 !important; padding: 25px;}
 
     /*
     #ProdBlock .board .board_htm,
