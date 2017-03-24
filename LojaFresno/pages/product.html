@@ -61,23 +61,15 @@
                 <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
-                                        
+                    
+                    <!--
                     <div class="produto-formas-pagamento" align="left">   
-                        
-                        {% for key, tab in productTabs %}
-                            {% if tab.container_id %}
+                        <a href="#formasPagto" onclick="openFpgtp()" rel="nofollow"  class="color">
+                            <span class="glyphicon glyphicon-plus"></span>
+                            ver todas as formas de pagamento
+                        </a> 
+                    </div> -->
 
-                                {% if tab.container_id == '#formasPagto' %}
-                                    <a href="#formaPagto" onclick="clickFormasPgmt()" rel="nofollow" id="showPaymentMethods" class="color">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                        ver todas as formas de pagamento
-                                    </a> 
-                                   
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}                       
-
-                    </div>
 
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
@@ -171,7 +163,7 @@
                     <div id="garantia" class="prodBox">
                         <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg" style="display:none;" />
                     </div>
-                    <div data-app="product.payment-methods" id="formasPagto" class="prodBox" style="display:none;"></div>
+                    <div data-app="product.payment-methods" id="formasPagto" class="prodBox" ></div>
                 </div>
             </div>
         </div>
