@@ -1,0 +1,25 @@
+{% if misturados|length > 0 %}
+
+    <div class="product-list {{ showcaseTitle }}">
+        {% if pages.current == 'catalog' or pages.current == 'search' %}
+            <ul class="row">
+        {% else %}
+            <ul>
+        {% endif %}
+            {% set break = 0 %}
+            {% for product in misturados %}
+                {% for pmisturado in product if break < 12 %}
+                    {% if pages.current == 'catalog' or pages.current == 'search' %}
+                        <li class="product col-md-4 col-xs-12" data-id="{{ pmisturado.id }}">
+                    {% else %}
+                        <li class="product col-md-3" data-id="{{ pmisturado.id }}">
+                    {% endif %}
+                        {% element 'snippets/product' {"product": pmisturado} %}
+                    </li>
+                {% set break = break + 1 %}
+                {% endfor%}
+            {% endfor %}
+        </ul> 
+    </div>
+
+{% endif %}

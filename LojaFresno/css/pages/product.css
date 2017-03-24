@@ -589,7 +589,7 @@ input::-webkit-calendar-picker-indicator {
 
     /*#ProdBlock #formasPagto,
     #ProdBlock #coments,*/
-    #ProdBlock .board{background-color:#f9f9f9 !important; border:0 !important; padding: 25px;}
+    #ProdBlock .board{ border:0 !important; padding: 25px;}
 
     /*
     #ProdBlock .board .board_htm,
