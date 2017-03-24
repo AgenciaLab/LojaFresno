@@ -240,12 +240,12 @@ and open the template in the editor.
         color: gray; 
         margin-bottom: 5px;
     }
-
+ 
     .price-promotion {
         font-size: 18pt;
         font-family: oswaldbold;
     }
-
+ 
     .page-product #quant {
         height: auto;
         margin: -10px 0 0 40px;
@@ -546,30 +546,6 @@ input::-webkit-calendar-picker-indicator {
     font: 700 12px 'OxygenRegular',sans-serif;
 }
 
-/*#label_valor1_var00 {
-    font-size: 12pt;
-    margin-top: 20px;
-    position: absolute;
-    top: -38px;
-    width: 200px;
-    left: -27px;
-    margin-bottom: 20px;
-    height: 20px;
-    padding-bottom: 20px;
-}
-
-#label_valor1_var01 {
-    font-size: 12pt;
-    margin-top: 20px;
-    position: absolute;
-    top: -38px;
-    width: 200px;
-    left: -45px;
-    margin-bottom: 20px;
-    height: 20px;
-    padding-bottom: 20px;
-}*/
-
 
 .varCont ul.lista_radios li{display:inline-block; background-color:#ffffff !important; padding:0 4px 7px 0 !important; font-size:12px !important; font-weight: normal !important; color:#0f55c5 !important;}
 .varCont ul.lista_radios li label.lista-radios-input span{color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif;}
@@ -614,7 +590,31 @@ input::-webkit-calendar-picker-indicator {
 .varCont ul.lista_radios li#variacao_texto_0{display:block !important; font:400 12px/12px 'Oxygen',sans-serif !important; color:#000 !important; margin-top:10px;}
 .varCont ul.lista_radios li#variacao_texto_0 input[type=text].text.obriga{font-size:14px !important; color:#000 !important; width:100% !important; margin-top:6px;}
 
-
+/*
+#label_valor1_var00 {
+     font-size: 12pt;
+     margin-top: 20px;
+     position: absolute;
+     top: -38px;
+     width: 200px;
+     left: -27px; 
+     margin-bottom: 20px;
+     height: 20px;
+     padding-bottom: 20px;
+ }
+ 
+ #label_valor1_var01 {
+     font-size: 12pt;
+     margin-top: 20px;
+     position: absolute;
+     top: -38px;
+     width: 200px;
+     left: -45px;
+     margin-bottom: 20px;
+     height: 20px;
+     padding-bottom: 20px;
+ }
+ */
 
 @media (min-width: 768px) {
     #Page{display:block;padding:10px;width:auto}

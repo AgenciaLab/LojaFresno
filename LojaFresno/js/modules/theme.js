@@ -86,18 +86,6 @@
             $('.qntd').addClass('text');
             $('.caixa-cupom').parents('tr').addClass('wrap-cupom');
             $('#tab').parents('tr').addClass('wrap-shipping-forms');
-            
-            /*var tabs = $('.passo-num');
-            var count = tabs.size();
-            for ( i = 0; i < count; i++ ) {
-                console.log(tabs.append());
-                if(i == '1') {
-                    $( "<li class='liAfter'></li>" ).insertAfter( ".carrinho-tabs li" );
-                }
-            }
-            console.log(count); */
-            
-                        //console.log(tabs.length);
 
             // Carrinho adicionando linha sub-total
             var subTotalAux = $('#tabela_carrinho .valores_carrinho'),
@@ -109,6 +97,15 @@
                     sumSubTotal += parseFloat(subTotalAux.eq(i).text().replace("R$","").replace(",", "."));
                 }
             }
+            
+            $('.bt-cep img').attr("src", 'https://images.tcdn.com.br/img/img_prod/203321/1473884780_btn-calcular-frete-carrinho.png');
+            $('#calculoFrete label').text('Calcular frete');
+            $('.wrap-cupom th h3').append('<span class="valores_desconto"> Desconto: </span> ');
+            $('.bt-cupom img').attr("src", 'https://images.tcdn.com.br/img/img_prod/203321/1473884780_btn-calcular-frete-carrinho.png');
+
+            $('.bt-continuar-comprando a').append('<span class="botao-commerce-img">Continuar comprando</span>');
+            // $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar img').attr("src",'https://images.tcdn.com.br/365499/themes/15/img/btn-avancar.png');
+            $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avançar </font>');
 
             sumSubTotal = sumSubTotal.toFixed(2);
             sumSubTotal = sumSubTotal.toString().replace(".", ",");

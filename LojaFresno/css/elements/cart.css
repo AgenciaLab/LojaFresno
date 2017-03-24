@@ -61,12 +61,149 @@
     vertical-align: middle;
 }
 
+.page-checkout_cart .caixa-forma-frete {
+    width: 100% !important;
+}
+
+.page-checkout_cart .caixa-forma-frete>table tr:first-child th:first-child {
+    float: left;
+    width: 70%;
+}
+
+.page-checkout_cart #tab input[type=radio], .page-checkout_cart .caixa-forma-frete div {
+    display: inline;
+    outline: 0;
+}
+
+.page-checkout_cart .caixa-forma-frete>table tr:first-child #calculoFrete label:first-child {
+    margin-left: 15px;
+    font-size: 1em;
+    margin-right: 34px;
+}
+
+.page-checkout_cart .caixa-forma-frete tr {
+    border-bottom: 1px dotted #c9c9c9;
+}
+
+.page-checkout_cart #cep1, .page-checkout_cart #cep2 {
+    text-align: center;
+    margin-bottom: 0;
+    vertical-align: 1px;
+    height: 35px;
+}
+
+.page-checkout_cart #cep1 {
+    width: 100%;
+    height: 35px;
+    max-width: 125px;
+}
+
+.page-checkout_cart .caixa-forma-frete span.bt-cep {
+    position: relative;
+    margin-left: 10px;
+}
+
+.wrap-cupom {
+    width:100%;
+}
+
+.wrap-cupom th.caixa-cupom {
+    text-align: left;
+    max-width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.wrap-cupom th h3 {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+.wrap-cupom th h3.valores_desconto {
+    float: left;
+}
+
+.wrap-cupom th h3 .valores_carrinho {
+    font-family: OxygenRegular;
+    font-size: 20px;
+    color: #000;
+    font-style: oblique;
+    font-stretch: condensed;
+    font-weight: 500;
+    float: right;
+    margin-left: 10px;
+}
+
+.page-checkout_cart .caixa-forma-frete .caixa-cupom label {
+    color: #000;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 14px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.page-checkout_cart .caixa-forma-frete .caixa-cupom input {
+    height: 35px;
+    min-width: 195px;
+}
+
+.pointer {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 .board h2{
     font-family: OxygenRegular;
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 50px;
 }
+
+.page-checkout_cart div.bt-continuar-comprando img{
+    display: none;
+}
+
+.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar img {
+    display: none;
+}
+
+.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
+    line-height: 0;
+    margin-bottom: 20px;
+    padding: 23px 60px 23px 60px;
+    background: #28A527;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+.page-checkout_cart div.bt-continuar-comprando {
+    width: 50%;
+}
+
+.page-checkout_cart div.bt-continuar-comprando {
+    max-width: 250px;
+    padding: 25px 25px 25px 35px;
+    border: 1px solid #D3D3D3;
+    border-radius: 1px;
+    background: #fff;
+    color: #656565;
+}
+
+.page-checkout_cart div.b t-continuar-comprando a.continuar-comprando{ 
+    margin: 12px;
+    font-size: 15px;
+}
+
+.botao-continuar-comprando .botao-commerce-img {
+    display: none;
+}
+
 .page-checkout_cart .Seguro+.board {
     text-align: left;
 }
@@ -99,22 +236,6 @@
 
 .page-checkout_cart #tabela_carrinho td:first-child a {
     padding: 0px;
-}
-
-.page-checkout_cart div.bt-continuar-comprando {
-    width: 50%;
-}
-.page-checkout_cart .caixa-botoes .botao-commerce.botao-continuar-comprando {
-    min-height: 57px;
-    border: 1px solid #D3D3D3;
-    border-radius: 1px;
-    background: #fff;
-    color: #656565;
-}
-
-.botao-continuar-comprando .botao-commerce-img {
-    margin:12px;
-    font-size: 15px;
 }
 
 .page-checkout_cart .caixa-total tr {
@@ -347,6 +468,8 @@
 
     #calculoFrete {
         float: left;
+        width: 100%;
+        text-align: left;
     }
 
     .wrap-cupom {
@@ -401,6 +524,16 @@ table th .color {
 
 .page-checkout_cart #tabela_carrinho {
     margin-top: -15px;
+}
+
+.page-checkout_cart #tabela_carrinho tbody td h4.color {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.page-checkout_cart #tabela_carrinho tbody td h5 {
+    font: 500 13px 'Oxygen', sans-serif;
+    margin-left: 15px;
 }
 
 .page-checkout_cart .caixa-botoes .botao-commerce.botao-prosseguir-compra a{

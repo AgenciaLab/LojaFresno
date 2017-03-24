@@ -1,9 +1,8 @@
 <div itemscope itemtype="http://schema.org/Product" class="product">
     <a href="{{ product.link }}" data-tray-tst="vitrine_produto_link_imagem">
         <div class="product-image" onmouseover="sobreImagem(this)" onmouseout="deixaImagem(this)">
-           {{ dump(product.images[1]) }}
             {% if product.images %}
-                    <img data-original="{{ product.images[0].medium }}" class="img-responsive lazy firstImage" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}" >
+                <img data-original="{{ product.images[0].medium }}" class="img-responsive lazy firstImage" src="{{ asset('img/loading.svg') }}" alt="{{ product.name }}" >
                     {% if product.images|length > 1 %}
                         <img src="{{ product.images[1].medium }}" class="img-responsive lazy hoverImage" alt="{{ product.name }}" style="display:none">
                     {% endif %}
@@ -62,4 +61,4 @@
             $(data).children().last().css("display", "none");
         }        
     };
-</script>
+</script> 

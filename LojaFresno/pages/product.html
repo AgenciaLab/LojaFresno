@@ -196,15 +196,15 @@
 
         $("#vars0").css("display", "none");
 
-        $(".color .lista-radios-input input").css("visibility", "hidden");
-        $(".color .lista-radios-input input").css("width", "0px");
+        $(".lista-radios-input input").css("visibility", "hidden");
+        $(".lista-radios-input input").css("width", "0px");
 
-        $(".color .lista-radios-input span").css("fontSize", "12pt");
+        $(".lista-radios-input span").css("fontSize", "12pt");
 
-        $(".color .lista-radios-input").each(function(index) {
+        $(".lista-radios-input").each(function(index) {
             $(this).html($(this).html().replace("Tamanho \\", ""))
         });
 
+        $(".lista-radios-input").first().css("display", "none");
     })(jQuery);
 </script>
- 
