@@ -104,7 +104,6 @@
             $('.bt-cupom img').attr("src", 'https://images.tcdn.com.br/img/img_prod/203321/1473884780_btn-calcular-frete-carrinho.png');
 
             $('.bt-continuar-comprando a').append('<span class="botao-commerce-img">Continuar comprando</span>');
-            // $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar img').attr("src",'https://images.tcdn.com.br/365499/themes/15/img/btn-avancar.png');
             $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avançar </font>');
 
             sumSubTotal = sumSubTotal.toFixed(2);
