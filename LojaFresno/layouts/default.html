@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <link rel="stylesheet" href="{{ themePath }}css/theme.min.css?{{ utils.assets_version }}">
 
         <!-- tray meta tags -->
         {{ tray.meta }}
@@ -50,6 +51,8 @@
 
         <!-- tray scripts -->
         {{ tray.scripts }}
+
+        <script type="text/javascript" src="{{ asset('js/jquery.jcarousel.min.js') }}"></script>
 
         {% if pages.current == 'product' %}
         <script type="text/javascript" src="{{ asset('js/thumb-maior.js') }}"></script>
@@ -149,6 +152,7 @@
 
         <!-- theme scripts-->
         <script type="text/javascript" src="{{ asset('js/modules/theme.js') }}"></script>
+        <script src="{{ themePath }}js/theme.min.js?{{ utils.assets_version }}" async></script>
 
         {% if pages.current == 'home' %}
         <script type="text/javascript">
