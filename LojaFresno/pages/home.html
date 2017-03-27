@@ -19,7 +19,7 @@
 {% if settings.showcase == "top_seller" %}
 <div id="prognoos_popv1"></div>
 {% set products = Products({
-'filter': 'available',
+'filter': 'new',
 'limit': limitProducts,
 'order': {'quantity_sold': 'desc'}
 }) %}
