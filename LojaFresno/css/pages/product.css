@@ -824,3 +824,38 @@ input::-webkit-calendar-picker-indicator {
     }
 
 }
+
+
+.product-list .jcarousel-clip{margin:0 auto;overflow:hidden;width:925px}
+.product-list .jcarousel-item a,.product-list .product a{display:block;text-decoration:none}
+.product-list .jcarousel-next{cursor:pointer;position:absolute;right:0;top:150px}
+.product-list .jcarousel-next:before{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAiCAMAAABhn6n1AAAAmVBMVEW+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr4dDk3qAAAAMnRSTlMAAQQICQ8QGBkaGyUxMkBBUFJhYmNlZnd4iImKmZqbqqyvsL/Awc7P2tvl7e7w9vf7/mcKx0wAAACtSURBVHjaddLZEoIwDEBRQBQVF9xwxQUVFUHA//84k6fccYa+9UzSpkmd9Ctr7tgalgLvABJryAng3lUiSFgJ5F3IRkMOAO8h0Ewg41rk2YHsNWkL8F8C9QgybUQyD3LUpDWglwt8QshMQ64u5KyyAvQLgXIAWWrIBbBQSG0fWAoOjW0f2bVWWIXCEpSOx7U/f2cNQgt9a3JmTbYxJO2Dcm8cJYfN71AEBv8f5gcNjSGyR2VnGwAAAABJRU5ErkJggg==)}
+.product-list .jcarousel-prev{cursor:pointer;left:0;position:absolute;top:150px}
+.product-list .jcarousel-prev:before{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAiCAMAAABhn6n1AAAAnFBMVEW+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr5gBF6RAAAAM3RSTlMAAQQICQ8QGBkaGyQlMTJAQVBRYWJlZmd3eIiJipmaqqusr7C/wc3Oz9rb5e7v8Pb3+/5pun/MAAAAsklEQVR42mXS6Q6CMBAE4FJRRFHEA2/EExVEwPd/N3cT0mnY/vsm0/RUGIsfjSvsFeRyhODEhTUcse+OcT8nVwEKRy5s4bAhP7Vx70WupyjseMIBntTkt2usH+RmhsKGJyTw+EvOB8bOjQtzFFbsM+x/yMUQwYULS1gGfslTPCuJuZK2wLKRlQRVuzGxdRwu48OFSh6/c0F7WLm4QvuSM20lCZ6h81DiKTFSTmIlvoP4MH/cIiJqNakPGQAAAABJRU5ErkJggg==)}
+.showcase-title:after,.social:after{content:''}
+.product-list .product-image{height:330px;margin-bottom:10px;position:relative}
+.product-list .product-image div{background-color:#fff;height:330px;left:0;opacity:1;overflow:hidden;position:absolute;top:0;width:100%;-webkit-transition:150ms all linear 0s;-moz-transition:150ms all linear 0s;-o-transition:150ms all linear 0s;transition:150ms all linear 0s}
+.search .search-button,.search .search-key{border-bottom:1px solid #b8b8b8;border-top:1px solid #b8b8b8;border-radius:0;height:34px}
+.product-list .product-image div:nth-child(2){opacity:0}
+.product-list .product-image div:nth-child(2):hover{opacity:1}
+.product-list .product-image img{left:50%;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.product-list .product-name{margin-bottom:5px;min-height:32px}
+.product-list .product-name h3{color:#555;font:400 13px/15px Lato,sans-serif}
+.product-list .price-de{color:#75A2D2;text-decoration:line-through;font:700 13px/15px Lato,sans-serif;margin-bottom:5px}
+.product-list .product-price{color:#4a6f99;font:900 13px/15px Lato,sans-serif;margin-bottom:5px}
+.product-list .product-payment{color:#747474;font:13px/15px Lato,sans-serif}
+.product-list .product-payment br{display:none}
+.page-home .product-list .jcarousel-item,.page-home .product-list .product{margin-right:15px;padding:0;width:220px}
+.page-home .product-list .jcarousel-item:hover a,.page-home .product-list .product:hover a{text-decoration:none}
+.search .search-key{border-left:1px solid #b8b8b8}
+.search ::-webkit-input-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
+.search :-moz-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
+.search ::-moz-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
+.search :-ms-input-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
+.search .search-button{background:#057ca5;border-right:1px solid #b8b8b8;color:#fff;font-size:18px;line-height:32px;margin-top:-1px;padding:0;text-align:center;width:32px}
+.showcase-title{color:#423e3f;font:900 18px/18px Lato,sans-serif;letter-spacing:1.75px;margin:35px 0;text-align:center}
+.showcase-title:after{background:#423e3f;display:block;height:5px;margin:7px auto 0;width:30px}
+.showcase-title.yellow:after{background:#fff02a}
+.showcase-title.blue:after{background:#28c1cf}
+.showcase-title.red:after{background:#cf1524}
+.showcase-banners{margin:35px 0}
