@@ -31,16 +31,26 @@
     }
     .page-checkout_cart #tabela_carrinho .qntd {
         float: left;
-        margin-left: 120px;
+        margin-left: 100px;
     }
+
+    .page-checkout_cart #tabela_carrinho .refresh {
+        /* margin: 5px auto 0; */
+        margin-right: 100px;
+        float: right;
+    }
+
     .page-checkout_cart #tabela_carrinho tr {
         margin: 0;
         padding: 0;
         border-bottom: 1px solid #e2e2e2;
     }
+    table tbody tr.sub-total {
+        display: none;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .carrinho-tabs ol {
         border-bottom: 1px dotted #9a9a9a;
         border-top: 1px dotted #9a9a9a;
@@ -108,7 +118,7 @@
         width: 100%;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .page-checkout_cart .caixa-forma-frete>table tr:first-child th:first-child {
         float: left;
         width: 70%;
@@ -129,7 +139,7 @@
         font-size: 1.1em;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .page-checkout_cart .caixa-forma-frete>table tr:first-child #calculoFrete label:first-child {
         margin-left: 15px;
         font-size: 1em;
@@ -170,7 +180,7 @@
         margin-top: 10px;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
    .wrap-cupom th.caixa-cupom {
         text-align: left;
         max-width: 50%;
@@ -210,7 +220,7 @@
         text-align: center;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .page-checkout_cart .caixa-forma-frete .caixa-cupom label {
         color: #000;
         font-size: 1em;
@@ -271,7 +281,7 @@
         color: #656565;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .page-checkout_cart div.bt-continuar-comprando {
         max-width: 250px;
         padding: 25px 25px 25px 35px;
@@ -306,7 +316,7 @@
         width: 100%;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .wrap-shipping-forms h3 {
         width: 250px;
     }
@@ -511,7 +521,7 @@
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {    
+@media (max-width: 767px) {    
     .color {
         margin-top: 5px
     }
@@ -527,6 +537,7 @@
     .sub-total-value {
         float: right;
         margin-top: -15px;
+        display: none;
     }
 
     .valores_carrinho {
@@ -569,7 +580,7 @@
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .page-checkout_cart #tabela_carrinho tr:last-child td {
         border-bottom: none;
         padding: 10px 45px;

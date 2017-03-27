@@ -104,11 +104,11 @@
             $('.bt-cupom img').attr("src", 'https://images.tcdn.com.br/img/img_prod/203321/1473884780_btn-calcular-frete-carrinho.png');
 
             $('.bt-continuar-comprando a').append('<span class="botao-commerce-img">Continuar comprando</span>');
-            $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avançar </font>');
+            $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avanï¿½ar </font>');
 
             sumSubTotal = sumSubTotal.toFixed(2);
             sumSubTotal = sumSubTotal.toString().replace(".", ",");
-            $('#tabela_carrinho').find('tbody').append('<tr class="sub-total"><td colspan="4">Sub-total:</td><td colspan="2" class="sub-total-value">R$ '+sumSubTotal+'</td></tr>');
+            //$('#tabela_carrinho').find('tbody').append('<tr class="sub-total"><td colspan="4">Sub-total:</td><td colspan="2" class="sub-total-value">R$ '+sumSubTotal+'</td></tr>');
 
             break;
 
