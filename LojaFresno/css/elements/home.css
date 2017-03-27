@@ -327,6 +327,7 @@ body {
     
     .col-xs-4, .col-sm-4, .col-md-7, .col-md-5, .col-md-4, .col-sm-5, .col-sm-12{
         padding: 0;
+        
     }
     .topCategory {
         min-width: 100%; 
