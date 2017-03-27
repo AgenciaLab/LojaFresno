@@ -1,4 +1,4 @@
-<section> 
+<section>
     <div class="container">
         <div class="product_Breadcrumb row">
             {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
@@ -9,30 +9,29 @@
                 <div class="product-gallery">
                     {{ productHelper.gallery() }}
                 </div>
-                {% else %}
-                {% if product.images %}
+                {% else %} {% if product.images %}
                 <div class="product-gallery">
 
                     <div class="thumbs-vertical" id="product-gallery">
                         <div class="carousel-gallery carousel-trigger-{{ product.id }}">
                             {% for key,product_image in product.images %}
-                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}" alt="{{ product.name }}" title="{{ product.name }}">
+                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}"
+                                alt="{{ product.name }}" title="{{ product.name }}">
                                 <img src="{{ product_image.small }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}
-                        </div> 
+                        </div>
 
-                        {% if product.variants.sku.Tamanho|length >= 2 %}
-                        {% for key,product_image in product.variants.sku.Tamanho %}
+                        {% if product.variants.sku.Tamanho|length >= 2 %} {% for key,product_image in product.variants.sku.Tamanho %}
                         <div class="carousel-gallery carousel-trigger-{{ product_image.id }}" style="display: none;">
                             {% for key2,product_img in product_image.images %}
-                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}" alt="{{ product.name }}" title="{{ product.name }}">
+                            <a href="#" data-image="{{ product_image.large }}" class="itrigger-{{ product.id }}" data-zoom-image="{{ product_image.large }}"
+                                alt="{{ product.name }}" title="{{ product.name }}">
                                 <img src="{{ product_image.large }}" alt="{{ product.name }}">
                             </a>
                             {% endfor %}
                         </div>
-                        {% endfor %} 
-                        {% endif %}
+                        {% endfor %} {% endif %}
                     </div>
 
                     {% if product.video %}
@@ -46,14 +45,13 @@
                     </div>
 
                 </div>
-                {% endif %}
-                {% endif %}
+                {% endif %} {% endif %}
                 <!-- /Galeria -->
 
 
             </div>
             <div class="col-md-5">
-                <div class="product_Title"> 
+                <div class="product_Title">
                     <h1>{{ product.name }}</h1>
                     <h3>COD {{ product.id }}</h3>
                 </div>
@@ -61,55 +59,38 @@
                 <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
 
                     {% element 'snippets/productPrice' {"product": product} %}
-                                        
-                    <div class="produto-formas-pagamento" align="left">   
-                        
-                        {% for key, tab in productTabs %}
-                            {% if tab.container_id %}
 
-                                {% if tab.container_id == '#formasPagto' %}
-                                    <a href="#formaPagto" rel="nofollow" id="showPaymentMethods" class="color">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                        ver todas as formas de pagamento
-                                    </a> 
-                                   
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}                       
+                    <div class="produto-formas-pagamento" align="left">
+
+                        {% for key, tab in productTabs %} {% if tab.container_id %} {% if tab.container_id == '#formasPagto' %}
+                        <a class="color" onclick="openFormaPagto()">
+                            <span class="glyphicon glyphicon-plus"></span> ver todas as formas de pagamento
+                        </a>
+
+                        {% endif %} {% endif %} {% endfor %}
 
                     </div>
+
 
                     {% if productHelper.variants != '' %}
                     <div style="position:relative;">
                         <div class="product_TabelaMedidas">
-                            <a target="_blank" href="http://www.usebandup.hospedagemdesites.ws/sac_bandup/medidas/medidas.html"><h3>Tabela de medidas</h3></a>
+                            <a target="_blank" href="http://www.usebandup.hospedagemdesites.ws/sac_bandup/medidas/medidas.html">
+                                <h3>Tabela de medidas</h3>
+                            </a>
                         </div>
                         {{ productHelper.variants() }}
                     </div>
-                    {% endif %}
-
-                   
-
-                    {{ productHelper.gifts() }}
-                    {{ product.additional_information }}
-
-                    {% element 'snippets/buy-form' {"product": product} %}
-
-
-                    {% if not product.upon_request and product.available %}
-                    {% endif %}
-                    {{ productHelper.shipping() }}
-
+                    {% endif %} {{ productHelper.gifts() }} {{ product.additional_information }} {% element 'snippets/buy-form' {"product": product}
+                    %} {% if not product.upon_request and product.available %} {% endif %} {{ productHelper.shipping() }}
                     {% if product.additional_message %}
                     <div class="additional-message">
                         {{ product.additional_message }}
                     </div>
-                    {% endif %}
-                    
-                    {% if productHelper.social != '' %}
-                        <div class="redesSociaisProd">
-                            {{ productHelper.social() }}
-                        </div>
+                    {% endif %} {% if productHelper.social != '' %}
+                    <div class="redesSociaisProd">
+                        {{ productHelper.social() }}
+                    </div>
                     {% endif %}
                 </form>
             </div>
@@ -124,18 +105,16 @@
 
                     <div id="ProdAbas" class="abasProduto">
                         <ul>
-                            {% for key, tab in productTabs %}
-                                {% if tab.container_id %}
-                                    <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
-                                        <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">
+                            {% for key, tab in productTabs %} {% if tab.container_id %}
+                            <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
+                                <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">
                                             {{ tab.description }}
                                         </a>
-                                    </li>
-                                {% endif %}
-                            {% endfor %}
+                            </li>
+                            {% endif %} {% endfor %}
                         </ul>
                     </div>
- 
+
                     <div id="descricao" class="prodBox">
                         <div class="board">
                             <div class="board_htm description">
@@ -163,14 +142,13 @@
                     </div>
 
 
-                    {{ productTabs.custom.content }}
-                    {{ productTabs.downloads.content }}
+                    {{ productTabs.custom.content }} {{ productTabs.downloads.content }}
 
 
                     <div id="garantia" class="prodBox">
                         <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg" style="display:none;" />
                     </div>
-                    <div data-app="product.payment-methods" id="formasPagto" class="prodBox" style="display:none;"></div>
+                    <div data-app="product.payment-methods" id="formasPagto" class="prodBox"></div>
                 </div>
             </div>
         </div>
@@ -186,28 +164,23 @@
                     </h2>
 
                     <div class="row product-list">
-                        {% set cont = 0 %}
-                        {% for related in product.related_products %}
-                            {% if cont < 3 %}
-                                <div class="col-sm-4 product">
-                                    {% element 'snippets/product' {"product": related} %}
-                                </div>
-                            {% endif %}
-                            {% set cont = cont+1 %}
-                        {% endfor %}
+                        {% set cont = 0 %} {% for related in product.related_products %} {% if cont
+                        < 3 %} <div class="col-sm-4 product">
+                            {% element 'snippets/product' {"product": related} %}
                     </div>
+                    {% endif %} {% set cont = cont+1 %} {% endfor %}
                 </div>
-                {% endif %}
             </div>
+            {% endif %}
+        </div>
 
-        </div>        
     </div>
-</section> 
+    </div>
+</section>
 
 
 <script>
-
-    (function($){
+    (function ($) {
 
         $("#vars0").css("display", "none");
 
@@ -216,9 +189,26 @@
 
         $(".lista-radios-input span").css("fontSize", "12pt");
 
-        $(".lista-radios-input").each(function(index) {
+        $(".lista-radios-input").each(function (index) {
             $(this).html($(this).html().replace("Tamanho \\", ""))
         });
 
     })(jQuery);
+
+    function openFormaPagto() {
+        jQuery("#Aba2 a").click();
+        window.scroll(0, findPos(document.getElementById("Aba2")));
+    }
+
+    //Finds y value of given object
+    function findPos(obj) {
+        var curtop = 0;
+        if (obj.offsetParent) {
+            do {
+                curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+            return [curtop];
+        }
+    }
+
 </script>
