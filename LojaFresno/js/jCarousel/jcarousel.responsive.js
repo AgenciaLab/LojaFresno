@@ -19,6 +19,8 @@
                 wrap: 'circular'
             });
 
+       if (window.innerWidth > 768)
+       {
         $('.jcarousel-control-prev')
             .jcarouselControl({
                 target: '-=3'
@@ -28,6 +30,19 @@
             .jcarouselControl({
                 target: '+=3'
             });
+       }
+       else{
+           $('.jcarousel-control-prev')
+            .jcarouselControl({ 
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .jcarouselControl({
+                target: '+=1'
+            });
+       }
+        
 
         $('.jcarousel-pagination')
             .on('jcarouselpagination:active', 'a', function() {
