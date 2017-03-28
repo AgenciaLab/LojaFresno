@@ -11,9 +11,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
   font-weight: normal;
   text-rendering: optimizelegibility;
+}
+
+@media (min-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
 }
 
 h1 {

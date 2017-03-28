@@ -163,7 +163,7 @@
                         <strong>QUEM COMPROU, TAMBÉM GOSTOU DE...</strong>
                     </h2>
 
-                    <div class="row product-list">
+                    <div class="row product">
                         {% set cont = 0 %} {% for related in product.related_products %} {% if cont
                         < 3 %} <div class="col-sm-4 product">
                             {% element 'snippets/product' {"product": related} %}

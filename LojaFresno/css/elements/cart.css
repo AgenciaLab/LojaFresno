@@ -107,6 +107,10 @@
     vertical-align: middle;
 }
 
+.page-content .carrinho-tabs h6 {
+    text-align: center;
+}
+
 .page-checkout_cart .caixa-forma-frete {
     width: 100% !important;
 }
@@ -256,15 +260,30 @@
     display: none;
 }
 
-.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
-    line-height: 0;
-    margin-bottom: 20px;
-    padding: 23px 60px 23px 60px;
-    background: #28A527;
-    color: #fff;
-    font-size: 2em;
-    font-weight: 800;
-    line-height: 2rem;
+@media (max-width: 767px) {
+    .page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
+        line-height: 0;
+        margin-bottom: 20px;
+        padding: 22px 0px 39px 0px;
+        background: #28A527;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
+        line-height: 0;
+        margin-bottom: 20px;
+        padding: 22px 50px 39px 50px;
+        background: #28A527;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 2rem;
+    }
 }
 
 .page-checkout_cart div.bt-continuar-comprando {
@@ -586,6 +605,11 @@
         padding: 10px 45px;
         color: #000;
         text-align: right
+    }
+
+    .page-checkout_cart #tabela_carrinho tr:last-child td img {
+        /*margin-left: -45px;*/
+        min-width: 93px;
     }
 
     .page-checkout_cart .caixa-total table {

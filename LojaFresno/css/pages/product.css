@@ -32,6 +32,13 @@
     margin-right: 0;
     margin-left: 0;
 }
+
+.product_PriceArea h2 {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -839,7 +846,7 @@ input::-webkit-calendar-picker-indicator {
 .showcase-title:after,.social:after{content:''}
 .product-list .product-image{height:330px;margin-bottom:10px;position:relative}
 .product-list .product-image div{background-color:#fff;height:330px;left:0;opacity:1;overflow:hidden;position:absolute;top:0;width:100%;-webkit-transition:150ms all linear 0s;-moz-transition:150ms all linear 0s;-o-transition:150ms all linear 0s;transition:150ms all linear 0s}
-.search .search-button,.search .search-key{border-bottom:1px solid #b8b8b8;border-top:1px solid #b8b8b8;border-radius:0;height:34px}
+/*.search .search-button,.search .search-key{border-bottom:1px solid #b8b8b8;border-top:1px solid #b8b8b8;border-radius:0;height:34px}*/
 .product-list .product-image div:nth-child(2){opacity:0}
 .product-list .product-image div:nth-child(2):hover{opacity:1}
 .product-list .product-image img{left:50%;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
@@ -856,7 +863,7 @@ input::-webkit-calendar-picker-indicator {
 .search :-moz-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
 .search ::-moz-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
 .search :-ms-input-placeholder{color:#433f3f;font:400 11px/1.8 Lato,sans-serif}
-.search .search-button{background:#057ca5;border-right:1px solid #b8b8b8;color:#fff;font-size:18px;line-height:32px;margin-top:-1px;padding:0;text-align:center;width:32px}
+/*.search .search-button{background:#057ca5;border-right:1px solid #b8b8b8;color:#fff;font-size:18px;line-height:32px;margin-top:-1px;padding:0;text-align:center;width:32px}*/
 .showcase-title{color:#423e3f;font:900 18px/18px Lato,sans-serif;letter-spacing:1.75px;margin:35px 0;text-align:center}
 .showcase-title:after{background:#423e3f;display:block;height:5px;margin:7px auto 0;width:30px}
 .showcase-title.yellow:after{background:#fff02a}

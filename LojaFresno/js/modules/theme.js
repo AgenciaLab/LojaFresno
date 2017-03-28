@@ -1,7 +1,7 @@
 (function($){
 
     // cart products
-    $.getJSON( "/mvc/store/cart/count?loja=249009", function( data ) {
+    /*$.getJSON( "/mvc/store/cart/count?loja=249009", function( data ) {
         var cartItem,
             cartItemHtml = '',
             totalItemsCart = data.cart.Products.length;
@@ -11,7 +11,7 @@
         }
 
         $('.cart .list ul').prepend(cartItemHtml);
-    });
+    }); */
 
     // plugins init
     if( $.fn.jcarousel ){
@@ -104,7 +104,7 @@
             $('.bt-cupom img').attr("src", 'https://images.tcdn.com.br/img/img_prod/203321/1473884780_btn-calcular-frete-carrinho.png');
 
             $('.bt-continuar-comprando a').append('<span class="botao-commerce-img">Continuar comprando</span>');
-            $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avan�ar </font>');
+            $('.page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar').append('<font class="btn-avancar"> Avançar </font>');
 
             sumSubTotal = sumSubTotal.toFixed(2);
             sumSubTotal = sumSubTotal.toString().replace(".", ",");
