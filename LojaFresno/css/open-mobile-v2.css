@@ -1476,6 +1476,7 @@
     top: 0 !important;
     right: 0;
     width: 48% !important;
+    visibility: hidden;
   }
 
   .abasProduto .aberta {

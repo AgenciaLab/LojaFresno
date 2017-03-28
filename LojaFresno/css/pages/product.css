@@ -70,7 +70,7 @@ and open the template in the editor.
     margin-bottom: 5px;
 }
     
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     
     .redesSociaisProd {
         margin-top: 100px;
@@ -243,6 +243,7 @@ and open the template in the editor.
  
     .price-promotion {
         font-size: 18pt;
+        min-height: 25px;
         font-family: oswaldbold;
     }
  
@@ -313,7 +314,7 @@ and open the template in the editor.
     }
 
     .product_PriceArea {
-        max-width: 150px;
+        
         margin: auto;
     }
 
@@ -546,15 +547,18 @@ input::-webkit-calendar-picker-indicator {
     font: 700 12px 'OxygenRegular',sans-serif;
 }
 
-.product_TabelaMedidas {
-    position: relative;
-    top: 10px;
-    right: -50px;
+@media (min-width: 767px) {
+    .product_TabelaMedidas {
+        position: relative;
+        top: 10px;
+        right: -50px;
+    }
 }
 
 .varCont ul.lista_radios li{display:inline-block; background-color:#ffffff !important; font-weight: normal !important; color:#0f55c5 !important;}
 .page-product .onVar, .page-product .onVar:hover { display: none;}
-.varCont ul.lista_radios li label.lista-radios-input span{color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif;}
+#label_valor1_var00 {color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif !important; }
+.varCont ul.lista_radios li label.lista-radios-input span{color:#2d2d2d; font:400 12px/12px 'Oxygen',sans-serif; }
 .varCont ul.lista_radios li label.lista-radios-input .on span{color:#fff;}
 .varCont ul.lista_radios li label.lista-radios-input input[type=radio]{
      height:100%; 
@@ -622,7 +626,7 @@ input::-webkit-calendar-picker-indicator {
  }
  */
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     #Page{display:block;padding:10px;width:auto}
     #Page br{font-size:0;line-height:0}
     #Page fieldset{display:block;margin:5px 0 15px 0;text-align:left}
@@ -668,7 +672,7 @@ input::-webkit-calendar-picker-indicator {
     }
 
     /* -----------------------------------------------
-        Abas - Descrição / Pgto / Comentário
+        Abas - Descri��o / Pgto / Coment�rio
     ----------------------------------------------- */
     #ProdBlock{padding-bottom:0 !important; border-bottom:0 !important; margin:15px 0 !important;}
     #ProdBlock > div{border:0 !important;}
