@@ -194,6 +194,10 @@
             $(this).html($(this).html().replace("Tamanho \\", ""))
         });
 
+        $(".lista-radios-input").click(function () {
+            $("#span_erro_carrinho").css("display", "none");
+        })
+
     })(jQuery);
 
     function openFormaPagto() {

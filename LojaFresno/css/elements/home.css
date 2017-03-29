@@ -216,6 +216,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .suggestion {
+        left: 0;
+        margin: 0 0px;
+        min-width: 100%;
+        right: 0;
+        top: 60px;
+        max-width: 100%;
+    }
+
     .product .product-image {
         border-bottom: none;
         height: 100%;
@@ -290,7 +299,7 @@ body {
 .selectDesigner {
     padding: 7px;
     -webkit-appearance: normal;
-    -moz-appearance: none;
+    -moz-appearance: menulist-text;
 }
 .page-catalog .catalog-footer {
     border: none;

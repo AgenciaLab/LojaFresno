@@ -57,7 +57,13 @@
 .search .search-key {
     font-size: 10pt;
     height: 35px;
-    padding: 15px;
+    padding: 0px 15px;
+}
+
+.search .search-key::-moz-placeholder {
+    font-size: 10pt;
+    height: 35px;
+    padding: 5px 15px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -156,6 +162,14 @@ a, a:hover {
     text-decoration: none;
 }
 
+select {
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+    appearance: menulist;
+}
+
+select::-ms-expand { display: block!important; color: #333; background: none;}
+
 @media screen and (max-width:767px){
     .main-menu,.main-menu li.item-level1.link-novidades{display:none}
     .main-menu .container{width:auto}
@@ -167,7 +181,6 @@ a, a:hover {
     .main-menu h3 a {
         font-size: 10pt;
         color: #232323;
-        padding: 0px 12px;
         text-transform: uppercase;
         font-family: OxygenBold;
         letter-spacing: 1px;
