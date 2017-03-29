@@ -100,6 +100,17 @@ and open the template in the editor.
 }
     
 @media (min-width: 767px) {
+
+    .titleProducts {
+        color: #333;
+        font-family: BebasNeueBook;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 2px solid #333;
+        line-height: 65px;
+        font-size: 36pt;
+        font-weight: 100;
+    }
     
     .redesSociaisProd {
         margin-top: 100px;
@@ -269,6 +280,17 @@ and open the template in the editor.
 
 @media (max-width: 767px) {
 
+    .titleProducts {
+        color: #333;
+        font-family: BebasNeueBook;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 2px solid #333;
+        line-height: 65px;
+        font-size: 36pt;
+        font-weight: 100;
+    }
+    
     .product-payment {        
     }
 
@@ -869,6 +891,8 @@ input::-webkit-calendar-picker-indicator {
         padding: 10px;
     }
 }
+
+
 
 @media screen and (max-width: 992px) {
 

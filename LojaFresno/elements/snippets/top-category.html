@@ -2,85 +2,114 @@
 {% set firstPai = Categories( { "id": pai.parent } )  %}
 
 
-<div class="row nospacing topCategory">
+{% if (pai.id != 13 and pai.parent != 13 )  %}
         
     <!-- MODA | MASCULINA | FEMININA -->
     {% if (firstPai.parent_id != '' and firstPai.parent_id == '217') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra6.link }}" target="{{ banners.extra6.target }}">
             <img src="{{ banners.extra6.src }}" class="imgBannerEx3" alt="{{ banners.extra6.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent != '' and pai.parent == '217') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra6.link }}" target="{{ banners.extra6.target }}">
             <img src="{{ banners.extra6.src }}" class="imgBannerEx3" alt="{{ banners.extra6.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent == '' and category.id == '217') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra6.link }}" target="{{ banners.extra6.target }}">
             <img src="{{ banners.extra6.src }}" class="imgBannerEx3" alt="{{ banners.extra6.alt }}" >
         </a>
+    </div>
     {% endif %}
     
     
     <!-- CASA E DECORACAO | ALMOFADA | CAMA MESA -->
     {% if (firstPai.parent_id != '' and firstPai.parent_id == '213') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra7.link }}" target="{{ banners.extra7.target }}">
             <img src="{{ banners.extra7.src }}" class="imgBannerEx3" alt="{{ banners.extra7.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent != '' and pai.parent == '213') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra7.link }}" target="{{ banners.extra7.target }}">
             <img src="{{ banners.extra7.src }}" class="imgBannerEx3" alt="{{ banners.extra7.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent == '' and category.id == '213') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra7.link }}" target="{{ banners.extra7.target }}">
             <img src="{{ banners.extra7.src }}" class="imgBannerEx3" alt="{{ banners.extra7.alt }}" >
         </a>
+    </div>
     {% endif %}
     
     
     <!-- ACESSORIOS | CHAVEIRO | CAPAS -->
     {% if (firstPai.parent_id != '' and firstPai.parent_id == '211') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra9.link }}" target="{{ banners.extra9.target }}">
             <img src="{{ banners.extra9.src }}" class="imgBannerEx3" alt="{{ banners.extra9.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent != '' and pai.parent == '211') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra9.link }}" target="{{ banners.extra9.target }}">
             <img src="{{ banners.extra9.src }}" class="imgBannerEx3" alt="{{ banners.extra9.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent == '' and category.id == '211') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra9.link }}" target="{{ banners.extra9.target }}">
             <img src="{{ banners.extra9.src }}" class="imgBannerEx3" alt="{{ banners.extra9.alt }}" >
         </a>
+    </div>
     {% endif %}
     
     
     <!-- CD E DVD -->
     {% if (firstPai.parent_id != '' and firstPai.parent_id == '18') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra8.link }}" target="{{ banners.extra8.target }}">
             <img src="{{ banners.extra8.src }}" class="imgBannerEx3" alt="{{ banners.extra8.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent != '' and pai.parent == '18') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra8.link }}" target="{{ banners.extra8.target }}">
             <img src="{{ banners.extra8.src }}" class="imgBannerEx3" alt="{{ banners.extra8.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent == '' and category.id == '18') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra8.link }}" target="{{ banners.extra8.target }}">
             <img src="{{ banners.extra8.src }}" class="imgBannerEx3" alt="{{ banners.extra8.alt }}" >
         </a>
+    </div>
     {% endif %}
     
     
     <!-- NOVIDADE -->
     {% if (firstPai.parent_id != '' and firstPai.parent_id == '13') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra10.link }}" target="{{ banners.extra10.target }}">
             <img src="{{ banners.extra10.src }}" class="imgBannerEx3" alt="{{ banners.extra10.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent != '' and pai.parent == '13') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra10.link }}" target="{{ banners.extra10.target }}">
             <img src="{{ banners.extra10.src }}" class="imgBannerEx3" alt="{{ banners.extra10.alt }}" >
         </a>
+    </div>
     {% elseif (firstPai.parent_id == '' and pai.parent == '' and category.id == '13') %}
+    <div class="row nospacing topCategory">
         <a href="{{ banners.extra10.link }}" target="{{ banners.extra10.target }}">
             <img src="{{ banners.extra10.src }}" class="imgBannerEx3" alt="{{ banners.extra10.alt }}" >
         </a>
+    </div>
     {% endif %}
-    
-</div>
+     {% endif %}

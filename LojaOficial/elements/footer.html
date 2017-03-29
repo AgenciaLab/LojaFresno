@@ -1,0 +1,203 @@
+{% set checkout = "checkout" in pages.current ? "true" : "false" %}
+<footer>
+
+    <a onclick="backToTop()" style="cursor: pointer">
+        <div class="footer_icon" >
+            <img src="{{ themePath }}img/footer/icon_back.png"/>
+        </div>
+    </a>
+
+    <div class="footer_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contactus">
+                            <img src="{{ themePath }}img/footer/icon_faleConosco.png"/>
+                            <h5>FALE COM A GENTE</h5>
+                        </div>
+                        <div class="row">
+                            <h4><span>(11)</span>3522 6507</h4>
+                        </div>
+                        <div class="row">
+                            <a href="mailto: sac@fresnoshop.com.br">
+                                <h6>sac@fresnoshop.com.br</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="row">
+                        <div class="footer_options">
+                            <h5>INSTITUCIONAL</h5>
+                            <ul>
+                                <li>
+                                    <a href="{{ links.company }}">
+                                        <h6>Sobre</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.register }}">
+                                        <h6>Cadastre-se</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.orders }}">
+                                        <h6>Meus Pedidos</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.contact }}">
+                                        <h6>Contato</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.security }}">
+                                        <h6>Política de Privacidade</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer_options">
+                            <h5>Formas de Pagamento</h5>
+
+                            <img src="{{ themePath }}img/footer/cartoes.png"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-2  col-xs-12">
+                    <div class="row">
+                        <div class="footer_options">
+                            <h5>DÚVIDAS</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="{{ links.send }}">
+                                        <h6>Entregas</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.payment }}">
+                                        <h6>Pagamentos</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.warranty }}">
+                                        <h6>Trocas e Devoluções</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ links.warranty }}">
+                                        <h6>Segurança e Garantia</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="footer_options">
+                            <h5>Compre com Segurança</h5>
+
+                            <div class="row" style="text-align: left;">
+                                <div class="col-md-12 col-xs-12" style="padding: 0; margin:0; ">
+                                        {% if seals.hackersafe %}
+                                            {{ seals.hackersafe }}
+                                        {% endif %}                                  
+                                </div>
+                            </div>
+                            <h6>Site 100% Seguro</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="footer_options">
+                            <h5>VENDA PARA ATACADO</h5>
+
+                            <ul>
+                                <li>
+                                    <h6>(14) 3604 2020</h6>
+                                </li>
+                                <li>
+                                    <a href="mailto: comercial@bandup.com.br">
+                                        <h6>comercial@bandup.com.br</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row" id="logosBdpLab">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="row" style="margin: 0; padding: 0;">
+                                <h4>Produtos desenvolvidos por:</h4>
+                                <a target="_blank" href="http://www.bandup.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logo_bandup.png"/>
+                                </a>
+                            </div>
+                            <div class="row" >
+                                <h4 style="margin-bottom: 15px;">Loja desenvolvida por:</h4>
+                                <a target="_blank" href="http://www.lab17340.com.br">
+                                    <img style="max-width: 130px;" src="{{ themePath }}img/footer/logoLab.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="row" style="margin: 0 0 10px 0; padding: 0;">
+                        <div class="footer_options" style="padding: 0px 60px; min-height: auto;">
+                            <a target="_blank" href="https://www.facebook.com/FresnoShopOficial">
+                                <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <img src="{{ themePath }}img/footer/icon_facebook.png"/>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/FresnoShop">
+                                <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <img src="{{ themePath }}img/footer/icon_twitter.png"/>
+                                </div>
+                            </a>
+                            <a target="_blank" href="http://instagram.com/fresnoshop">
+                                <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <img src="{{ themePath }}img/footer/icon_instagram.png"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="footer_options" style="text-align: left;">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12" style="padding: 0; margin:0;">
+                                    <div class="Aligncenter">
+                                        <img class="img-responsive" src="{{ themePath }}img/footer/diamant_bit.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboveFooter_content">
+        <h4>Fan Store Entretendimento S.A. - bandUP! - Av.Pedro Ometto, 1570 - Vila Narcisa - 17340-000 - Barra Bonita (SP)</h4>
+        <h4 style="    padding-bottom: 2px;    position: absolute;    z-index: 99;    background-color: #fff;    width: 100%;"> CNPJ: 01.424.397/0001-01 - Inscrição Estadual: 202.032.630.110</h4>
+    </div>
+
+</footer>
+
+<script>
+    function backToTop() {
+        //$('html, body').animate({scrollTop: 0}, 'fast');
+        window.scrollTo(0,0);
+    }
+</script>

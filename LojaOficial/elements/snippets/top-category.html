@@ -1,0 +1,28 @@
+<div class="row nospacing topCategory">
+    <!-- MODA | MASCULINA | FEMININA -->
+    {% if (category.id == '17' or category.id == '29' or category.id == '27')  %}
+        <a href="{{ banners.extra5.link }}" target="{{ banners.extra5.target }}">
+            <img src="{{ banners.extra5.src }}" class="imgBannerEx3" alt="{{ banners.extra5.alt }}" >
+        </a>
+    <!-- CASA E DECORACAO | ALMOFADA | CAMA MESA -->
+    {% elseif (category.id == '19' or category.id == '31' or category.id == '37') %}
+        <a href="{{ banners.extra17.link }}" target="{{ banners.extra17.target }}">
+            <img src="{{ banners.extra17.src }}" class="imgBannerEx3" alt="{{ banners.extra17.alt }}" >
+        </a>
+    <!-- ACESSORIOS | CHAVEIRO | CAPAS -->
+    {% elseif (category.id == '21' or category.id == '33' or category.id == '35') %}
+        <a href="{{ banners.extra16.link }}" target="{{ banners.extra16.target }}">
+            <img src="{{ banners.extra16.src }}" class="imgBannerEx3" alt="{{ banners.extra16.alt }}" >
+        </a>
+    <!-- CD E DVD -->
+    {% elseif category.id == '23' %}
+        <a href="{{ banners.extra18.link }}" target="{{ banners.extra18.target }}">
+            <img src="{{ banners.extra18.src }}" class="imgBannerEx3" alt="{{ banners.extra18.alt }}" >
+        </a>
+    <!-- NOVIDADE -->
+    {% elseif category.id == '25' %}
+        <a href="{{ banners.extra17.link }}" target="{{ banners.extra17.target }}">
+            <img src="{{ banners.extra17.src }}" class="imgBannerEx3" alt="{{ banners.extra17.alt }}" >
+        </a>
+    {% endif %}
+</div>

@@ -1,12 +1,27 @@
 <div class="loginBox header_loginBox">
-    <div class="seta_cima"></div>
-    <form action="#" method="post" name="form_login">
-        <h3>Acessar conta</h3>
-        <input name="email_login" type="email" placeholder="e-mail" required />
-        <input name="senha_login" type="password" placeholder="senha" required/>
+    <div class="login tray-hide" data-logged-user="false">
+        <div class="seta_cima"></div>
+        <form action="/loja/login_layout.php?loja={{ store.id }}&login=1&origem=central" method="post" name="form_login">
+            <h3>Acessar conta</h3>
+            <input name="email_login" type="email" placeholder="e-mail" required />
+            <input name="senha_login" type="password" placeholder="senha" required/>
+            <button type="submit">login</button>
+            <div></div>
+            <a href="{{ links.register }}">Cadastre-se</a>
+        </form>
+    </div>
 
-        <button type="submit">login</button>
-        <div></div>
-        <a href="/cadastro">Cadastre-se</a>
-    </form>
+    <div class="login tray-hide" data-logged-user="true">
+        <div class=" logged-box">
+            <div class="areaLogado">
+                <h3>Olá, <span data-customer="name">{{ customer.name }}</span>!</h3>
+                <h3><a href="{{ links.home }}">Início / Home</a></h3>
+                <h3><a href="{{ links.central }}">Central do Cliente</a></h3>
+                <h3><a href="{{ links.orders }}">Meus Pedidos</a></h3>
+                <h3><a href="{{ links.orders_return }}">Trocas e Devoluções</a></h3>
+                <h3><a href="{{ links.logout }}">Sair / Logout</a></h3>
+            </div>
+        </div>
+    </div>
 </div>
+

@@ -1,0 +1,18 @@
+<div class="breadcrumb">
+  <span class="breadcrumb-item"><a href="/">Home</a></span>
+  <span class="iconGoin"> > </span>
+  {% if breadcrumb %}
+    {% for item in breadcrumb %}
+      <span class="breadcrumb-item" id="capitalize">
+        <a href="{{ item.link}}" title="{{ item.name }}"> {{ item.name }}</a>
+      </span>
+    {% endfor %}
+    <br><br>
+
+    <a id="breadcrumDestaq" href="{{ breadcrumb[0].link}}" title="{{ breadcrumb[0].name }}"> {{ breadcrumb[0].name }} </a>
+
+    <span class="icon-breadcrumb"></span>
+
+    <span class="breadcrumb-item">{{  products|length }} Produtos</span>
+  {% endif %}
+</div>

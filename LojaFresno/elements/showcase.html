@@ -1,4 +1,11 @@
 {% if products|length > 0 %}
+
+<div class="showcaseMob clearfix " data-tray-tst="vitrine_home">
+
+<h2 class="titleProducts">
+                        <strong>{{ showcaseTitle }}</strong>
+                     </h2>
+
 <div class="showcase-catalog clearfix col-sm-12 col-md-12">
     <div class="jcarousel-wrapper">
         <div class="jcarousel">
@@ -9,18 +16,18 @@
                 </li>
  {% endfor %}
             </ul>
-        </div>
+        </div>  
 
-        <a href="#" class="jcarousel-control-prev">
+        <a class="jcarousel-control-prev">
             <img class="img-responsive" src="{{ asset('img/project/barraEsquerda.png') }}" alt="" />
         </a>
-        <a href="#" class="jcarousel-control-next">
+        <a class="jcarousel-control-next">
             <img class="img-responsive" src="{{ asset('img/project/barraDireita.png') }}" alt="" />
         </a>
 
         <p class="jcarousel-pagination"></p>
-    </div>
 
 
+</div>
 </div>
 {% endif %} 

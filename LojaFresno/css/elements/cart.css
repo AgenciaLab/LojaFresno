@@ -339,7 +339,37 @@
     }
 
     .slick-dots {
-        display: none!important;
+        display: block;
+        position: absolute;
+        bottom: -33px!important;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .slick-dots li button:before {
+        content: ''!important;
+    }
+
+    .slick-dots .slick-active button {
+        background: #333!important;
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        content: ''!important;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: lightgray!important;
     }
     
     .page-checkout_cart .AvancarTopo+.bt-avancar, .page-checkout_cart .bt-continuar-comprando+.bt-avancar {
