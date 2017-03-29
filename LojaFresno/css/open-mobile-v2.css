@@ -102,11 +102,6 @@
     height: auto !important;
   }
 
-  #descricao * {
-    font-size: 12px!important;
-    line-height: 14px!important;
-    background: inherit!important;
-  }
 
   .produto-links {
     display: none;

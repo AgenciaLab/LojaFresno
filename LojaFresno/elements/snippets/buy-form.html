@@ -1,14 +1,15 @@
 {% if product.available %}
 <script>
-function process(quant){
-    var value = parseInt(document.getElementById("quant").value);
-    value+=quant;
-    if(value < 1){
-      document.getElementById("quant").value = 1;
-    }else{
-    document.getElementById("quant").value = value;
+    function process(quant) {
+        var value = parseInt(document.getElementById("quant").value);
+        value += quant;
+        if (value < 1) {
+            document.getElementById("quant").value = 1;
+        } else {
+            document.getElementById("quant").value = value;
+        }
     }
-  }
+
 </script>
 <div class="clearfix wrapper-btn-buy passo2" id="product-form-box">
     <div data-app="product.quantity" class="product-quantity clearfix" id="quantidade">
@@ -26,9 +27,9 @@ function process(quant){
                         <input type="button" id="minus" value='+' onclick="process(1)">
                     </div>
                 </div>
-            </div> 
+            </div>
 
-                
+
 
         </div>
 
@@ -43,29 +44,34 @@ function process(quant){
     <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma op&ccedil;&otilde;es para varia&ccedil;&otilde;es do produto</span>
 </div>
 
-<script type="text/javascript">function process(quant){var value = parseInt(document.getElementById("quant").value);value+=quant;if( value > 0){document.getElementById("quant").value = value;	}} </script>
+<script type="text/javascript">
+                     function process(quant) { var value = parseInt(document.getElementById("quant").value); value += quant; if (value > 0) { document.getElementById("quant").value = value; } }
+</script>
 
 <script>
     var checado = document.getElementsByName('radioVariant1');
-    
+
     function VerifyVariantComprar() {
         var checado = document.getElementsByName('radioVariant1');
-        
+
+
         var algumchecado = false;
-        
-        for (i = 0; i < checado.length; i++ ) {
-            if(checado[i].checked) {
-                algumchecado = true;               
+
+        if (checado.length !== 0) {
+            for (i = 0; i < checado.length; i++) {
+                if (checado[i].checked) {
+                    algumchecado = true;
+                }
+            }
+
+            if (algumchecado == false) {
+                document.getElementById('span_erro_carrinho').style.display = 'block';
+
             }
         }
-        
-        if(algumchecado == false) {
-            document.getElementById('span_erro_carrinho').style.display = 'block';
-            
-        }
-        
-        
+
     }
+
 </script>
 
 {% endif %}

@@ -63,8 +63,8 @@
                     <div class="produto-formas-pagamento" align="left">
 
                         {% for key, tab in productTabs %} {% if tab.container_id %} {% if tab.container_id == '#formasPagto' %}
-                        <a class="color" onclick="openFormaPagto()">
-                            <span class="glyphicon glyphicon-plus"></span> ver todas as formas de pagamento
+                        <a class="color" onclick="openFormaPagto()" style="font-family: OxygenRegular;    font-weight: 600 !important; cursor: pointer;">
+                            +  Ver todas as formas de pagamentos
                         </a>
 
                         {% endif %} {% endif %} {% endfor %}
@@ -187,7 +187,8 @@
         $(".lista-radios-input input").css("visibility", "hidden");
         $(".lista-radios-input input").css("width", "0px");
 
-        $(".lista-radios-input span").css("fontSize", "12pt");
+        $(".lista-radios-input span").css("fontSize", "11pt");
+        $(".lista-radios-input span").css("fontFamily", "OxygenRegular");
 
         $(".lista-radios-input").each(function (index) {
             $(this).html($(this).html().replace("Tamanho \\", ""))
