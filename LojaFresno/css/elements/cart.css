@@ -645,7 +645,6 @@
     }
 
     .page-checkout_cart #tabela_carrinho tr:last-child td {
-        display: none;
         border-bottom: none;
         padding: 0px 5px;
         color: #000;
