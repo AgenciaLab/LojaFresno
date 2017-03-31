@@ -5,6 +5,10 @@ body {
     border: none;
 }
 
+.board {
+    font-family: OxygenRegular;
+}
+
 .first {
     float: left;
     margin-right: 15px;
@@ -403,4 +407,17 @@ body {
     #ProdAbas .aberta >a, #ProdAbas li>a {
         margin: auto !important;
     }
+}
+
+
+.central-mapa  {
+    display: none!important;
+}
+
+.board h1 .color, h3 .color {
+    font-family: OxygenBold;
+}
+
+.tablePage h5, .tablePage h3, .tablePage h4, .tablePage tbody tr th, .precoparc, .precoAvista, .TimeLine5~p, .TimeLine7~p, .board {
+    font-family: OxygenRegular;
 }
