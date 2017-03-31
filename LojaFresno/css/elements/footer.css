@@ -130,16 +130,16 @@ and open the template in the editor.
     }
 
     .aboveFooter_content h4 {
-    font-family: OxygenRegular;
-    font-size: 7pt;
-    line-height: 20px;
-    text-align: center;
-}
+        font-family: OxygenRegular;
+        font-size: 7pt;
+        line-height: 20px;
+        text-align: center;
+    }
 
-.aboveFooter_content {
-    text-align: center;
-    margin-top: 15px;
-}
+    .aboveFooter_content {
+        text-align: center;
+        margin-top: 15px;
+    }
 
     #neoassist {
         display: none!important;
@@ -198,6 +198,10 @@ and open the template in the editor.
     .Aligncenter img{
         position: absolute;
         left: 36%;
+    }
+
+    .footer_content, .container, .row, .col-md-2 {
+        z-index: 9000;
     }
 }
 

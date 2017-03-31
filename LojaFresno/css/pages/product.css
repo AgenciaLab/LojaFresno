@@ -290,6 +290,9 @@ and open the template in the editor.
         font-size: 36pt;
         font-weight: 100;
     }
+    #NoBorder {
+        border-top: none;
+    }
     
     .product-payment {        
     }
@@ -517,6 +520,10 @@ and open the template in the editor.
 
 .lista_radios {
     margin-top: 2px;
+}
+
+#NoBorder {
+    border-top: none;
 }
 
 .page-product .lista_cor_variacao li, .page-product .lista_cor_variacao2 li {
