@@ -47,6 +47,15 @@ a {
   color: #0388A6;
 }
 
+.board .color {
+  color: #333;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 pre {
   border:1px solid #000;
   overflow-x:auto;

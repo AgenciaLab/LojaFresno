@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+    .site-main row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .board {
+        margin: 0;
+        padding: 0;
+    }
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+    .tablePage, table {
+        margin: 0;
+    }
+    .page-central_troca table td {
+        padding: 5px 10px 5px 10px;
+    }
+    .page-central_troca .board form[name=form1]  {
+        overflow: hidden;
+    }
+    .table-bordered {
+        border:1px solid #ddd;
+    }
+    .table h4 {
+        font-size: 18px;
+    }
+    .table h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        text-align: left;
+    }
+    .blocoAlerta {
+        background-color: #fff;
+        margin: 15px 0 0 0;
+        padding: 0;
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-central_troca .page-content>* {
+        padding: 0;
+    }
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .table-bordered {
+        border:1px solid #ddd;
+    }
+    .tablePage {
+        border: 1px solid #CCC;
+    }
+    .table h4 {
+        font-size: 15px;
+    }
+    .table h3 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        text-align: left;
+    }
+    .blocoAlerta {
+        background-color: #fff;
+        margin: 15px 0 0 0;
+        padding: 0;
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+    }
+}
