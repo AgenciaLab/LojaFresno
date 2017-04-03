@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
+  .level1 h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   h1, h2, h3, h4, h5, h6 {

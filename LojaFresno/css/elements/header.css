@@ -108,7 +108,7 @@
 .main-menu .item-level1{
     float:left;
     position:relative;
-    width: 168px;
+    width: 20%;
 }
 .main-menu .item-level1:first-child,.main-menu .item-level1:nth-child(2){
     margin-left:0
