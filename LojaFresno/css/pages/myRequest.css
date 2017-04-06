@@ -1,0 +1,86 @@
+.page-central_anteriores .page-content h1:after, .page-central_cliente .page-content h1:after, .page-central_comissoes .page-content h1:after, .page-central_comissoes_extrato .page-content h1:after, .page-central_confirmar_pagamento .page-content h1:after, .page-central_detalhe_pedido .page-content h1:after, .page-central_gera_troca .page-content h1:after, .page-central_lista_espera .page-content h1:after, .page-central_listas .page-content h1:after, .page-central_listas_cliente .page-content h1:after, .page-central_rastrear .page-content h1:after, .page-central_senha .page-content h1:after, .page-central_troca .page-content h1:after {
+       border: none;
+   }
+   .page-central_anteriores .page-content h1 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 1.5em;
+        color: inherit;
+   }
+   .board .color {
+       color: #0388A6;
+   }
+   .page-central_anteriores table td font strong {
+       color: #FF0000;
+   }
+   .page-central_anteriores table td strong {
+       color: #0388A6;
+   }
+    .board #div_erro {
+        margin-top: -30px;
+    }
+
+@media (min-width: 768px) {
+   .page-central_anteriores .page-content>* {
+       padding: 15px 15px 0px 15px;
+       margin-bottom: 20px;
+   }
+   .table-bordered {
+       border: none;
+   }
+   .page-central_anteriores table {
+       margin-top: -10px;
+   }
+   .page-central_anteriores table th {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+   }
+   .page-central_anteriores table td {
+       border: 1px solid #ddd;
+   }
+}
+
+@media (max-width: 768px) {
+    .page-central_anteriores .page-content h1 {
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: -15px;
+    }
+    .page-central_anteriores .page-content>* {
+       padding: 15px 15px 0px 0px;
+    }
+    .table-bordered {
+       border: none;
+    }
+    .page-central_anteriores table {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .page-central_anteriores table th {
+        display: none;
+    }
+
+    .page-central_anteriores .Pedidos td:first-child {
+        border-top: 1px solid #000;
+        margin-top: 2em;
+    }
+    .page-central_anteriores .Pedidos td {
+        border: none;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+     }
+     .page-central_anteriores .Pedidos td:last-child {
+         border-bottom: 1px solid #000;
+     }
+    
+}
